@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Data.DataPipelineProvisioning;
+
+using AtlasOps.Features;
+
+public interface IDataPipelineProvisioningRepository : IAtlasOpsCapabilityRepository<DataPipelineProvisioningItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.FinOps.ChargebackRuleProvisioning;
+
+using AtlasOps.Features;
+
+public interface IChargebackRuleProvisioningRepository : IAtlasOpsCapabilityRepository<ChargebackRuleProvisioningItem>;

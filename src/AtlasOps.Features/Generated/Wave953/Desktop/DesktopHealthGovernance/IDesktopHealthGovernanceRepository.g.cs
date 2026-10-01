@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Desktop.DesktopHealthGovernance;
+
+using AtlasOps.Features;
+
+public interface IDesktopHealthGovernanceRepository : IAtlasOpsCapabilityRepository<DesktopHealthGovernanceItem>;

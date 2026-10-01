@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Kubernetes.KubernetesClusterOptimization;
+
+using AtlasOps.Features;
+
+public interface IKubernetesClusterOptimizationRepository : IAtlasOpsCapabilityRepository<KubernetesClusterOptimizationItem>;

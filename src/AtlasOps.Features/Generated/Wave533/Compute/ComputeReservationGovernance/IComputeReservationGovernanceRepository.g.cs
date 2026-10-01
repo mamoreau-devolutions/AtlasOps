@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.ComputeReservationGovernance;
+
+using AtlasOps.Features;
+
+public interface IComputeReservationGovernanceRepository : IAtlasOpsCapabilityRepository<ComputeReservationGovernanceItem>;

@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>preview</LangVersion>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="MSTest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\src\Connectors\AtlasOps.Connectors.Avalonia\AtlasOps.Connectors.Avalonia.csproj" />
+    <ProjectReference Include="..\..\..\src\Connectors\AtlasOps.Connectors.Collaboration\AtlasOps.Connectors.Collaboration.csproj" />
+    <ProjectReference Include="..\..\..\src\Connectors\AtlasOps.Connectors.Contracts\AtlasOps.Connectors.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\src\Connectors\AtlasOps.Connectors.Data\AtlasOps.Connectors.Data.csproj" />
+    <ProjectReference Include="..\..\..\src\Connectors\AtlasOps.Connectors.Documents\AtlasOps.Connectors.Documents.csproj" />
+    <ProjectReference Include="..\..\..\src\Connectors\AtlasOps.Connectors.Http\AtlasOps.Connectors.Http.csproj" />
+    <ProjectReference Include="..\..\..\src\Connectors\AtlasOps.Connectors.Observability\AtlasOps.Connectors.Observability.csproj" />
+    <ProjectReference Include="..\..\..\src\Connectors\AtlasOps.Connectors.Runtime\AtlasOps.Connectors.Runtime.csproj" />
+    <ProjectReference Include="..\..\..\src\Connectors\AtlasOps.Connectors.Security\AtlasOps.Connectors.Security.csproj" />
+  </ItemGroup>
+</Project>

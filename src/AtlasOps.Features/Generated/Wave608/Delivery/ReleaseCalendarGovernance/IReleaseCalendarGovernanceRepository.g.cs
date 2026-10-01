@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.ReleaseCalendarGovernance;
+
+using AtlasOps.Features;
+
+public interface IReleaseCalendarGovernanceRepository : IAtlasOpsCapabilityRepository<ReleaseCalendarGovernanceItem>;

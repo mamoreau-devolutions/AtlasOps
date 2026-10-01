@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ProblemRecordProvisioning;
+
+using AtlasOps.Features;
+
+public interface IProblemRecordProvisioningRepository : IAtlasOpsCapabilityRepository<ProblemRecordProvisioningItem>;

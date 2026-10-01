@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.MaintenanceWindowOptimization;
+
+using AtlasOps.Features;
+
+public interface IMaintenanceWindowOptimizationRepository : IAtlasOpsCapabilityRepository<MaintenanceWindowOptimizationItem>;

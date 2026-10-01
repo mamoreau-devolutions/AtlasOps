@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Network.NetworkAddressMonitoring;
+
+using AtlasOps.Features;
+
+public interface INetworkAddressMonitoringRepository : IAtlasOpsCapabilityRepository<NetworkAddressMonitoringItem>;

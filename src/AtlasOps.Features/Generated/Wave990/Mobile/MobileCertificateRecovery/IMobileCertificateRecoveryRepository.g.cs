@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Mobile.MobileCertificateRecovery;
+
+using AtlasOps.Features;
+
+public interface IMobileCertificateRecoveryRepository : IAtlasOpsCapabilityRepository<MobileCertificateRecoveryItem>;

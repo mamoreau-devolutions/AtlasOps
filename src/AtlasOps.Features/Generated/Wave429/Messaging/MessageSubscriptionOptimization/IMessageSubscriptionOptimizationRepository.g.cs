@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Messaging.MessageSubscriptionOptimization;
+
+using AtlasOps.Features;
+
+public interface IMessageSubscriptionOptimizationRepository : IAtlasOpsCapabilityRepository<MessageSubscriptionOptimizationItem>;

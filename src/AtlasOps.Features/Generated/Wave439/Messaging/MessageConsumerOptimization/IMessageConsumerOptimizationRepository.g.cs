@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Messaging.MessageConsumerOptimization;
+
+using AtlasOps.Features;
+
+public interface IMessageConsumerOptimizationRepository : IAtlasOpsCapabilityRepository<MessageConsumerOptimizationItem>;

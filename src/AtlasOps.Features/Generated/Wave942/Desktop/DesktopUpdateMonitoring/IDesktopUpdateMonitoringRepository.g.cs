@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Desktop.DesktopUpdateMonitoring;
+
+using AtlasOps.Features;
+
+public interface IDesktopUpdateMonitoringRepository : IAtlasOpsCapabilityRepository<DesktopUpdateMonitoringItem>;

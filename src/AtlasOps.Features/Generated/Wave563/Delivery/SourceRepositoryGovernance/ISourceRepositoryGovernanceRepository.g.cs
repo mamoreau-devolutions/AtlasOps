@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.SourceRepositoryGovernance;
+
+using AtlasOps.Features;
+
+public interface ISourceRepositoryGovernanceRepository : IAtlasOpsCapabilityRepository<SourceRepositoryGovernanceItem>;

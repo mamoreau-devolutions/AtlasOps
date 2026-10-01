@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ChangeRequestProvisioning;
+
+using AtlasOps.Features;
+
+public interface IChangeRequestProvisioningRepository : IAtlasOpsCapabilityRepository<ChangeRequestProvisioningItem>;

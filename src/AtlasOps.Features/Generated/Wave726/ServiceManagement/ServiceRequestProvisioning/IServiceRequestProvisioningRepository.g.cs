@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ServiceRequestProvisioning;
+
+using AtlasOps.Features;
+
+public interface IServiceRequestProvisioningRepository : IAtlasOpsCapabilityRepository<ServiceRequestProvisioningItem>;

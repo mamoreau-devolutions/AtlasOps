@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Kubernetes.KubernetesNamespaceGovernance;
+
+using AtlasOps.Features;
+
+public interface IKubernetesNamespaceGovernanceRepository : IAtlasOpsCapabilityRepository<KubernetesNamespaceGovernanceItem>;

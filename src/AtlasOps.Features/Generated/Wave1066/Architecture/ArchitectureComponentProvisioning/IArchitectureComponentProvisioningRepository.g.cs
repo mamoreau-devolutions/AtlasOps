@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Architecture.ArchitectureComponentProvisioning;
+
+using AtlasOps.Features;
+
+public interface IArchitectureComponentProvisioningRepository : IAtlasOpsCapabilityRepository<ArchitectureComponentProvisioningItem>;

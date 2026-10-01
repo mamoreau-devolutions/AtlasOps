@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Mobile.MobileCertificateMonitoring;
+
+using AtlasOps.Features;
+
+public interface IMobileCertificateMonitoringRepository : IAtlasOpsCapabilityRepository<MobileCertificateMonitoringItem>;

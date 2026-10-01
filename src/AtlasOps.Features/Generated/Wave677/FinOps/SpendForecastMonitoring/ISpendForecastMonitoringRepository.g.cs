@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.FinOps.SpendForecastMonitoring;
+
+using AtlasOps.Features;
+
+public interface ISpendForecastMonitoringRepository : IAtlasOpsCapabilityRepository<SpendForecastMonitoringItem>;

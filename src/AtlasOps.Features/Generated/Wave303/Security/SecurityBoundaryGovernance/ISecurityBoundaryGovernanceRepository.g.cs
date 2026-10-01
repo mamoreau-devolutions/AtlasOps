@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Security.SecurityBoundaryGovernance;
+
+using AtlasOps.Features;
+
+public interface ISecurityBoundaryGovernanceRepository : IAtlasOpsCapabilityRepository<SecurityBoundaryGovernanceItem>;

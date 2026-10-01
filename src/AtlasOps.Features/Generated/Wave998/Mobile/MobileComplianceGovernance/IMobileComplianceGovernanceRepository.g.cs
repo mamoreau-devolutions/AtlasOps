@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Mobile.MobileComplianceGovernance;
+
+using AtlasOps.Features;
+
+public interface IMobileComplianceGovernanceRepository : IAtlasOpsCapabilityRepository<MobileComplianceGovernanceItem>;

@@ -1,0 +1,22 @@
+namespace AtlasOps.Features.Compute.ComputeScheduleOptimization;
+
+using Avalonia.Controls;
+using Avalonia.Interactivity;
+using Avalonia.Markup.Xaml;
+
+public sealed partial class ComputeScheduleOptimizationView : UserControl
+{
+    public ComputeScheduleOptimizationView()
+    {
+        this.DataContext = new ComputeScheduleOptimizationViewModel();
+        AvaloniaXamlLoader.Load(this);
+    }
+
+    private void Advance_OnClick(object? sender, RoutedEventArgs e)
+    {
+        if (this.DataContext is ComputeScheduleOptimizationViewModel viewModel)
+        {
+            viewModel.Advance();
+        }
+    }
+}

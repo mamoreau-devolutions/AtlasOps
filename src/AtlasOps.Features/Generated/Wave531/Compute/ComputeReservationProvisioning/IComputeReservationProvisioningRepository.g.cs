@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.ComputeReservationProvisioning;
+
+using AtlasOps.Features;
+
+public interface IComputeReservationProvisioningRepository : IAtlasOpsCapabilityRepository<ComputeReservationProvisioningItem>;

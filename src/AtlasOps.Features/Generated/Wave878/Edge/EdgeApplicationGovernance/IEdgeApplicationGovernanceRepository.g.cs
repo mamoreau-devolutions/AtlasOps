@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Edge.EdgeApplicationGovernance;
+
+using AtlasOps.Features;
+
+public interface IEdgeApplicationGovernanceRepository : IAtlasOpsCapabilityRepository<EdgeApplicationGovernanceItem>;

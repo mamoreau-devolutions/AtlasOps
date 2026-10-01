@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Desktop.DesktopPolicyGovernance;
+
+using AtlasOps.Features;
+
+public interface IDesktopPolicyGovernanceRepository : IAtlasOpsCapabilityRepository<DesktopPolicyGovernanceItem>;

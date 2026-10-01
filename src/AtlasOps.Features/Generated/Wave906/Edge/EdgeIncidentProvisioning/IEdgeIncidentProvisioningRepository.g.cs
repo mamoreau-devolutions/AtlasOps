@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Edge.EdgeIncidentProvisioning;
+
+using AtlasOps.Features;
+
+public interface IEdgeIncidentProvisioningRepository : IAtlasOpsCapabilityRepository<EdgeIncidentProvisioningItem>;

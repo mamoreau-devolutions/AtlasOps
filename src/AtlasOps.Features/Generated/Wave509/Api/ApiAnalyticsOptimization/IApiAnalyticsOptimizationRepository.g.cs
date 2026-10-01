@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Api.ApiAnalyticsOptimization;
+
+using AtlasOps.Features;
+
+public interface IApiAnalyticsOptimizationRepository : IAtlasOpsCapabilityRepository<ApiAnalyticsOptimizationItem>;

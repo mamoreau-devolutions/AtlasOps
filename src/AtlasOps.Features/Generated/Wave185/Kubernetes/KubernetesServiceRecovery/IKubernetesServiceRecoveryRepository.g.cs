@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Kubernetes.KubernetesServiceRecovery;
+
+using AtlasOps.Features;
+
+public interface IKubernetesServiceRecoveryRepository : IAtlasOpsCapabilityRepository<KubernetesServiceRecoveryItem>;

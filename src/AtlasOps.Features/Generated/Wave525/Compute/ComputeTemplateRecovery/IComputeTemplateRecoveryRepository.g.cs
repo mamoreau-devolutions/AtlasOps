@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.ComputeTemplateRecovery;
+
+using AtlasOps.Features;
+
+public interface IComputeTemplateRecoveryRepository : IAtlasOpsCapabilityRepository<ComputeTemplateRecoveryItem>;

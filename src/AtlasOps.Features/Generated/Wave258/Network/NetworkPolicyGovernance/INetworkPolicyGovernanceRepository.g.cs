@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Network.NetworkPolicyGovernance;
+
+using AtlasOps.Features;
+
+public interface INetworkPolicyGovernanceRepository : IAtlasOpsCapabilityRepository<NetworkPolicyGovernanceItem>;

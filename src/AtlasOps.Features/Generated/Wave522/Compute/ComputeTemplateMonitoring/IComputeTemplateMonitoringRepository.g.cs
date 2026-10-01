@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.ComputeTemplateMonitoring;
+
+using AtlasOps.Features;
+
+public interface IComputeTemplateMonitoringRepository : IAtlasOpsCapabilityRepository<ComputeTemplateMonitoringItem>;

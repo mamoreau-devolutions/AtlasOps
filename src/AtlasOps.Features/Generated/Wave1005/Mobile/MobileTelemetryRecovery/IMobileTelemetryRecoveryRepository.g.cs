@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Mobile.MobileTelemetryRecovery;
+
+using AtlasOps.Features;
+
+public interface IMobileTelemetryRecoveryRepository : IAtlasOpsCapabilityRepository<MobileTelemetryRecoveryItem>;

@@ -1,0 +1,34 @@
+{
+  "name": "IANA protocol parameter registries",
+  "version": "2026-03 snapshot",
+  "license": "CC0-1.0",
+  "retrievedAt": "2026-10-01T11:50:36.3069441+00:00",
+  "sources": [
+    "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.csv",
+    "https://www.iana.org/assignments/protocol-numbers/protocol-numbers-1.csv",
+    "https://www.iana.org/assignments/tls-parameters/tls-parameters-4.csv"
+  ],
+  "fileCount": 4,
+  "files": [
+    {
+      "path": "LICENSE.html",
+      "bytes": 8375,
+      "sha256": "43cfd90b1cb25ca86933032612a2c466fac94d7afc934ca8ef96a61e2b55e1b3"
+    },
+    {
+      "path": "protocol-numbers-1.csv",
+      "bytes": 9230,
+      "sha256": "e704ee14e69347681b3a6271af02195a9741236074fc311449ebb032101bdf2c"
+    },
+    {
+      "path": "service-names-port-numbers.csv",
+      "bytes": 1157594,
+      "sha256": "ec8ae429cec20ab1642c7154aec9bc94d5864d46959bc1312bc12ab4540d95eb"
+    },
+    {
+      "path": "tls-parameters-4.csv",
+      "bytes": 28663,
+      "sha256": "4fe36f25017ed2882bf1c4a24493af83ed98526c0869881934cb968803489ed3"
+    }
+  ]
+}

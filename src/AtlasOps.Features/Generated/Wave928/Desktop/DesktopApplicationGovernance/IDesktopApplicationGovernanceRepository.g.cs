@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Desktop.DesktopApplicationGovernance;
+
+using AtlasOps.Features;
+
+public interface IDesktopApplicationGovernanceRepository : IAtlasOpsCapabilityRepository<DesktopApplicationGovernanceItem>;

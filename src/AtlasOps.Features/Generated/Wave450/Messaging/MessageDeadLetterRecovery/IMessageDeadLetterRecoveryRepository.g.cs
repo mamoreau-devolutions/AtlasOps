@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Messaging.MessageDeadLetterRecovery;
+
+using AtlasOps.Features;
+
+public interface IMessageDeadLetterRecoveryRepository : IAtlasOpsCapabilityRepository<MessageDeadLetterRecoveryItem>;

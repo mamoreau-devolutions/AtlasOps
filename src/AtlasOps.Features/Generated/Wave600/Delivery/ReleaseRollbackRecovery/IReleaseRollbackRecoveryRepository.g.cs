@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.ReleaseRollbackRecovery;
+
+using AtlasOps.Features;
+
+public interface IReleaseRollbackRecoveryRepository : IAtlasOpsCapabilityRepository<ReleaseRollbackRecoveryItem>;

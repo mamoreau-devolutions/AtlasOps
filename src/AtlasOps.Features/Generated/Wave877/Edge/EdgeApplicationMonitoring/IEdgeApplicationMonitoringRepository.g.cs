@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Edge.EdgeApplicationMonitoring;
+
+using AtlasOps.Features;
+
+public interface IEdgeApplicationMonitoringRepository : IAtlasOpsCapabilityRepository<EdgeApplicationMonitoringItem>;

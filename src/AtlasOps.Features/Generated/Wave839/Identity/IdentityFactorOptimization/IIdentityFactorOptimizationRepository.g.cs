@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Identity.IdentityFactorOptimization;
+
+using AtlasOps.Features;
+
+public interface IIdentityFactorOptimizationRepository : IAtlasOpsCapabilityRepository<IdentityFactorOptimizationItem>;

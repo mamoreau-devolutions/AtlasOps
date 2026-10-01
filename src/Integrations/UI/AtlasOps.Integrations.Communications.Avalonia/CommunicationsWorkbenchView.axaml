@@ -1,0 +1,9 @@
+<UserControl
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AtlasOps.Integrations.Communications.Avalonia"
+    xmlns:operations="using:AtlasOps.Operations.Avalonia"
+    x:Class="AtlasOps.Integrations.Communications.Avalonia.CommunicationsWorkbenchView"
+    x:DataType="local:CommunicationsWorkbenchViewModel">
+    <operations:OperationsWorkbenchView />
+</UserControl>

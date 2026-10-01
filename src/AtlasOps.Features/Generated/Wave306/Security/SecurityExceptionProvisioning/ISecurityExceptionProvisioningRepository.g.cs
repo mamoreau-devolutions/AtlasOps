@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Security.SecurityExceptionProvisioning;
+
+using AtlasOps.Features;
+
+public interface ISecurityExceptionProvisioningRepository : IAtlasOpsCapabilityRepository<SecurityExceptionProvisioningItem>;

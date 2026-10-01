@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Architecture.ArchitectureRoadmapOptimization;
+
+using AtlasOps.Features;
+
+public interface IArchitectureRoadmapOptimizationRepository : IAtlasOpsCapabilityRepository<ArchitectureRoadmapOptimizationItem>;

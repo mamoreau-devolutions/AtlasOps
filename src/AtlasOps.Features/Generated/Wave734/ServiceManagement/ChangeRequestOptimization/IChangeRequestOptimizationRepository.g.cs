@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ChangeRequestOptimization;
+
+using AtlasOps.Features;
+
+public interface IChangeRequestOptimizationRepository : IAtlasOpsCapabilityRepository<ChangeRequestOptimizationItem>;

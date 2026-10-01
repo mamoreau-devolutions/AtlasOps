@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Kubernetes.KubernetesIngressGovernance;
+
+using AtlasOps.Features;
+
+public interface IKubernetesIngressGovernanceRepository : IAtlasOpsCapabilityRepository<KubernetesIngressGovernanceItem>;

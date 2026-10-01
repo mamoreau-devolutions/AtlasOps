@@ -1,0 +1,396 @@
+{
+  "schemaVersion": 1,
+  "targetProjectCount": 100,
+  "capabilitiesPerDomain": 30,
+  "domains": [
+    {
+      "display": "Workspaces and projects",
+      "concerns": [
+        "Lifecycle",
+        "Governance",
+        "Collaboration",
+        "Forecasting",
+        "Reporting",
+        "Archival"
+      ],
+      "nouns": [
+        "Portfolio",
+        "Workspace",
+        "Project",
+        "Milestone",
+        "Stakeholder"
+      ],
+      "id": "Workspaces"
+    },
+    {
+      "display": "Connections and sessions",
+      "concerns": [
+        "Provisioning",
+        "Routing",
+        "Health",
+        "Recovery",
+        "Policy",
+        "Audit"
+      ],
+      "nouns": [
+        "Profile",
+        "Session",
+        "Gateway",
+        "Tunnel",
+        "Endpoint"
+      ],
+      "id": "Connections"
+    },
+    {
+      "display": "Credentials and secrets",
+      "concerns": [
+        "Lifecycle",
+        "Access",
+        "Rotation",
+        "Verification",
+        "Recovery",
+        "Audit"
+      ],
+      "nouns": [
+        "Credential",
+        "Secret",
+        "Vault",
+        "Resolver",
+        "Rotation"
+      ],
+      "id": "Credentials"
+    },
+    {
+      "display": "Assets and inventory",
+      "concerns": [
+        "Inventory",
+        "Classification",
+        "Drift",
+        "Ownership",
+        "Lifecycle",
+        "Reporting"
+      ],
+      "nouns": [
+        "Asset",
+        "Device",
+        "Software",
+        "Dependency",
+        "Discovery"
+      ],
+      "id": "Inventory"
+    },
+    {
+      "display": "Automation and runbooks",
+      "concerns": [
+        "Design",
+        "Scheduling",
+        "Execution",
+        "Retry",
+        "Cancellation",
+        "Audit"
+      ],
+      "nouns": [
+        "Runbook",
+        "Workflow",
+        "Job",
+        "Trigger",
+        "Approval"
+      ],
+      "id": "Automation"
+    },
+    {
+      "display": "Deployments and environments",
+      "concerns": [
+        "Planning",
+        "Validation",
+        "Promotion",
+        "Monitoring",
+        "Recovery",
+        "Audit"
+      ],
+      "nouns": [
+        "Release",
+        "Environment",
+        "Artifact",
+        "Rollout",
+        "Rollback"
+      ],
+      "id": "Deployments"
+    },
+    {
+      "display": "Incidents and alerting",
+      "concerns": [
+        "Detection",
+        "Triage",
+        "Assignment",
+        "Escalation",
+        "Resolution",
+        "Review"
+      ],
+      "nouns": [
+        "Incident",
+        "Alert",
+        "Escalation",
+        "Timeline",
+        "Runbook"
+      ],
+      "id": "Incidents"
+    },
+    {
+      "display": "Observability and metrics",
+      "concerns": [
+        "Collection",
+        "Aggregation",
+        "Correlation",
+        "Threshold",
+        "Retention",
+        "Reporting"
+      ],
+      "nouns": [
+        "Metric",
+        "Trace",
+        "Log",
+        "Dashboard",
+        "Objective"
+      ],
+      "id": "Observability"
+    },
+    {
+      "display": "Governance and policy",
+      "concerns": [
+        "Authoring",
+        "Evaluation",
+        "Approval",
+        "Enforcement",
+        "Remediation",
+        "Audit"
+      ],
+      "nouns": [
+        "Policy",
+        "Control",
+        "Exception",
+        "Evidence",
+        "Assessment"
+      ],
+      "id": "Governance"
+    },
+    {
+      "display": "Identity and organization",
+      "concerns": [
+        "Provisioning",
+        "Assignment",
+        "Delegation",
+        "Review",
+        "Revocation",
+        "Audit"
+      ],
+      "nouns": [
+        "Identity",
+        "Team",
+        "Role",
+        "Membership",
+        "Entitlement"
+      ],
+      "id": "Identity"
+    },
+    {
+      "display": "Documents and knowledge",
+      "concerns": [
+        "Authoring",
+        "Indexing",
+        "Versioning",
+        "Approval",
+        "Publishing",
+        "Archival"
+      ],
+      "nouns": [
+        "Document",
+        "Article",
+        "Template",
+        "Revision",
+        "Link"
+      ],
+      "id": "Documents"
+    },
+    {
+      "display": "Geography intelligence",
+      "concerns": [
+        "Catalog",
+        "Validation",
+        "Search",
+        "Override",
+        "Comparison",
+        "Reporting"
+      ],
+      "nouns": [
+        "Country",
+        "Division",
+        "Region",
+        "Boundary",
+        "Location"
+      ],
+      "id": "Geography"
+    },
+    {
+      "display": "IANA network intelligence",
+      "concerns": [
+        "Catalog",
+        "Classification",
+        "Validation",
+        "Policy",
+        "Collision",
+        "Reporting"
+      ],
+      "nouns": [
+        "Service",
+        "Port",
+        "Protocol",
+        "Cipher",
+        "Assignment"
+      ],
+      "id": "NetworkIntelligence"
+    },
+    {
+      "display": "Software lifecycle",
+      "concerns": [
+        "Catalog",
+        "Classification",
+        "Forecasting",
+        "Risk",
+        "Upgrade",
+        "Reporting"
+      ],
+      "nouns": [
+        "Product",
+        "Release",
+        "Cycle",
+        "Version",
+        "Campaign"
+      ],
+      "id": "Lifecycle"
+    },
+    {
+      "display": "Localization and time zones",
+      "concerns": [
+        "Catalog",
+        "Fallback",
+        "Formatting",
+        "Mapping",
+        "Scheduling",
+        "Validation"
+      ],
+      "nouns": [
+        "Locale",
+        "Language",
+        "Territory",
+        "Currency",
+        "TimeZone"
+      ],
+      "id": "Localization"
+    },
+    {
+      "display": "Cloud economics",
+      "concerns": [
+        "Catalog",
+        "Normalization",
+        "Sizing",
+        "Forecasting",
+        "Optimization",
+        "Reporting"
+      ],
+      "nouns": [
+        "Provider",
+        "Offering",
+        "Region",
+        "Price",
+        "Commitment"
+      ],
+      "id": "CloudEconomics"
+    },
+    {
+      "display": "Geospatial operations",
+      "concerns": [
+        "Catalog",
+        "Indexing",
+        "Intersection",
+        "Distance",
+        "Validation",
+        "Reporting"
+      ],
+      "nouns": [
+        "Layer",
+        "Feature",
+        "Geometry",
+        "Route",
+        "Proximity"
+      ],
+      "id": "Geospatial"
+    },
+    {
+      "display": "Licensing and compliance",
+      "concerns": [
+        "Catalog",
+        "Detection",
+        "Evaluation",
+        "Approval",
+        "Remediation",
+        "Reporting"
+      ],
+      "nouns": [
+        "License",
+        "Obligation",
+        "Component",
+        "Notice",
+        "Finding"
+      ],
+      "id": "Compliance"
+    }
+  ],
+  "platformProjects": [
+    "Composition",
+    "Shell",
+    "DesignSystem",
+    "Configuration",
+    "Commands",
+    "Domain",
+    "Application",
+    "Serialization",
+    "Validation",
+    "Search",
+    "Security",
+    "Auditing",
+    "Telemetry",
+    "Scheduling"
+  ],
+  "adapters": [
+    "Persistence.Local",
+    "Persistence.Sqlite",
+    "Persistence.Turso",
+    "Aws",
+    "Azure",
+    "Gcp",
+    "Iana",
+    "EndOfLife",
+    "Unicode",
+    "NaturalEarth"
+  ],
+  "tools": [
+    "DataCompiler",
+    "SchemaCompiler",
+    "Migration",
+    "Diagnostics",
+    "Benchmarking",
+    "ProjectGraph"
+  ],
+  "testProjects": [
+    "Architecture",
+    "Domain",
+    "Application",
+    "Persistence",
+    "Adapters",
+    "ReferenceData",
+    "Avalonia",
+    "Generators",
+    "EndToEnd"
+  ]
+}

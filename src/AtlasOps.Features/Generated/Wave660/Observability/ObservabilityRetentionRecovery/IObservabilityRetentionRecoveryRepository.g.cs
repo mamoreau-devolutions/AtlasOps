@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Observability.ObservabilityRetentionRecovery;
+
+using AtlasOps.Features;
+
+public interface IObservabilityRetentionRecoveryRepository : IAtlasOpsCapabilityRepository<ObservabilityRetentionRecoveryItem>;

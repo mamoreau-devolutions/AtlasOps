@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Network.NetworkAddressOptimization;
+
+using AtlasOps.Features;
+
+public interface INetworkAddressOptimizationRepository : IAtlasOpsCapabilityRepository<NetworkAddressOptimizationItem>;

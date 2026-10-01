@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.ReleaseApprovalGovernance;
+
+using AtlasOps.Features;
+
+public interface IReleaseApprovalGovernanceRepository : IAtlasOpsCapabilityRepository<ReleaseApprovalGovernanceItem>;

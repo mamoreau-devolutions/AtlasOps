@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ServiceRequestGovernance;
+
+using AtlasOps.Features;
+
+public interface IServiceRequestGovernanceRepository : IAtlasOpsCapabilityRepository<ServiceRequestGovernanceItem>;

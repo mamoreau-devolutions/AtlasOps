@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Kubernetes.KubernetesVolumeProvisioning;
+
+using AtlasOps.Features;
+
+public interface IKubernetesVolumeProvisioningRepository : IAtlasOpsCapabilityRepository<KubernetesVolumeProvisioningItem>;

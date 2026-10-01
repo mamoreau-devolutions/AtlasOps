@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.FinOps.ChargebackRuleMonitoring;
+
+using AtlasOps.Features;
+
+public interface IChargebackRuleMonitoringRepository : IAtlasOpsCapabilityRepository<ChargebackRuleMonitoringItem>;

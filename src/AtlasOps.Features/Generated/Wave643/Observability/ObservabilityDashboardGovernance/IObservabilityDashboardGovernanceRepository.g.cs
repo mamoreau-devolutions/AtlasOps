@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Observability.ObservabilityDashboardGovernance;
+
+using AtlasOps.Features;
+
+public interface IObservabilityDashboardGovernanceRepository : IAtlasOpsCapabilityRepository<ObservabilityDashboardGovernanceItem>;

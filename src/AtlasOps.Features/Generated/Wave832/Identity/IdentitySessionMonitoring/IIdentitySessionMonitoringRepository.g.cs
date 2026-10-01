@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Identity.IdentitySessionMonitoring;
+
+using AtlasOps.Features;
+
+public interface IIdentitySessionMonitoringRepository : IAtlasOpsCapabilityRepository<IdentitySessionMonitoringItem>;

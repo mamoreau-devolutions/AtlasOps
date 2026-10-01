@@ -1,0 +1,9 @@
+namespace AtlasOps.Features.Edge.EdgeGatewayProvisioning;
+
+public sealed record UpdateEdgeGatewayProvisioningCommand(
+    string Id,
+    string Name,
+    string Owner,
+    string TargetState,
+    int Priority,
+    bool IsEnabled);

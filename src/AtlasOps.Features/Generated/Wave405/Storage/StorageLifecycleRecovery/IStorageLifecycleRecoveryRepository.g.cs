@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Storage.StorageLifecycleRecovery;
+
+using AtlasOps.Features;
+
+public interface IStorageLifecycleRecoveryRepository : IAtlasOpsCapabilityRepository<StorageLifecycleRecoveryItem>;

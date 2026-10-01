@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Storage.StorageLifecycleMonitoring;
+
+using AtlasOps.Features;
+
+public interface IStorageLifecycleMonitoringRepository : IAtlasOpsCapabilityRepository<StorageLifecycleMonitoringItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Database.DatabaseReplicaOptimization;
+
+using AtlasOps.Features;
+
+public interface IDatabaseReplicaOptimizationRepository : IAtlasOpsCapabilityRepository<DatabaseReplicaOptimizationItem>;

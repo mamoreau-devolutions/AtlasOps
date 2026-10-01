@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ServiceOwnerGovernance;
+
+using AtlasOps.Features;
+
+public interface IServiceOwnerGovernanceRepository : IAtlasOpsCapabilityRepository<ServiceOwnerGovernanceItem>;

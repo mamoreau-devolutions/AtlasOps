@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Kubernetes.KubernetesWorkloadProvisioning;
+
+using AtlasOps.Features;
+
+public interface IKubernetesWorkloadProvisioningRepository : IAtlasOpsCapabilityRepository<KubernetesWorkloadProvisioningItem>;

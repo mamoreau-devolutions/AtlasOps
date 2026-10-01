@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Security.SecuritySessionGovernance;
+
+using AtlasOps.Features;
+
+public interface ISecuritySessionGovernanceRepository : IAtlasOpsCapabilityRepository<SecuritySessionGovernanceItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.VirtualMachineGovernance;
+
+using AtlasOps.Features;
+
+public interface IVirtualMachineGovernanceRepository : IAtlasOpsCapabilityRepository<VirtualMachineGovernanceItem>;

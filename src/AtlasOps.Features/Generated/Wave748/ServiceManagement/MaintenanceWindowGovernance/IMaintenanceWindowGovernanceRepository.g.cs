@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.MaintenanceWindowGovernance;
+
+using AtlasOps.Features;
+
+public interface IMaintenanceWindowGovernanceRepository : IAtlasOpsCapabilityRepository<MaintenanceWindowGovernanceItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Architecture.ArchitectureEvidenceProvisioning;
+
+using AtlasOps.Features;
+
+public interface IArchitectureEvidenceProvisioningRepository : IAtlasOpsCapabilityRepository<ArchitectureEvidenceProvisioningItem>;

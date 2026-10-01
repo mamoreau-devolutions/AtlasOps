@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Observability.ObservabilityDashboardProvisioning;
+
+using AtlasOps.Features;
+
+public interface IObservabilityDashboardProvisioningRepository : IAtlasOpsCapabilityRepository<ObservabilityDashboardProvisioningItem>;

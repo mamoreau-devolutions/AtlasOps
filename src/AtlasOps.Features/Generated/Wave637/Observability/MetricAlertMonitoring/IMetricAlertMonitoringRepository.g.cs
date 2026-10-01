@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Observability.MetricAlertMonitoring;
+
+using AtlasOps.Features;
+
+public interface IMetricAlertMonitoringRepository : IAtlasOpsCapabilityRepository<MetricAlertMonitoringItem>;

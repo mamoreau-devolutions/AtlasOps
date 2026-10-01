@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.ReleaseEnvironmentOptimization;
+
+using AtlasOps.Features;
+
+public interface IReleaseEnvironmentOptimizationRepository : IAtlasOpsCapabilityRepository<ReleaseEnvironmentOptimizationItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Desktop.DesktopProfileOptimization;
+
+using AtlasOps.Features;
+
+public interface IDesktopProfileOptimizationRepository : IAtlasOpsCapabilityRepository<DesktopProfileOptimizationItem>;

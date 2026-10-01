@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Security.SecuritySessionProvisioning;
+
+using AtlasOps.Features;
+
+public interface ISecuritySessionProvisioningRepository : IAtlasOpsCapabilityRepository<SecuritySessionProvisioningItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Storage.StorageLifecycleOptimization;
+
+using AtlasOps.Features;
+
+public interface IStorageLifecycleOptimizationRepository : IAtlasOpsCapabilityRepository<StorageLifecycleOptimizationItem>;

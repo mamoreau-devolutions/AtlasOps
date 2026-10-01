@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Architecture.ArchitectureDependencyGovernance;
+
+using AtlasOps.Features;
+
+public interface IArchitectureDependencyGovernanceRepository : IAtlasOpsCapabilityRepository<ArchitectureDependencyGovernanceItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Architecture.ArchitectureDecisionRecovery;
+
+using AtlasOps.Features;
+
+public interface IArchitectureDecisionRecoveryRepository : IAtlasOpsCapabilityRepository<ArchitectureDecisionRecoveryItem>;

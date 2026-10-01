@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.ReleaseMetricGovernance;
+
+using AtlasOps.Features;
+
+public interface IReleaseMetricGovernanceRepository : IAtlasOpsCapabilityRepository<ReleaseMetricGovernanceItem>;

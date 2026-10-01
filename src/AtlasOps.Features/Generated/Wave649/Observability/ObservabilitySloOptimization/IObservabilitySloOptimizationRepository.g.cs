@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Observability.ObservabilitySloOptimization;
+
+using AtlasOps.Features;
+
+public interface IObservabilitySloOptimizationRepository : IAtlasOpsCapabilityRepository<ObservabilitySloOptimizationItem>;

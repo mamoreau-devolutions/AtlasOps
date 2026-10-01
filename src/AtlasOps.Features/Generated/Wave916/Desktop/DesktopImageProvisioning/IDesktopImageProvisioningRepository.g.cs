@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Desktop.DesktopImageProvisioning;
+
+using AtlasOps.Features;
+
+public interface IDesktopImageProvisioningRepository : IAtlasOpsCapabilityRepository<DesktopImageProvisioningItem>;

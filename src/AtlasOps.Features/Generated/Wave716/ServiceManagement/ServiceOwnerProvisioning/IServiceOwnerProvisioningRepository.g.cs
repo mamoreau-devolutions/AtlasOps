@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ServiceOwnerProvisioning;
+
+using AtlasOps.Features;
+
+public interface IServiceOwnerProvisioningRepository : IAtlasOpsCapabilityRepository<ServiceOwnerProvisioningItem>;

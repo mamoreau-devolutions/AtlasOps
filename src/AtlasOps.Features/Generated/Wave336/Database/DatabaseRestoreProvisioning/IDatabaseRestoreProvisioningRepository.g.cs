@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Database.DatabaseRestoreProvisioning;
+
+using AtlasOps.Features;
+
+public interface IDatabaseRestoreProvisioningRepository : IAtlasOpsCapabilityRepository<DatabaseRestoreProvisioningItem>;

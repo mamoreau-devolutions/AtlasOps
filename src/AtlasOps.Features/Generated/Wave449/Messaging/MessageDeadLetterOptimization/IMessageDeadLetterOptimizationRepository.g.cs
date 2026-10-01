@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Messaging.MessageDeadLetterOptimization;
+
+using AtlasOps.Features;
+
+public interface IMessageDeadLetterOptimizationRepository : IAtlasOpsCapabilityRepository<MessageDeadLetterOptimizationItem>;

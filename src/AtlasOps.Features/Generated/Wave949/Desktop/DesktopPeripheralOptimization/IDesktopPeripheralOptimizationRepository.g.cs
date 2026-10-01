@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Desktop.DesktopPeripheralOptimization;
+
+using AtlasOps.Features;
+
+public interface IDesktopPeripheralOptimizationRepository : IAtlasOpsCapabilityRepository<DesktopPeripheralOptimizationItem>;

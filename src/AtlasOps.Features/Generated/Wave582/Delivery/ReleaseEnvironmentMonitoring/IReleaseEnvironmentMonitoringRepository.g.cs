@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.ReleaseEnvironmentMonitoring;
+
+using AtlasOps.Features;
+
+public interface IReleaseEnvironmentMonitoringRepository : IAtlasOpsCapabilityRepository<ReleaseEnvironmentMonitoringItem>;

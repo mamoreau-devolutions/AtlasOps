@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Database.DatabaseMaintenanceGovernance;
+
+using AtlasOps.Features;
+
+public interface IDatabaseMaintenanceGovernanceRepository : IAtlasOpsCapabilityRepository<DatabaseMaintenanceGovernanceItem>;

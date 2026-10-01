@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Architecture.ArchitectureEvidenceRecovery;
+
+using AtlasOps.Features;
+
+public interface IArchitectureEvidenceRecoveryRepository : IAtlasOpsCapabilityRepository<ArchitectureEvidenceRecoveryItem>;

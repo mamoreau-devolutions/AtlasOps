@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Kubernetes.KubernetesNamespaceMonitoring;
+
+using AtlasOps.Features;
+
+public interface IKubernetesNamespaceMonitoringRepository : IAtlasOpsCapabilityRepository<KubernetesNamespaceMonitoringItem>;

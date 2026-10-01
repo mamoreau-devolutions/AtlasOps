@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.ComputeTemplateGovernance;
+
+using AtlasOps.Features;
+
+public interface IComputeTemplateGovernanceRepository : IAtlasOpsCapabilityRepository<ComputeTemplateGovernanceItem>;

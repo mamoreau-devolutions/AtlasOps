@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.BusinessContinuity.RecoveryRunbookGovernance;
+
+using AtlasOps.Features;
+
+public interface IRecoveryRunbookGovernanceRepository : IAtlasOpsCapabilityRepository<RecoveryRunbookGovernanceItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Security.SecurityPatchProvisioning;
+
+using AtlasOps.Features;
+
+public interface ISecurityPatchProvisioningRepository : IAtlasOpsCapabilityRepository<SecurityPatchProvisioningItem>;

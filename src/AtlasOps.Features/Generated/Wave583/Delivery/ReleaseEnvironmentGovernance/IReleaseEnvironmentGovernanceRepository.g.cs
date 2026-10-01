@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.ReleaseEnvironmentGovernance;
+
+using AtlasOps.Features;
+
+public interface IReleaseEnvironmentGovernanceRepository : IAtlasOpsCapabilityRepository<ReleaseEnvironmentGovernanceItem>;

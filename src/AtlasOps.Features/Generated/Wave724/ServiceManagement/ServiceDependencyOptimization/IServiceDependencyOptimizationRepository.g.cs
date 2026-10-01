@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ServiceDependencyOptimization;
+
+using AtlasOps.Features;
+
+public interface IServiceDependencyOptimizationRepository : IAtlasOpsCapabilityRepository<ServiceDependencyOptimizationItem>;

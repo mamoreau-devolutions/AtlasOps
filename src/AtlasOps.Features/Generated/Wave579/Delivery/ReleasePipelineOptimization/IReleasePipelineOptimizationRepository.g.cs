@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.ReleasePipelineOptimization;
+
+using AtlasOps.Features;
+
+public interface IReleasePipelineOptimizationRepository : IAtlasOpsCapabilityRepository<ReleasePipelineOptimizationItem>;

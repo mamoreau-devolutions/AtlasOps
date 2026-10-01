@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Database.DatabaseMaintenanceProvisioning;
+
+using AtlasOps.Features;
+
+public interface IDatabaseMaintenanceProvisioningRepository : IAtlasOpsCapabilityRepository<DatabaseMaintenanceProvisioningItem>;

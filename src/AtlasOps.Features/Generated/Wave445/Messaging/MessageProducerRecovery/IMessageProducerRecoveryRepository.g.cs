@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Messaging.MessageProducerRecovery;
+
+using AtlasOps.Features;
+
+public interface IMessageProducerRecoveryRepository : IAtlasOpsCapabilityRepository<MessageProducerRecoveryItem>;

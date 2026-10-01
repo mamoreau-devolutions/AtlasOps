@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Mobile.MobileApplicationProvisioning;
+
+using AtlasOps.Features;
+
+public interface IMobileApplicationProvisioningRepository : IAtlasOpsCapabilityRepository<MobileApplicationProvisioningItem>;

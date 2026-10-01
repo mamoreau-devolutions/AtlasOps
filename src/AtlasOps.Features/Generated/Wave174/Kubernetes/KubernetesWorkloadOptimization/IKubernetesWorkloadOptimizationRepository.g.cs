@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Kubernetes.KubernetesWorkloadOptimization;
+
+using AtlasOps.Features;
+
+public interface IKubernetesWorkloadOptimizationRepository : IAtlasOpsCapabilityRepository<KubernetesWorkloadOptimizationItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Identity.IdentityRoleProvisioning;
+
+using AtlasOps.Features;
+
+public interface IIdentityRoleProvisioningRepository : IAtlasOpsCapabilityRepository<IdentityRoleProvisioningItem>;

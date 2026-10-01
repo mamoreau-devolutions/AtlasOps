@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Messaging.MessageDeadLetterMonitoring;
+
+using AtlasOps.Features;
+
+public interface IMessageDeadLetterMonitoringRepository : IAtlasOpsCapabilityRepository<MessageDeadLetterMonitoringItem>;

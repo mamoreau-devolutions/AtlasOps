@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ChangeRequestGovernance;
+
+using AtlasOps.Features;
+
+public interface IChangeRequestGovernanceRepository : IAtlasOpsCapabilityRepository<ChangeRequestGovernanceItem>;

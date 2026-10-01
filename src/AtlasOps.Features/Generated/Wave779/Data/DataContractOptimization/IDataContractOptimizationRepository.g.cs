@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Data.DataContractOptimization;
+
+using AtlasOps.Features;
+
+public interface IDataContractOptimizationRepository : IAtlasOpsCapabilityRepository<DataContractOptimizationItem>;

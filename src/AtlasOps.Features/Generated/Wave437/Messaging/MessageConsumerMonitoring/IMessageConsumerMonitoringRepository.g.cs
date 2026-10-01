@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Messaging.MessageConsumerMonitoring;
+
+using AtlasOps.Features;
+
+public interface IMessageConsumerMonitoringRepository : IAtlasOpsCapabilityRepository<MessageConsumerMonitoringItem>;

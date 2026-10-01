@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Kubernetes.KubernetesVolumeMonitoring;
+
+using AtlasOps.Features;
+
+public interface IKubernetesVolumeMonitoringRepository : IAtlasOpsCapabilityRepository<KubernetesVolumeMonitoringItem>;

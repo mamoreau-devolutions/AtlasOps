@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Network.NetworkSegmentOptimization;
+
+using AtlasOps.Features;
+
+public interface INetworkSegmentOptimizationRepository : IAtlasOpsCapabilityRepository<NetworkSegmentOptimizationItem>;

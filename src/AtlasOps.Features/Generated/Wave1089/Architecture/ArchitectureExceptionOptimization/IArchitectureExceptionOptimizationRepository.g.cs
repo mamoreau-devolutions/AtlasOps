@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Architecture.ArchitectureExceptionOptimization;
+
+using AtlasOps.Features;
+
+public interface IArchitectureExceptionOptimizationRepository : IAtlasOpsCapabilityRepository<ArchitectureExceptionOptimizationItem>;

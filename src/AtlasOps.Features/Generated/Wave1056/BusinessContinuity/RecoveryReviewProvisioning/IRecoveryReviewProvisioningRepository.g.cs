@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.BusinessContinuity.RecoveryReviewProvisioning;
+
+using AtlasOps.Features;
+
+public interface IRecoveryReviewProvisioningRepository : IAtlasOpsCapabilityRepository<RecoveryReviewProvisioningItem>;

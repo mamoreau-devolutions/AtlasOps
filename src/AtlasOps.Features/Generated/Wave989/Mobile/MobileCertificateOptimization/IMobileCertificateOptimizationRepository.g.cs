@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Mobile.MobileCertificateOptimization;
+
+using AtlasOps.Features;
+
+public interface IMobileCertificateOptimizationRepository : IAtlasOpsCapabilityRepository<MobileCertificateOptimizationItem>;

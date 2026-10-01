@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.ComputeLifecycleOptimization;
+
+using AtlasOps.Features;
+
+public interface IComputeLifecycleOptimizationRepository : IAtlasOpsCapabilityRepository<ComputeLifecycleOptimizationItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Security.SecurityKeyProvisioning;
+
+using AtlasOps.Features;
+
+public interface ISecurityKeyProvisioningRepository : IAtlasOpsCapabilityRepository<SecurityKeyProvisioningItem>;

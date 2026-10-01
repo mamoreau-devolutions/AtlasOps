@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.BusinessContinuity.RecoveryDependencyMonitoring;
+
+using AtlasOps.Features;
+
+public interface IRecoveryDependencyMonitoringRepository : IAtlasOpsCapabilityRepository<RecoveryDependencyMonitoringItem>;

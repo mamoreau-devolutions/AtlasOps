@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ServiceOwnerMonitoring;
+
+using AtlasOps.Features;
+
+public interface IServiceOwnerMonitoringRepository : IAtlasOpsCapabilityRepository<ServiceOwnerMonitoringItem>;

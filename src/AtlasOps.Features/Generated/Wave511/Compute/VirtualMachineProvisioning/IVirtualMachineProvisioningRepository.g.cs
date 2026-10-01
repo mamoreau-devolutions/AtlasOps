@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.VirtualMachineProvisioning;
+
+using AtlasOps.Features;
+
+public interface IVirtualMachineProvisioningRepository : IAtlasOpsCapabilityRepository<VirtualMachineProvisioningItem>;

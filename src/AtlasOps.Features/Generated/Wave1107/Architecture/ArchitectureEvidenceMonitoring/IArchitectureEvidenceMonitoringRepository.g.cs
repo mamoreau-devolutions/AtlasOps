@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Architecture.ArchitectureEvidenceMonitoring;
+
+using AtlasOps.Features;
+
+public interface IArchitectureEvidenceMonitoringRepository : IAtlasOpsCapabilityRepository<ArchitectureEvidenceMonitoringItem>;

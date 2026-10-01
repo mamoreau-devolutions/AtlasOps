@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.ComputeMetricProvisioning;
+
+using AtlasOps.Features;
+
+public interface IComputeMetricProvisioningRepository : IAtlasOpsCapabilityRepository<ComputeMetricProvisioningItem>;

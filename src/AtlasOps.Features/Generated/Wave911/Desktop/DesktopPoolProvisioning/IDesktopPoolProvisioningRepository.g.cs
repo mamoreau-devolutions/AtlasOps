@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Desktop.DesktopPoolProvisioning;
+
+using AtlasOps.Features;
+
+public interface IDesktopPoolProvisioningRepository : IAtlasOpsCapabilityRepository<DesktopPoolProvisioningItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.ReleasePipelineProvisioning;
+
+using AtlasOps.Features;
+
+public interface IReleasePipelineProvisioningRepository : IAtlasOpsCapabilityRepository<ReleasePipelineProvisioningItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Storage.StorageSnapshotGovernance;
+
+using AtlasOps.Features;
+
+public interface IStorageSnapshotGovernanceRepository : IAtlasOpsCapabilityRepository<StorageSnapshotGovernanceItem>;

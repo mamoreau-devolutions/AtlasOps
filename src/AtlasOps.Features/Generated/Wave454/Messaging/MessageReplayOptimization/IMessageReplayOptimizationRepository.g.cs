@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Messaging.MessageReplayOptimization;
+
+using AtlasOps.Features;
+
+public interface IMessageReplayOptimizationRepository : IAtlasOpsCapabilityRepository<MessageReplayOptimizationItem>;

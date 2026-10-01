@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Storage.StorageArchiveProvisioning;
+
+using AtlasOps.Features;
+
+public interface IStorageArchiveProvisioningRepository : IAtlasOpsCapabilityRepository<StorageArchiveProvisioningItem>;

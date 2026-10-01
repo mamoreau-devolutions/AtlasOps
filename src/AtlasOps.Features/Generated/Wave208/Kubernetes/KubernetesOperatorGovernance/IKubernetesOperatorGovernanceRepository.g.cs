@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Kubernetes.KubernetesOperatorGovernance;
+
+using AtlasOps.Features;
+
+public interface IKubernetesOperatorGovernanceRepository : IAtlasOpsCapabilityRepository<KubernetesOperatorGovernanceItem>;

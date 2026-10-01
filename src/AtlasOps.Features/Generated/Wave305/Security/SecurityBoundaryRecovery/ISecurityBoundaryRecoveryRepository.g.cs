@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Security.SecurityBoundaryRecovery;
+
+using AtlasOps.Features;
+
+public interface ISecurityBoundaryRecoveryRepository : IAtlasOpsCapabilityRepository<SecurityBoundaryRecoveryItem>;

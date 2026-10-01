@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Observability.TraceSourceMonitoring;
+
+using AtlasOps.Features;
+
+public interface ITraceSourceMonitoringRepository : IAtlasOpsCapabilityRepository<TraceSourceMonitoringItem>;

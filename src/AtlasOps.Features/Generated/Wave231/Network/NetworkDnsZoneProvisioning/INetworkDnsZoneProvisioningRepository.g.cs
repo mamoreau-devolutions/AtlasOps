@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Network.NetworkDnsZoneProvisioning;
+
+using AtlasOps.Features;
+
+public interface INetworkDnsZoneProvisioningRepository : IAtlasOpsCapabilityRepository<NetworkDnsZoneProvisioningItem>;

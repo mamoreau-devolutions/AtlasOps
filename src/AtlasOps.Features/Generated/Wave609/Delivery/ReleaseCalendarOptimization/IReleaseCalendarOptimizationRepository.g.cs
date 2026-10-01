@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.ReleaseCalendarOptimization;
+
+using AtlasOps.Features;
+
+public interface IReleaseCalendarOptimizationRepository : IAtlasOpsCapabilityRepository<ReleaseCalendarOptimizationItem>;

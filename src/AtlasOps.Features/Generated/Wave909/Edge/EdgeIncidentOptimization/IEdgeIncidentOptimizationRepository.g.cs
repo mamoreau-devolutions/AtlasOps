@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Edge.EdgeIncidentOptimization;
+
+using AtlasOps.Features;
+
+public interface IEdgeIncidentOptimizationRepository : IAtlasOpsCapabilityRepository<EdgeIncidentOptimizationItem>;

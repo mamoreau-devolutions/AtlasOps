@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Database.DatabaseRestoreOptimization;
+
+using AtlasOps.Features;
+
+public interface IDatabaseRestoreOptimizationRepository : IAtlasOpsCapabilityRepository<DatabaseRestoreOptimizationItem>;

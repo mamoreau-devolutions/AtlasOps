@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ServiceDependencyGovernance;
+
+using AtlasOps.Features;
+
+public interface IServiceDependencyGovernanceRepository : IAtlasOpsCapabilityRepository<ServiceDependencyGovernanceItem>;

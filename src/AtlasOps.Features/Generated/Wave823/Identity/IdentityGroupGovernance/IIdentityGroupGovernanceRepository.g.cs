@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Identity.IdentityGroupGovernance;
+
+using AtlasOps.Features;
+
+public interface IIdentityGroupGovernanceRepository : IAtlasOpsCapabilityRepository<IdentityGroupGovernanceItem>;

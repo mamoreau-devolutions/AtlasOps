@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.ReleaseCalendarRecovery;
+
+using AtlasOps.Features;
+
+public interface IReleaseCalendarRecoveryRepository : IAtlasOpsCapabilityRepository<ReleaseCalendarRecoveryItem>;

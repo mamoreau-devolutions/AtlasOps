@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.ComputeScaleSetGovernance;
+
+using AtlasOps.Features;
+
+public interface IComputeScaleSetGovernanceRepository : IAtlasOpsCapabilityRepository<ComputeScaleSetGovernanceItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Identity.IdentityGroupProvisioning;
+
+using AtlasOps.Features;
+
+public interface IIdentityGroupProvisioningRepository : IAtlasOpsCapabilityRepository<IdentityGroupProvisioningItem>;

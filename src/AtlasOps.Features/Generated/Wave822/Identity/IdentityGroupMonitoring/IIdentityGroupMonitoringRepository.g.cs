@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Identity.IdentityGroupMonitoring;
+
+using AtlasOps.Features;
+
+public interface IIdentityGroupMonitoringRepository : IAtlasOpsCapabilityRepository<IdentityGroupMonitoringItem>;

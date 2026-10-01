@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.ComputeConsoleOptimization;
+
+using AtlasOps.Features;
+
+public interface IComputeConsoleOptimizationRepository : IAtlasOpsCapabilityRepository<ComputeConsoleOptimizationItem>;

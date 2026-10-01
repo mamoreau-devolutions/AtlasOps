@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ServiceScorecardProvisioning;
+
+using AtlasOps.Features;
+
+public interface IServiceScorecardProvisioningRepository : IAtlasOpsCapabilityRepository<ServiceScorecardProvisioningItem>;

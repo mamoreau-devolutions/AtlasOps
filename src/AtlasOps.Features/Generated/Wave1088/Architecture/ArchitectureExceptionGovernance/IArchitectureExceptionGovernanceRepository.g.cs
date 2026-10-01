@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Architecture.ArchitectureExceptionGovernance;
+
+using AtlasOps.Features;
+
+public interface IArchitectureExceptionGovernanceRepository : IAtlasOpsCapabilityRepository<ArchitectureExceptionGovernanceItem>;

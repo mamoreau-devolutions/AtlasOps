@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Data.DataTransformOptimization;
+
+using AtlasOps.Features;
+
+public interface IDataTransformOptimizationRepository : IAtlasOpsCapabilityRepository<DataTransformOptimizationItem>;

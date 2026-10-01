@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Database.DatabaseQueryProvisioning;
+
+using AtlasOps.Features;
+
+public interface IDatabaseQueryProvisioningRepository : IAtlasOpsCapabilityRepository<DatabaseQueryProvisioningItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Messaging.MessageBrokerMonitoring;
+
+using AtlasOps.Features;
+
+public interface IMessageBrokerMonitoringRepository : IAtlasOpsCapabilityRepository<MessageBrokerMonitoringItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Database.DatabaseQueryGovernance;
+
+using AtlasOps.Features;
+
+public interface IDatabaseQueryGovernanceRepository : IAtlasOpsCapabilityRepository<DatabaseQueryGovernanceItem>;

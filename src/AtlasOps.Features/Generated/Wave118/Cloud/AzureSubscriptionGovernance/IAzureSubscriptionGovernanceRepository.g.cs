@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Cloud.AzureSubscriptionGovernance;
+
+using AtlasOps.Features;
+
+public interface IAzureSubscriptionGovernanceRepository : IAtlasOpsCapabilityRepository<AzureSubscriptionGovernanceItem>;

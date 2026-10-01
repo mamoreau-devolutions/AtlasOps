@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.ComputePatchProvisioning;
+
+using AtlasOps.Features;
+
+public interface IComputePatchProvisioningRepository : IAtlasOpsCapabilityRepository<ComputePatchProvisioningItem>;

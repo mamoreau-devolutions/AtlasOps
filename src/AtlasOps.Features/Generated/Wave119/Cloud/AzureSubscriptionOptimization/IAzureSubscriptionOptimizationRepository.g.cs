@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Cloud.AzureSubscriptionOptimization;
+
+using AtlasOps.Features;
+
+public interface IAzureSubscriptionOptimizationRepository : IAtlasOpsCapabilityRepository<AzureSubscriptionOptimizationItem>;

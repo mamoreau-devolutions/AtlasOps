@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Observability.TraceSourceGovernance;
+
+using AtlasOps.Features;
+
+public interface ITraceSourceGovernanceRepository : IAtlasOpsCapabilityRepository<TraceSourceGovernanceItem>;

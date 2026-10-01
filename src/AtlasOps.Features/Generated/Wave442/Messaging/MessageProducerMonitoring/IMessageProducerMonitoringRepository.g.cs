@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Messaging.MessageProducerMonitoring;
+
+using AtlasOps.Features;
+
+public interface IMessageProducerMonitoringRepository : IAtlasOpsCapabilityRepository<MessageProducerMonitoringItem>;

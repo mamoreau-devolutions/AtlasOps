@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Messaging.MessageRetentionRecovery;
+
+using AtlasOps.Features;
+
+public interface IMessageRetentionRecoveryRepository : IAtlasOpsCapabilityRepository<MessageRetentionRecoveryItem>;

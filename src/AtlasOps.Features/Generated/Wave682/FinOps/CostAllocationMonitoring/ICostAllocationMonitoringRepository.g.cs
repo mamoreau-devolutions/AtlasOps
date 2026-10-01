@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.FinOps.CostAllocationMonitoring;
+
+using AtlasOps.Features;
+
+public interface ICostAllocationMonitoringRepository : IAtlasOpsCapabilityRepository<CostAllocationMonitoringItem>;

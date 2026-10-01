@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Network.NetworkFirewallMonitoring;
+
+using AtlasOps.Features;
+
+public interface INetworkFirewallMonitoringRepository : IAtlasOpsCapabilityRepository<NetworkFirewallMonitoringItem>;

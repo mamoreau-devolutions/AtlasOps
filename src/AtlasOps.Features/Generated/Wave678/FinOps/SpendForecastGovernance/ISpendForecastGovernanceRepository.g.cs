@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.FinOps.SpendForecastGovernance;
+
+using AtlasOps.Features;
+
+public interface ISpendForecastGovernanceRepository : IAtlasOpsCapabilityRepository<SpendForecastGovernanceItem>;

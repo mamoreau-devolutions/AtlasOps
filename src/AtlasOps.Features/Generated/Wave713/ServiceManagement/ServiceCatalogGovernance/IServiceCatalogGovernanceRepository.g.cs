@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ServiceCatalogGovernance;
+
+using AtlasOps.Features;
+
+public interface IServiceCatalogGovernanceRepository : IAtlasOpsCapabilityRepository<ServiceCatalogGovernanceItem>;

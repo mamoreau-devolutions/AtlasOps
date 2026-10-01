@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Kubernetes.KubernetesSecretRecovery;
+
+using AtlasOps.Features;
+
+public interface IKubernetesSecretRecoveryRepository : IAtlasOpsCapabilityRepository<KubernetesSecretRecoveryItem>;

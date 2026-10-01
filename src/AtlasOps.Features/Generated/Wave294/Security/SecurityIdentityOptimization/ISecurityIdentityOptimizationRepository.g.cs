@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Security.SecurityIdentityOptimization;
+
+using AtlasOps.Features;
+
+public interface ISecurityIdentityOptimizationRepository : IAtlasOpsCapabilityRepository<SecurityIdentityOptimizationItem>;

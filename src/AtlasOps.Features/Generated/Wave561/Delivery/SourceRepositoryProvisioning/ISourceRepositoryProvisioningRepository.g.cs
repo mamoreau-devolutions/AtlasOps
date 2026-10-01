@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.SourceRepositoryProvisioning;
+
+using AtlasOps.Features;
+
+public interface ISourceRepositoryProvisioningRepository : IAtlasOpsCapabilityRepository<SourceRepositoryProvisioningItem>;

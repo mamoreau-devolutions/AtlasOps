@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>false</UseWPF>
+    <UseWindowsForms>false</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>preview</LangVersion>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia" />
+    <PackageReference Include="Avalonia.Desktop" />
+    <PackageReference Include="Avalonia.Themes.Fluent" />
+    <PackageReference Include="Avalonia.Fonts.Inter" />
+    <PackageReference Include="AvaloniaUI.DiagnosticsSupport" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Connectors\AtlasOps.Connectors.Avalonia\AtlasOps.Connectors.Avalonia.csproj" />
+    <ProjectReference Include="..\Connectors\AtlasOps.Connectors.Collaboration\AtlasOps.Connectors.Collaboration.csproj" />
+    <ProjectReference Include="..\Connectors\AtlasOps.Connectors.Data\AtlasOps.Connectors.Data.csproj" />
+    <ProjectReference Include="..\Connectors\AtlasOps.Connectors.Documents\AtlasOps.Connectors.Documents.csproj" />
+    <ProjectReference Include="..\Connectors\AtlasOps.Connectors.Http\AtlasOps.Connectors.Http.csproj" />
+    <ProjectReference Include="..\Connectors\AtlasOps.Connectors.Observability\AtlasOps.Connectors.Observability.csproj" />
+    <ProjectReference Include="..\Connectors\AtlasOps.Connectors.Runtime\AtlasOps.Connectors.Runtime.csproj" />
+    <ProjectReference Include="..\Connectors\AtlasOps.Connectors.Security\AtlasOps.Connectors.Security.csproj" />
+    <ProjectReference Include="..\Operations\AtlasOps.Operations.Avalonia\AtlasOps.Operations.Avalonia.csproj" />
+    <ProjectReference Include="..\Integrations\UI\AtlasOps.Integrations.Engineering.Avalonia\AtlasOps.Integrations.Engineering.Avalonia.csproj" />
+    <ProjectReference Include="..\Integrations\UI\AtlasOps.Integrations.Infrastructure.Avalonia\AtlasOps.Integrations.Infrastructure.Avalonia.csproj" />
+    <ProjectReference Include="..\Integrations\UI\AtlasOps.Integrations.Communications.Avalonia\AtlasOps.Integrations.Communications.Avalonia.csproj" />
+    <ProjectReference Include="..\Integrations\UI\AtlasOps.Integrations.Identity.Avalonia\AtlasOps.Integrations.Identity.Avalonia.csproj" />
+    <ProjectReference Include="..\Extensions\AtlasOps.Extensions.Runtime\AtlasOps.Extensions.Runtime.csproj" />
+    <ProjectReference Include="..\Product\AtlasOps.Product.Localization\AtlasOps.Product.Localization.csproj" />
+    <ProjectReference Include="..\Product\AtlasOps.Product.Migrations\AtlasOps.Product.Migrations.csproj" />
+    <ProjectReference Include="..\Product\AtlasOps.Product.Release\AtlasOps.Product.Release.csproj" />
+    <ProjectReference Include="..\Product\AtlasOps.Product.Support\AtlasOps.Product.Support.csproj" />
+    <ProjectReference Include="..\Modular\Adapters\AtlasOps.Adapters.Aws\AtlasOps.Adapters.Aws.csproj" />
+    <ProjectReference Include="..\Modular\Adapters\AtlasOps.Adapters.Azure\AtlasOps.Adapters.Azure.csproj" />
+    <ProjectReference Include="..\Modular\Adapters\AtlasOps.Adapters.Gcp\AtlasOps.Adapters.Gcp.csproj" />
+    <ProjectReference Include="..\Modular\Adapters\AtlasOps.Adapters.Persistence.Sqlite\AtlasOps.Adapters.Persistence.Sqlite.csproj" />
+    <ProjectReference Include="..\Modular\Platform\AtlasOps.Scheduling\AtlasOps.Scheduling.csproj" />
+    <ProjectReference Include="..\Modular\Platform\AtlasOps.Security\AtlasOps.Security.csproj" />
+    <ProjectReference Include="..\Modular\Platform\AtlasOps.Serialization\AtlasOps.Serialization.csproj" />
+    <ProjectReference Include="..\Modular\Platform\AtlasOps.Telemetry\AtlasOps.Telemetry.csproj" />
+    <ProjectReference Include="..\AtlasOps.Core\AtlasOps.Core.csproj" />
+    <ProjectReference Include="..\AtlasOps.Features\AtlasOps.Features.csproj" />
+    <ProjectReference Include="..\AtlasOps.Geography\AtlasOps.Geography.csproj" />
+    <ProjectReference Include="..\AtlasOps.ReferenceData\AtlasOps.ReferenceData.csproj" />
+    <ProjectReference Include="..\Enterprise\AtlasOps.Enterprise.Core\AtlasOps.Enterprise.Core.csproj" />
+    <ProjectReference Include="..\Enterprise\AtlasOps.Enterprise.Avalonia\AtlasOps.Enterprise.Avalonia.csproj" />
+    <ProjectReference Include="..\Modular\Platform\AtlasOps.Composition\AtlasOps.Composition.csproj" />
+  </ItemGroup>
+</Project>

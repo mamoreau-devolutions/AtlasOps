@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Database.NoSqlDatabaseMonitoring;
+
+using AtlasOps.Features;
+
+public interface INoSqlDatabaseMonitoringRepository : IAtlasOpsCapabilityRepository<NoSqlDatabaseMonitoringItem>;

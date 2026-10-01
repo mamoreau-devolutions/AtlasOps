@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.ComputeConsoleMonitoring;
+
+using AtlasOps.Features;
+
+public interface IComputeConsoleMonitoringRepository : IAtlasOpsCapabilityRepository<ComputeConsoleMonitoringItem>;

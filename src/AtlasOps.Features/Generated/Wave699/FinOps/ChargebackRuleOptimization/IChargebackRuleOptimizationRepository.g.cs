@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.FinOps.ChargebackRuleOptimization;
+
+using AtlasOps.Features;
+
+public interface IChargebackRuleOptimizationRepository : IAtlasOpsCapabilityRepository<ChargebackRuleOptimizationItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.ComputeReservationMonitoring;
+
+using AtlasOps.Features;
+
+public interface IComputeReservationMonitoringRepository : IAtlasOpsCapabilityRepository<ComputeReservationMonitoringItem>;

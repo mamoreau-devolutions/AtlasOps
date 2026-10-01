@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Observability.ObservabilitySloProvisioning;
+
+using AtlasOps.Features;
+
+public interface IObservabilitySloProvisioningRepository : IAtlasOpsCapabilityRepository<ObservabilitySloProvisioningItem>;

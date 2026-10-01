@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.ReleaseRollbackMonitoring;
+
+using AtlasOps.Features;
+
+public interface IReleaseRollbackMonitoringRepository : IAtlasOpsCapabilityRepository<ReleaseRollbackMonitoringItem>;

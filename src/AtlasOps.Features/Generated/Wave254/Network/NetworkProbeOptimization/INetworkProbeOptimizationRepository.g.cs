@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Network.NetworkProbeOptimization;
+
+using AtlasOps.Features;
+
+public interface INetworkProbeOptimizationRepository : IAtlasOpsCapabilityRepository<NetworkProbeOptimizationItem>;

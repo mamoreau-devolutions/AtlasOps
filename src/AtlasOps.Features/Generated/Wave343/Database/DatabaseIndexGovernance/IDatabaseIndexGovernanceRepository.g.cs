@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Database.DatabaseIndexGovernance;
+
+using AtlasOps.Features;
+
+public interface IDatabaseIndexGovernanceRepository : IAtlasOpsCapabilityRepository<DatabaseIndexGovernanceItem>;

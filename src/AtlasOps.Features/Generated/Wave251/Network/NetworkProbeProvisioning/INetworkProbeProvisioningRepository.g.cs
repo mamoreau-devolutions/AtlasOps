@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Network.NetworkProbeProvisioning;
+
+using AtlasOps.Features;
+
+public interface INetworkProbeProvisioningRepository : IAtlasOpsCapabilityRepository<NetworkProbeProvisioningItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.FinOps.ResourceCommitmentProvisioning;
+
+using AtlasOps.Features;
+
+public interface IResourceCommitmentProvisioningRepository : IAtlasOpsCapabilityRepository<ResourceCommitmentProvisioningItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Network.NetworkRouteOptimization;
+
+using AtlasOps.Features;
+
+public interface INetworkRouteOptimizationRepository : IAtlasOpsCapabilityRepository<NetworkRouteOptimizationItem>;

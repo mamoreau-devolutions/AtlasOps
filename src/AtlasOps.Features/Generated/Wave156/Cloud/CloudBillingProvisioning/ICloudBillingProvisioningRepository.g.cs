@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Cloud.CloudBillingProvisioning;
+
+using AtlasOps.Features;
+
+public interface ICloudBillingProvisioningRepository : IAtlasOpsCapabilityRepository<CloudBillingProvisioningItem>;

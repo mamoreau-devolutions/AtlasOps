@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.BusinessContinuity.RecoveryFailoverGovernance;
+
+using AtlasOps.Features;
+
+public interface IRecoveryFailoverGovernanceRepository : IAtlasOpsCapabilityRepository<RecoveryFailoverGovernanceItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Kubernetes.KubernetesNamespaceProvisioning;
+
+using AtlasOps.Features;
+
+public interface IKubernetesNamespaceProvisioningRepository : IAtlasOpsCapabilityRepository<KubernetesNamespaceProvisioningItem>;

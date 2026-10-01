@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Storage.StorageTransferProvisioning;
+
+using AtlasOps.Features;
+
+public interface IStorageTransferProvisioningRepository : IAtlasOpsCapabilityRepository<StorageTransferProvisioningItem>;

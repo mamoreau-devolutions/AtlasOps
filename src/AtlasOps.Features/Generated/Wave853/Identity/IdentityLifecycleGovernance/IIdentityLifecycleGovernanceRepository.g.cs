@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Identity.IdentityLifecycleGovernance;
+
+using AtlasOps.Features;
+
+public interface IIdentityLifecycleGovernanceRepository : IAtlasOpsCapabilityRepository<IdentityLifecycleGovernanceItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.BuildArtifactOptimization;
+
+using AtlasOps.Features;
+
+public interface IBuildArtifactOptimizationRepository : IAtlasOpsCapabilityRepository<BuildArtifactOptimizationItem>;

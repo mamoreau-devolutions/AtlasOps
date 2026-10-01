@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Database.DatabaseIndexMonitoring;
+
+using AtlasOps.Features;
+
+public interface IDatabaseIndexMonitoringRepository : IAtlasOpsCapabilityRepository<DatabaseIndexMonitoringItem>;

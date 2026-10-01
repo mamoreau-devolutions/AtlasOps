@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Data.DataTransformProvisioning;
+
+using AtlasOps.Features;
+
+public interface IDataTransformProvisioningRepository : IAtlasOpsCapabilityRepository<DataTransformProvisioningItem>;

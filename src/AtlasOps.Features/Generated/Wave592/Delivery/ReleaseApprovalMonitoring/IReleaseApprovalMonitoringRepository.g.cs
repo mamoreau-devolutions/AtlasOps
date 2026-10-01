@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.ReleaseApprovalMonitoring;
+
+using AtlasOps.Features;
+
+public interface IReleaseApprovalMonitoringRepository : IAtlasOpsCapabilityRepository<ReleaseApprovalMonitoringItem>;

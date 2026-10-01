@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Mobile.MobilePolicyOptimization;
+
+using AtlasOps.Features;
+
+public interface IMobilePolicyOptimizationRepository : IAtlasOpsCapabilityRepository<MobilePolicyOptimizationItem>;

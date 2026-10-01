@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Database.DatabaseCredentialGovernance;
+
+using AtlasOps.Features;
+
+public interface IDatabaseCredentialGovernanceRepository : IAtlasOpsCapabilityRepository<DatabaseCredentialGovernanceItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.ReleaseApprovalRecovery;
+
+using AtlasOps.Features;
+
+public interface IReleaseApprovalRecoveryRepository : IAtlasOpsCapabilityRepository<ReleaseApprovalRecoveryItem>;

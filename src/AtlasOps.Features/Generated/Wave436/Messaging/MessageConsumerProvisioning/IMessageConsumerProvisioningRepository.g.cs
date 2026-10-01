@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Messaging.MessageConsumerProvisioning;
+
+using AtlasOps.Features;
+
+public interface IMessageConsumerProvisioningRepository : IAtlasOpsCapabilityRepository<MessageConsumerProvisioningItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Storage.StorageReplicationOptimization;
+
+using AtlasOps.Features;
+
+public interface IStorageReplicationOptimizationRepository : IAtlasOpsCapabilityRepository<StorageReplicationOptimizationItem>;

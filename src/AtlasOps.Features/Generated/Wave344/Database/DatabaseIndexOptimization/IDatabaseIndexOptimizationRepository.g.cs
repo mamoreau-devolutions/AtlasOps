@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Database.DatabaseIndexOptimization;
+
+using AtlasOps.Features;
+
+public interface IDatabaseIndexOptimizationRepository : IAtlasOpsCapabilityRepository<DatabaseIndexOptimizationItem>;

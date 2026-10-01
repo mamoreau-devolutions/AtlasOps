@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Security.SecurityCertificateOptimization;
+
+using AtlasOps.Features;
+
+public interface ISecurityCertificateOptimizationRepository : IAtlasOpsCapabilityRepository<SecurityCertificateOptimizationItem>;

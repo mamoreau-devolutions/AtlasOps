@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Network.NetworkAddressProvisioning;
+
+using AtlasOps.Features;
+
+public interface INetworkAddressProvisioningRepository : IAtlasOpsCapabilityRepository<NetworkAddressProvisioningItem>;

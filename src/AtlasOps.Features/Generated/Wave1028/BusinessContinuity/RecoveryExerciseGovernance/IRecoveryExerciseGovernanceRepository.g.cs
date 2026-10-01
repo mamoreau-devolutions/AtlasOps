@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.BusinessContinuity.RecoveryExerciseGovernance;
+
+using AtlasOps.Features;
+
+public interface IRecoveryExerciseGovernanceRepository : IAtlasOpsCapabilityRepository<RecoveryExerciseGovernanceItem>;

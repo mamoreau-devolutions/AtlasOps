@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Mobile.MobileUpdateOptimization;
+
+using AtlasOps.Features;
+
+public interface IMobileUpdateOptimizationRepository : IAtlasOpsCapabilityRepository<MobileUpdateOptimizationItem>;

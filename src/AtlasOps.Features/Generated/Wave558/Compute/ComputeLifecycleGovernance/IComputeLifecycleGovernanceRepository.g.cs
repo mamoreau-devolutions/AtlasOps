@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.ComputeLifecycleGovernance;
+
+using AtlasOps.Features;
+
+public interface IComputeLifecycleGovernanceRepository : IAtlasOpsCapabilityRepository<ComputeLifecycleGovernanceItem>;

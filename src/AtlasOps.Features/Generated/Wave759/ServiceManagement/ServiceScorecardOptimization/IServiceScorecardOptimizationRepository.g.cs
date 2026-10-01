@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ServiceScorecardOptimization;
+
+using AtlasOps.Features;
+
+public interface IServiceScorecardOptimizationRepository : IAtlasOpsCapabilityRepository<ServiceScorecardOptimizationItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Security.SecurityCertificateGovernance;
+
+using AtlasOps.Features;
+
+public interface ISecurityCertificateGovernanceRepository : IAtlasOpsCapabilityRepository<SecurityCertificateGovernanceItem>;

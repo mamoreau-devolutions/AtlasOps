@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>preview</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Platform\AtlasOps.Configuration\AtlasOps.Configuration.csproj" />
+    <ProjectReference Include="..\..\Platform\AtlasOps.Security\AtlasOps.Security.csproj" />
+    <ProjectReference Include="..\..\Platform\AtlasOps.Telemetry\AtlasOps.Telemetry.csproj" />
+  </ItemGroup>
+</Project>

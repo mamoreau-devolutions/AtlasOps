@@ -1,0 +1,55 @@
+{
+  "generatedAtUtc": "2026-10-01T18:15:02.2242398+00:00",
+  "root": ".",
+  "topology": {
+    "projects": 154,
+    "projectReferenceEdges": 358,
+    "uniqueDirectPackages": 99
+  },
+  "source": {
+    "files": 16738,
+    "lines": 836424.0,
+    "axamlViews": 1236,
+    "classifications": [
+      {
+        "classification": "handwritten",
+        "files": 430,
+        "lines": 24855.0,
+        "controlFlowTokens": 1485.0
+      },
+      {
+        "classification": "generated",
+        "files": 16308,
+        "lines": 811569.0,
+        "controlFlowTokens": 78511.0
+      },
+      {
+        "classification": "scaffolded",
+        "files": 0,
+        "lines": 0,
+        "controlFlowTokens": 0
+      }
+    ]
+  },
+  "verification": {
+    "declaredTests": 12298,
+    "testProjects": 15
+  },
+  "thresholds": {
+    "projects": {
+      "actual": 154,
+      "minimum": 150,
+      "passed": true
+    },
+    "handwrittenLines": {
+      "actual": 24855.0,
+      "minimum": 20000,
+      "passed": true
+    },
+    "tests": {
+      "actual": 12298,
+      "minimum": 12000,
+      "passed": true
+    }
+  }
+}

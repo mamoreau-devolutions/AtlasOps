@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Desktop.DesktopApplicationMonitoring;
+
+using AtlasOps.Features;
+
+public interface IDesktopApplicationMonitoringRepository : IAtlasOpsCapabilityRepository<DesktopApplicationMonitoringItem>;

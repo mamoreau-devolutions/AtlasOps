@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Architecture.ArchitectureDependencyOptimization;
+
+using AtlasOps.Features;
+
+public interface IArchitectureDependencyOptimizationRepository : IAtlasOpsCapabilityRepository<ArchitectureDependencyOptimizationItem>;

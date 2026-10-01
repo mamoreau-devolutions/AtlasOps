@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Cloud.CloudIdentityGovernance;
+
+using AtlasOps.Features;
+
+public interface ICloudIdentityGovernanceRepository : IAtlasOpsCapabilityRepository<CloudIdentityGovernanceItem>;

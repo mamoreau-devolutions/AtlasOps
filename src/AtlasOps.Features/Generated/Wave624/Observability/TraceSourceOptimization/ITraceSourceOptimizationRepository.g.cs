@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Observability.TraceSourceOptimization;
+
+using AtlasOps.Features;
+
+public interface ITraceSourceOptimizationRepository : IAtlasOpsCapabilityRepository<TraceSourceOptimizationItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Storage.StorageReplicationRecovery;
+
+using AtlasOps.Features;
+
+public interface IStorageReplicationRecoveryRepository : IAtlasOpsCapabilityRepository<StorageReplicationRecoveryItem>;

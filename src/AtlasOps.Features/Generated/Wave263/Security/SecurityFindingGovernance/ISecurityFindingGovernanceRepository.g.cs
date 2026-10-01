@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Security.SecurityFindingGovernance;
+
+using AtlasOps.Features;
+
+public interface ISecurityFindingGovernanceRepository : IAtlasOpsCapabilityRepository<SecurityFindingGovernanceItem>;

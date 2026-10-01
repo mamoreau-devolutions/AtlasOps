@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.BusinessContinuity.ContinuityPlanGovernance;
+
+using AtlasOps.Features;
+
+public interface IContinuityPlanGovernanceRepository : IAtlasOpsCapabilityRepository<ContinuityPlanGovernanceItem>;

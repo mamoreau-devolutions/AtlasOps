@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Kubernetes.KubernetesPodOptimization;
+
+using AtlasOps.Features;
+
+public interface IKubernetesPodOptimizationRepository : IAtlasOpsCapabilityRepository<KubernetesPodOptimizationItem>;

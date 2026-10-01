@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.BuildArtifactGovernance;
+
+using AtlasOps.Features;
+
+public interface IBuildArtifactGovernanceRepository : IAtlasOpsCapabilityRepository<BuildArtifactGovernanceItem>;

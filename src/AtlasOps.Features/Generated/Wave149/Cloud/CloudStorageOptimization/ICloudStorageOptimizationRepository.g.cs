@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Cloud.CloudStorageOptimization;
+
+using AtlasOps.Features;
+
+public interface ICloudStorageOptimizationRepository : IAtlasOpsCapabilityRepository<CloudStorageOptimizationItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Desktop.DesktopApplicationOptimization;
+
+using AtlasOps.Features;
+
+public interface IDesktopApplicationOptimizationRepository : IAtlasOpsCapabilityRepository<DesktopApplicationOptimizationItem>;

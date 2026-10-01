@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.KnowledgeArticleProvisioning;
+
+using AtlasOps.Features;
+
+public interface IKnowledgeArticleProvisioningRepository : IAtlasOpsCapabilityRepository<KnowledgeArticleProvisioningItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Architecture.ArchitectureReviewRecovery;
+
+using AtlasOps.Features;
+
+public interface IArchitectureReviewRecoveryRepository : IAtlasOpsCapabilityRepository<ArchitectureReviewRecoveryItem>;

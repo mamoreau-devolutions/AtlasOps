@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.BuildPipelineMonitoring;
+
+using AtlasOps.Features;
+
+public interface IBuildPipelineMonitoringRepository : IAtlasOpsCapabilityRepository<BuildPipelineMonitoringItem>;

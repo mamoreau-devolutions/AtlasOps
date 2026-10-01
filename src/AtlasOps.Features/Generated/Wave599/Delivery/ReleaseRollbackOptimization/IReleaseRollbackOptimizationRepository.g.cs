@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.ReleaseRollbackOptimization;
+
+using AtlasOps.Features;
+
+public interface IReleaseRollbackOptimizationRepository : IAtlasOpsCapabilityRepository<ReleaseRollbackOptimizationItem>;

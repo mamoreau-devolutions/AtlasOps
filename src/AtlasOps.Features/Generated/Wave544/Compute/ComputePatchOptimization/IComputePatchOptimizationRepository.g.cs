@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.ComputePatchOptimization;
+
+using AtlasOps.Features;
+
+public interface IComputePatchOptimizationRepository : IAtlasOpsCapabilityRepository<ComputePatchOptimizationItem>;

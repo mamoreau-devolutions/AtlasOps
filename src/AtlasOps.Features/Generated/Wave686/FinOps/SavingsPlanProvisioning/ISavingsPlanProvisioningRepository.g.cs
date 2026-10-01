@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.FinOps.SavingsPlanProvisioning;
+
+using AtlasOps.Features;
+
+public interface ISavingsPlanProvisioningRepository : IAtlasOpsCapabilityRepository<SavingsPlanProvisioningItem>;

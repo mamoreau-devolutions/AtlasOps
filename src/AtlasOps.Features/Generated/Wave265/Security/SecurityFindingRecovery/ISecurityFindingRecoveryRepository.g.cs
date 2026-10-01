@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Security.SecurityFindingRecovery;
+
+using AtlasOps.Features;
+
+public interface ISecurityFindingRecoveryRepository : IAtlasOpsCapabilityRepository<SecurityFindingRecoveryItem>;

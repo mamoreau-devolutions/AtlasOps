@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Architecture.ArchitectureExceptionRecovery;
+
+using AtlasOps.Features;
+
+public interface IArchitectureExceptionRecoveryRepository : IAtlasOpsCapabilityRepository<ArchitectureExceptionRecoveryItem>;

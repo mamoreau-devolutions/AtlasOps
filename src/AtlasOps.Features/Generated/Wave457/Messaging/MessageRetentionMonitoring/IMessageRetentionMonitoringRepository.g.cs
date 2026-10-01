@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Messaging.MessageRetentionMonitoring;
+
+using AtlasOps.Features;
+
+public interface IMessageRetentionMonitoringRepository : IAtlasOpsCapabilityRepository<MessageRetentionMonitoringItem>;

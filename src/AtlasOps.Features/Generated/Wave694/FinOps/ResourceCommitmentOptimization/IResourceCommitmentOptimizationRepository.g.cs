@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.FinOps.ResourceCommitmentOptimization;
+
+using AtlasOps.Features;
+
+public interface IResourceCommitmentOptimizationRepository : IAtlasOpsCapabilityRepository<ResourceCommitmentOptimizationItem>;

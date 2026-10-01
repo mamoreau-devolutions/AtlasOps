@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Desktop.DesktopLicenseMonitoring;
+
+using AtlasOps.Features;
+
+public interface IDesktopLicenseMonitoringRepository : IAtlasOpsCapabilityRepository<DesktopLicenseMonitoringItem>;

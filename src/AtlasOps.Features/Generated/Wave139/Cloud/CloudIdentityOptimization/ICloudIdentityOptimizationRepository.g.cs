@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Cloud.CloudIdentityOptimization;
+
+using AtlasOps.Features;
+
+public interface ICloudIdentityOptimizationRepository : IAtlasOpsCapabilityRepository<CloudIdentityOptimizationItem>;

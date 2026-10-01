@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.FinOps.SpendForecastOptimization;
+
+using AtlasOps.Features;
+
+public interface ISpendForecastOptimizationRepository : IAtlasOpsCapabilityRepository<SpendForecastOptimizationItem>;

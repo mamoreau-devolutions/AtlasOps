@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Mobile.MobileProfileMonitoring;
+
+using AtlasOps.Features;
+
+public interface IMobileProfileMonitoringRepository : IAtlasOpsCapabilityRepository<MobileProfileMonitoringItem>;

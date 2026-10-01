@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Database.DatabaseBackupMonitoring;
+
+using AtlasOps.Features;
+
+public interface IDatabaseBackupMonitoringRepository : IAtlasOpsCapabilityRepository<DatabaseBackupMonitoringItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.MaintenanceWindowProvisioning;
+
+using AtlasOps.Features;
+
+public interface IMaintenanceWindowProvisioningRepository : IAtlasOpsCapabilityRepository<MaintenanceWindowProvisioningItem>;

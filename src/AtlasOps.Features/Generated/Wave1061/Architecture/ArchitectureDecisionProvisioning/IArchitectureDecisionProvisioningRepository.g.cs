@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Architecture.ArchitectureDecisionProvisioning;
+
+using AtlasOps.Features;
+
+public interface IArchitectureDecisionProvisioningRepository : IAtlasOpsCapabilityRepository<ArchitectureDecisionProvisioningItem>;

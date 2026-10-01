@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Kubernetes.KubernetesVolumeOptimization;
+
+using AtlasOps.Features;
+
+public interface IKubernetesVolumeOptimizationRepository : IAtlasOpsCapabilityRepository<KubernetesVolumeOptimizationItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Kubernetes.KubernetesNamespaceOptimization;
+
+using AtlasOps.Features;
+
+public interface IKubernetesNamespaceOptimizationRepository : IAtlasOpsCapabilityRepository<KubernetesNamespaceOptimizationItem>;

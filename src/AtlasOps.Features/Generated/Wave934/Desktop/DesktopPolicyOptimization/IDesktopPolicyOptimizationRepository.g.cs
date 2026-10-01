@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Desktop.DesktopPolicyOptimization;
+
+using AtlasOps.Features;
+
+public interface IDesktopPolicyOptimizationRepository : IAtlasOpsCapabilityRepository<DesktopPolicyOptimizationItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.ComputeScheduleMonitoring;
+
+using AtlasOps.Features;
+
+public interface IComputeScheduleMonitoringRepository : IAtlasOpsCapabilityRepository<ComputeScheduleMonitoringItem>;

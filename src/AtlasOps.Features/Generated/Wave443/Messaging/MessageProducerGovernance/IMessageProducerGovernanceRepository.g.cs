@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Messaging.MessageProducerGovernance;
+
+using AtlasOps.Features;
+
+public interface IMessageProducerGovernanceRepository : IAtlasOpsCapabilityRepository<MessageProducerGovernanceItem>;

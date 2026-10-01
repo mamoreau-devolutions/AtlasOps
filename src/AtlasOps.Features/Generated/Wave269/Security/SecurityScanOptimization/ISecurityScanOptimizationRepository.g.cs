@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Security.SecurityScanOptimization;
+
+using AtlasOps.Features;
+
+public interface ISecurityScanOptimizationRepository : IAtlasOpsCapabilityRepository<SecurityScanOptimizationItem>;

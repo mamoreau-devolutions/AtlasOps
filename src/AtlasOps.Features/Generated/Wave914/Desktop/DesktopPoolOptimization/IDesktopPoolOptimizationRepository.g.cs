@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Desktop.DesktopPoolOptimization;
+
+using AtlasOps.Features;
+
+public interface IDesktopPoolOptimizationRepository : IAtlasOpsCapabilityRepository<DesktopPoolOptimizationItem>;

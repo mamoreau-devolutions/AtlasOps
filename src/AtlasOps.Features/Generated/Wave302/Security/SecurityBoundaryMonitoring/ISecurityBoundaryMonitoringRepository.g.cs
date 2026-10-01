@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Security.SecurityBoundaryMonitoring;
+
+using AtlasOps.Features;
+
+public interface ISecurityBoundaryMonitoringRepository : IAtlasOpsCapabilityRepository<SecurityBoundaryMonitoringItem>;

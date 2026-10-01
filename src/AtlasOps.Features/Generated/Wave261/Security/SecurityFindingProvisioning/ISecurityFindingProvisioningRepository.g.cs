@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Security.SecurityFindingProvisioning;
+
+using AtlasOps.Features;
+
+public interface ISecurityFindingProvisioningRepository : IAtlasOpsCapabilityRepository<SecurityFindingProvisioningItem>;

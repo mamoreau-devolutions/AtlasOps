@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.ComputeScaleSetOptimization;
+
+using AtlasOps.Features;
+
+public interface IComputeScaleSetOptimizationRepository : IAtlasOpsCapabilityRepository<ComputeScaleSetOptimizationItem>;

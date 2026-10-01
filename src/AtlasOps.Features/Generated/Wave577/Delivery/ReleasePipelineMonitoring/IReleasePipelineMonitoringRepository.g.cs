@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.ReleasePipelineMonitoring;
+
+using AtlasOps.Features;
+
+public interface IReleasePipelineMonitoringRepository : IAtlasOpsCapabilityRepository<ReleasePipelineMonitoringItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Mobile.MobileTelemetryProvisioning;
+
+using AtlasOps.Features;
+
+public interface IMobileTelemetryProvisioningRepository : IAtlasOpsCapabilityRepository<MobileTelemetryProvisioningItem>;

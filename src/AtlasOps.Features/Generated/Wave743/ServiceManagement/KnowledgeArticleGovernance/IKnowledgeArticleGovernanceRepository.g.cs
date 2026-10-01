@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.KnowledgeArticleGovernance;
+
+using AtlasOps.Features;
+
+public interface IKnowledgeArticleGovernanceRepository : IAtlasOpsCapabilityRepository<KnowledgeArticleGovernanceItem>;

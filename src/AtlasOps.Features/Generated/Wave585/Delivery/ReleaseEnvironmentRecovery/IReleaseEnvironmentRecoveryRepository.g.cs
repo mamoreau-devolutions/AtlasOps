@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.ReleaseEnvironmentRecovery;
+
+using AtlasOps.Features;
+
+public interface IReleaseEnvironmentRecoveryRepository : IAtlasOpsCapabilityRepository<ReleaseEnvironmentRecoveryItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ProblemRecordRecovery;
+
+using AtlasOps.Features;
+
+public interface IProblemRecordRecoveryRepository : IAtlasOpsCapabilityRepository<ProblemRecordRecoveryItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Network.NetworkSegmentProvisioning;
+
+using AtlasOps.Features;
+
+public interface INetworkSegmentProvisioningRepository : IAtlasOpsCapabilityRepository<NetworkSegmentProvisioningItem>;

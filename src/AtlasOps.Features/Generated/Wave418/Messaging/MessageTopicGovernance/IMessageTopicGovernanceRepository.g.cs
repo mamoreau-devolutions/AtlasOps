@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Messaging.MessageTopicGovernance;
+
+using AtlasOps.Features;
+
+public interface IMessageTopicGovernanceRepository : IAtlasOpsCapabilityRepository<MessageTopicGovernanceItem>;

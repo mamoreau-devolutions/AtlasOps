@@ -1,0 +1,130 @@
+<local:ConnectorWorkbenchView
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:contracts="using:AtlasOps.Connectors.Contracts"
+    xmlns:local="using:AtlasOps.Connectors.Avalonia"
+    x:Class="AtlasOps.Connectors.Avalonia.ConnectorWorkbenchView"
+    x:DataType="local:ConnectorWorkbenchViewModel"
+    MinWidth="760"
+    MinHeight="480">
+    <Grid
+        Margin="20"
+        RowDefinitions="Auto,Auto,Auto,*"
+        RowSpacing="12">
+        <StackPanel Spacing="3">
+            <TextBlock
+                FontSize="24"
+                FontWeight="SemiBold"
+                Text="{Binding Title}" />
+            <TextBlock
+                Opacity="0.72"
+                Text="{Binding Summary}"
+                TextWrapping="Wrap" />
+        </StackPanel>
+        <Grid
+            Grid.Row="1"
+            ColumnDefinitions="*,Auto,Auto"
+            ColumnSpacing="8">
+            <TextBox
+                Text="{Binding SearchText, Mode=TwoWay}"
+                PlaceholderText="Filter connectors by name, kind, or identifier" />
+            <Button
+                Grid.Column="1"
+                Command="{Binding RefreshCommand}"
+                Content="Refresh health" />
+            <Button
+                Grid.Column="2"
+                Command="{Binding ExecuteSelectedCommand}"
+                Content="Synchronize" />
+        </Grid>
+        <Border
+            Grid.Row="2"
+            Padding="10"
+            Background="#16243A"
+            CornerRadius="6">
+            <TextBlock Text="{Binding StatusMessage}" />
+        </Border>
+        <Grid
+            Grid.Row="3"
+            ColumnDefinitions="300,5,*">
+            <ListBox
+                ItemsSource="{Binding Connectors}"
+                SelectedItem="{Binding SelectedConnector, Mode=TwoWay}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate x:DataType="contracts:ConnectorDefinition">
+                        <StackPanel
+                            Margin="8"
+                            Spacing="3">
+                            <TextBlock
+                                FontWeight="SemiBold"
+                                Text="{Binding DisplayName}" />
+                            <TextBlock
+                                FontSize="11"
+                                Foreground="#91A1B8"
+                                Text="{Binding Kind}" />
+                            <TextBlock
+                                FontSize="10"
+                                Foreground="#9CC2FF"
+                                Text="{Binding Id}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <GridSplitter
+                Grid.Column="1"
+                ResizeDirection="Columns" />
+            <Grid
+                Grid.Column="2"
+                Margin="16,0,0,0"
+                RowDefinitions="Auto,*,Auto,*"
+                RowSpacing="8">
+                <TextBlock
+                    FontSize="17"
+                    FontWeight="SemiBold"
+                    Text="Health" />
+                <DataGrid
+                    Grid.Row="1"
+                    AutoGenerateColumns="False"
+                    IsReadOnly="True"
+                    ItemsSource="{Binding Health}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn
+                            Header="Connector"
+                            Binding="{Binding ConnectorId}" />
+                        <DataGridTextColumn
+                            Header="State"
+                            Binding="{Binding State}" />
+                        <DataGridTextColumn
+                            Header="Message"
+                            Binding="{Binding Message}" />
+                    </DataGrid.Columns>
+                </DataGrid>
+                <TextBlock
+                    Grid.Row="2"
+                    FontSize="17"
+                    FontWeight="SemiBold"
+                    Text="Recent executions" />
+                <DataGrid
+                    Grid.Row="3"
+                    AutoGenerateColumns="False"
+                    IsReadOnly="True"
+                    ItemsSource="{Binding Executions}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn
+                            Header="Time"
+                            Binding="{Binding OccurredAt}" />
+                        <DataGridTextColumn
+                            Header="Connector"
+                            Binding="{Binding ConnectorId}" />
+                        <DataGridTextColumn
+                            Header="Operation"
+                            Binding="{Binding Operation}" />
+                        <DataGridTextColumn
+                            Header="Status"
+                            Binding="{Binding Status}" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </Grid>
+    </Grid>
+</local:ConnectorWorkbenchView>

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Database.DatabaseReplicaGovernance;
+
+using AtlasOps.Features;
+
+public interface IDatabaseReplicaGovernanceRepository : IAtlasOpsCapabilityRepository<DatabaseReplicaGovernanceItem>;

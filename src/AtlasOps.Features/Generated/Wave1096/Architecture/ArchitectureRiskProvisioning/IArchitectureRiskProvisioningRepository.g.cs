@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Architecture.ArchitectureRiskProvisioning;
+
+using AtlasOps.Features;
+
+public interface IArchitectureRiskProvisioningRepository : IAtlasOpsCapabilityRepository<ArchitectureRiskProvisioningItem>;

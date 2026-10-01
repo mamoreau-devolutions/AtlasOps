@@ -1,0 +1,14 @@
+.vs/
+.vscode/
+.idea/
+**/bin/
+**/obj/
+artifacts/
+TestResults/
+timing/
+*.user
+*.suo
+*.nupkg
+*.snupkg
+*.trx
+*.log

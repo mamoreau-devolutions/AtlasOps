@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Cloud.CloudIdentityMonitoring;
+
+using AtlasOps.Features;
+
+public interface ICloudIdentityMonitoringRepository : IAtlasOpsCapabilityRepository<CloudIdentityMonitoringItem>;

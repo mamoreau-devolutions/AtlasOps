@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.BusinessContinuity.RecoveryDependencyOptimization;
+
+using AtlasOps.Features;
+
+public interface IRecoveryDependencyOptimizationRepository : IAtlasOpsCapabilityRepository<RecoveryDependencyOptimizationItem>;

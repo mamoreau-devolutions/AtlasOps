@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Architecture.ArchitectureDecisionMonitoring;
+
+using AtlasOps.Features;
+
+public interface IArchitectureDecisionMonitoringRepository : IAtlasOpsCapabilityRepository<ArchitectureDecisionMonitoringItem>;

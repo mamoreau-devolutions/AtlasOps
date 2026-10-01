@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.KnowledgeArticleOptimization;
+
+using AtlasOps.Features;
+
+public interface IKnowledgeArticleOptimizationRepository : IAtlasOpsCapabilityRepository<KnowledgeArticleOptimizationItem>;

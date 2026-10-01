@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Messaging.MessageConsumerGovernance;
+
+using AtlasOps.Features;
+
+public interface IMessageConsumerGovernanceRepository : IAtlasOpsCapabilityRepository<MessageConsumerGovernanceItem>;

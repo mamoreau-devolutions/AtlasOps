@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.MaintenanceWindowMonitoring;
+
+using AtlasOps.Features;
+
+public interface IMaintenanceWindowMonitoringRepository : IAtlasOpsCapabilityRepository<MaintenanceWindowMonitoringItem>;

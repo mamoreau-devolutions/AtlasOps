@@ -1,0 +1,35 @@
+<Project>
+  <Import Project="$(MSBuildThisFileDirectory)..\..\..\Directory.Build.targets"
+          Condition="Exists('$(MSBuildThisFileDirectory)..\..\..\Directory.Build.targets')" />
+
+  <ItemGroup>
+    <Compile Remove="GeneratedProjectMarker.cs" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(MSBuildProjectName)' == 'AtlasOps.Domain.Tests'">
+    <ProjectReference Include="$(MSBuildThisFileDirectory)..\..\src\Modular\Modules\Automation\AtlasOps.Modules.Automation.Core\AtlasOps.Modules.Automation.Core.csproj" />
+    <ProjectReference Include="$(MSBuildThisFileDirectory)..\..\src\Modular\Modules\CloudEconomics\AtlasOps.Modules.CloudEconomics.Core\AtlasOps.Modules.CloudEconomics.Core.csproj" />
+    <ProjectReference Include="$(MSBuildThisFileDirectory)..\..\src\Modular\Modules\Compliance\AtlasOps.Modules.Compliance.Core\AtlasOps.Modules.Compliance.Core.csproj" />
+    <ProjectReference Include="$(MSBuildThisFileDirectory)..\..\src\Modular\Modules\Connections\AtlasOps.Modules.Connections.Core\AtlasOps.Modules.Connections.Core.csproj" />
+    <ProjectReference Include="$(MSBuildThisFileDirectory)..\..\src\Modular\Modules\Credentials\AtlasOps.Modules.Credentials.Core\AtlasOps.Modules.Credentials.Core.csproj" />
+    <ProjectReference Include="$(MSBuildThisFileDirectory)..\..\src\Modular\Modules\Deployments\AtlasOps.Modules.Deployments.Core\AtlasOps.Modules.Deployments.Core.csproj" />
+    <ProjectReference Include="$(MSBuildThisFileDirectory)..\..\src\Modular\Modules\Documents\AtlasOps.Modules.Documents.Core\AtlasOps.Modules.Documents.Core.csproj" />
+    <ProjectReference Include="$(MSBuildThisFileDirectory)..\..\src\Modular\Modules\Geography\AtlasOps.Modules.Geography.Core\AtlasOps.Modules.Geography.Core.csproj" />
+    <ProjectReference Include="$(MSBuildThisFileDirectory)..\..\src\Modular\Modules\Geospatial\AtlasOps.Modules.Geospatial.Core\AtlasOps.Modules.Geospatial.Core.csproj" />
+    <ProjectReference Include="$(MSBuildThisFileDirectory)..\..\src\Modular\Modules\Governance\AtlasOps.Modules.Governance.Core\AtlasOps.Modules.Governance.Core.csproj" />
+    <ProjectReference Include="$(MSBuildThisFileDirectory)..\..\src\Modular\Modules\Identity\AtlasOps.Modules.Identity.Core\AtlasOps.Modules.Identity.Core.csproj" />
+    <ProjectReference Include="$(MSBuildThisFileDirectory)..\..\src\Modular\Modules\Inventory\AtlasOps.Modules.Inventory.Core\AtlasOps.Modules.Inventory.Core.csproj" />
+    <ProjectReference Include="$(MSBuildThisFileDirectory)..\..\src\Modular\Modules\Lifecycle\AtlasOps.Modules.Lifecycle.Core\AtlasOps.Modules.Lifecycle.Core.csproj" />
+    <ProjectReference Include="$(MSBuildThisFileDirectory)..\..\src\Modular\Modules\Localization\AtlasOps.Modules.Localization.Core\AtlasOps.Modules.Localization.Core.csproj" />
+    <ProjectReference Include="$(MSBuildThisFileDirectory)..\..\src\Modular\Modules\NetworkIntelligence\AtlasOps.Modules.NetworkIntelligence.Core\AtlasOps.Modules.NetworkIntelligence.Core.csproj" />
+    <ProjectReference Include="$(MSBuildThisFileDirectory)..\..\src\Modular\Modules\Observability\AtlasOps.Modules.Observability.Core\AtlasOps.Modules.Observability.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(MSBuildProjectName)' == 'AtlasOps.Adapters.Tests'">
+    <ProjectReference Include="$(MSBuildThisFileDirectory)..\..\src\Modular\Adapters\AtlasOps.Adapters.Azure\AtlasOps.Adapters.Azure.csproj" />
+    <ProjectReference Include="$(MSBuildThisFileDirectory)..\..\src\Modular\Adapters\AtlasOps.Adapters.EndOfLife\AtlasOps.Adapters.EndOfLife.csproj" />
+    <ProjectReference Include="$(MSBuildThisFileDirectory)..\..\src\Modular\Adapters\AtlasOps.Adapters.Gcp\AtlasOps.Adapters.Gcp.csproj" />
+    <ProjectReference Include="$(MSBuildThisFileDirectory)..\..\src\Modular\Adapters\AtlasOps.Adapters.NaturalEarth\AtlasOps.Adapters.NaturalEarth.csproj" />
+    <ProjectReference Include="$(MSBuildThisFileDirectory)..\..\src\Modular\Adapters\AtlasOps.Adapters.Unicode\AtlasOps.Adapters.Unicode.csproj" />
+  </ItemGroup>
+</Project>

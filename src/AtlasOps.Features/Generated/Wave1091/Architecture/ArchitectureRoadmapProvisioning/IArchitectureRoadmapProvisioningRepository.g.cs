@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Architecture.ArchitectureRoadmapProvisioning;
+
+using AtlasOps.Features;
+
+public interface IArchitectureRoadmapProvisioningRepository : IAtlasOpsCapabilityRepository<ArchitectureRoadmapProvisioningItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Network.NetworkPeerOptimization;
+
+using AtlasOps.Features;
+
+public interface INetworkPeerOptimizationRepository : IAtlasOpsCapabilityRepository<NetworkPeerOptimizationItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Observability.ObservabilityRetentionMonitoring;
+
+using AtlasOps.Features;
+
+public interface IObservabilityRetentionMonitoringRepository : IAtlasOpsCapabilityRepository<ObservabilityRetentionMonitoringItem>;

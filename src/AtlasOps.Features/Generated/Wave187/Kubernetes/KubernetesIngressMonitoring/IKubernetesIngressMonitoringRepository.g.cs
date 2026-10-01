@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Kubernetes.KubernetesIngressMonitoring;
+
+using AtlasOps.Features;
+
+public interface IKubernetesIngressMonitoringRepository : IAtlasOpsCapabilityRepository<KubernetesIngressMonitoringItem>;

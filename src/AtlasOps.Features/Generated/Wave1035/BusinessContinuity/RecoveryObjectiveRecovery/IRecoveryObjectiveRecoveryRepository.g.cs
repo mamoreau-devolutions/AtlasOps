@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.BusinessContinuity.RecoveryObjectiveRecovery;
+
+using AtlasOps.Features;
+
+public interface IRecoveryObjectiveRecoveryRepository : IAtlasOpsCapabilityRepository<RecoveryObjectiveRecoveryItem>;

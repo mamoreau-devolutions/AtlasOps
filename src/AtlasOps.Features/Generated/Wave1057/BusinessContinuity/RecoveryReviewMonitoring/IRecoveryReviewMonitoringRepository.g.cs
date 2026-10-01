@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.BusinessContinuity.RecoveryReviewMonitoring;
+
+using AtlasOps.Features;
+
+public interface IRecoveryReviewMonitoringRepository : IAtlasOpsCapabilityRepository<RecoveryReviewMonitoringItem>;

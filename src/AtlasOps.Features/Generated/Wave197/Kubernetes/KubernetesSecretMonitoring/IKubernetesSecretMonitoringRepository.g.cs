@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Kubernetes.KubernetesSecretMonitoring;
+
+using AtlasOps.Features;
+
+public interface IKubernetesSecretMonitoringRepository : IAtlasOpsCapabilityRepository<KubernetesSecretMonitoringItem>;

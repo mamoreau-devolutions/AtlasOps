@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Incidents.StakeholderSubscription;
+
+using AtlasOps.Features;
+
+public interface IStakeholderSubscriptionRepository : IAtlasOpsCapabilityRepository<StakeholderSubscriptionItem>;

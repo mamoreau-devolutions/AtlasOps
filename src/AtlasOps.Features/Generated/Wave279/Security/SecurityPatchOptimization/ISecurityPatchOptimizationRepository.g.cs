@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Security.SecurityPatchOptimization;
+
+using AtlasOps.Features;
+
+public interface ISecurityPatchOptimizationRepository : IAtlasOpsCapabilityRepository<SecurityPatchOptimizationItem>;

@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>preview</LangVersion>
+    <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Avalonia" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Kubernetes\AtlasOps.Integrations.Kubernetes.Core\AtlasOps.Integrations.Kubernetes.Core.csproj" />
+    <ProjectReference Include="..\..\SecureShell\AtlasOps.Integrations.SecureShell.Core\AtlasOps.Integrations.SecureShell.Core.csproj" />
+    <ProjectReference Include="..\..\Databases\AtlasOps.Integrations.Databases.Core\AtlasOps.Integrations.Databases.Core.csproj" />
+    <ProjectReference Include="..\..\ObjectStorage\AtlasOps.Integrations.ObjectStorage.Core\AtlasOps.Integrations.ObjectStorage.Core.csproj" />
+    <ProjectReference Include="..\..\..\Operations\AtlasOps.Operations.Avalonia\AtlasOps.Operations.Avalonia.csproj" />
+  </ItemGroup>
+</Project>

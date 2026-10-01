@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Network.NetworkPolicyMonitoring;
+
+using AtlasOps.Features;
+
+public interface INetworkPolicyMonitoringRepository : IAtlasOpsCapabilityRepository<NetworkPolicyMonitoringItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Storage.StorageEncryptionMonitoring;
+
+using AtlasOps.Features;
+
+public interface IStorageEncryptionMonitoringRepository : IAtlasOpsCapabilityRepository<StorageEncryptionMonitoringItem>;

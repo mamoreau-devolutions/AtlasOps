@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ProblemRecordMonitoring;
+
+using AtlasOps.Features;
+
+public interface IProblemRecordMonitoringRepository : IAtlasOpsCapabilityRepository<ProblemRecordMonitoringItem>;

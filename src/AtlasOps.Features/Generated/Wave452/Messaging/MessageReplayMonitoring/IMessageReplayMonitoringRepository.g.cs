@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Messaging.MessageReplayMonitoring;
+
+using AtlasOps.Features;
+
+public interface IMessageReplayMonitoringRepository : IAtlasOpsCapabilityRepository<MessageReplayMonitoringItem>;

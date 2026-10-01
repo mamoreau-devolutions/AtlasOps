@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Observability.ObservabilitySloGovernance;
+
+using AtlasOps.Features;
+
+public interface IObservabilitySloGovernanceRepository : IAtlasOpsCapabilityRepository<ObservabilitySloGovernanceItem>;

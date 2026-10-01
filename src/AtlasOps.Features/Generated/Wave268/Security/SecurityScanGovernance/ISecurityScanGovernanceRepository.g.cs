@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Security.SecurityScanGovernance;
+
+using AtlasOps.Features;
+
+public interface ISecurityScanGovernanceRepository : IAtlasOpsCapabilityRepository<SecurityScanGovernanceItem>;

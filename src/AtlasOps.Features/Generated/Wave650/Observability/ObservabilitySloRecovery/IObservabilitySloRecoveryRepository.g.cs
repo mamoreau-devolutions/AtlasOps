@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Observability.ObservabilitySloRecovery;
+
+using AtlasOps.Features;
+
+public interface IObservabilitySloRecoveryRepository : IAtlasOpsCapabilityRepository<ObservabilitySloRecoveryItem>;

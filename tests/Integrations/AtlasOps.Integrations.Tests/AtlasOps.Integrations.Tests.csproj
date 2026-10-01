@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>preview</LangVersion>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="MSTest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\src\Integrations\Databases\AtlasOps.Integrations.Databases.Contracts\AtlasOps.Integrations.Databases.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\src\Integrations\Databases\AtlasOps.Integrations.Databases.Core\AtlasOps.Integrations.Databases.Core.csproj" />
+    <ProjectReference Include="..\..\..\src\Integrations\GitProviders\AtlasOps.Integrations.GitProviders.Contracts\AtlasOps.Integrations.GitProviders.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\src\Integrations\GitProviders\AtlasOps.Integrations.GitProviders.Core\AtlasOps.Integrations.GitProviders.Core.csproj" />
+    <ProjectReference Include="..\..\..\src\Integrations\Identity\AtlasOps.Integrations.Identity.Contracts\AtlasOps.Integrations.Identity.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\src\Integrations\Identity\AtlasOps.Integrations.Identity.Core\AtlasOps.Integrations.Identity.Core.csproj" />
+    <ProjectReference Include="..\..\..\src\Integrations\Kubernetes\AtlasOps.Integrations.Kubernetes.Contracts\AtlasOps.Integrations.Kubernetes.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\src\Integrations\Kubernetes\AtlasOps.Integrations.Kubernetes.Core\AtlasOps.Integrations.Kubernetes.Core.csproj" />
+    <ProjectReference Include="..\..\..\src\Integrations\Mail\AtlasOps.Integrations.Mail.Contracts\AtlasOps.Integrations.Mail.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\src\Integrations\Mail\AtlasOps.Integrations.Mail.Core\AtlasOps.Integrations.Mail.Core.csproj" />
+    <ProjectReference Include="..\..\..\src\Integrations\Messaging\AtlasOps.Integrations.Messaging.Contracts\AtlasOps.Integrations.Messaging.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\src\Integrations\Messaging\AtlasOps.Integrations.Messaging.Core\AtlasOps.Integrations.Messaging.Core.csproj" />
+    <ProjectReference Include="..\..\..\src\Integrations\Monitoring\AtlasOps.Integrations.Monitoring.Contracts\AtlasOps.Integrations.Monitoring.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\src\Integrations\Monitoring\AtlasOps.Integrations.Monitoring.Core\AtlasOps.Integrations.Monitoring.Core.csproj" />
+    <ProjectReference Include="..\..\..\src\Integrations\ObjectStorage\AtlasOps.Integrations.ObjectStorage.Contracts\AtlasOps.Integrations.ObjectStorage.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\src\Integrations\ObjectStorage\AtlasOps.Integrations.ObjectStorage.Core\AtlasOps.Integrations.ObjectStorage.Core.csproj" />
+    <ProjectReference Include="..\..\..\src\Integrations\SecureShell\AtlasOps.Integrations.SecureShell.Contracts\AtlasOps.Integrations.SecureShell.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\src\Integrations\SecureShell\AtlasOps.Integrations.SecureShell.Core\AtlasOps.Integrations.SecureShell.Core.csproj" />
+    <ProjectReference Include="..\..\..\src\Integrations\ServiceManagement\AtlasOps.Integrations.ServiceManagement.Contracts\AtlasOps.Integrations.ServiceManagement.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\src\Integrations\ServiceManagement\AtlasOps.Integrations.ServiceManagement.Core\AtlasOps.Integrations.ServiceManagement.Core.csproj" />
+    <ProjectReference Include="..\..\..\src\Integrations\Webhooks\AtlasOps.Integrations.Webhooks.Contracts\AtlasOps.Integrations.Webhooks.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\src\Integrations\Webhooks\AtlasOps.Integrations.Webhooks.Core\AtlasOps.Integrations.Webhooks.Core.csproj" />
+    <ProjectReference Include="..\..\..\src\Integrations\WorkTracking\AtlasOps.Integrations.WorkTracking.Contracts\AtlasOps.Integrations.WorkTracking.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\src\Integrations\WorkTracking\AtlasOps.Integrations.WorkTracking.Core\AtlasOps.Integrations.WorkTracking.Core.csproj" />
+  </ItemGroup>
+</Project>

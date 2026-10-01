@@ -1,0 +1,135 @@
+name: AtlasOps Windows-target build benchmark
+
+run-name: AtlasOps Windows-target build benchmark
+
+on:
+  push:
+    paths:
+      - .github/workflows/benchmark-runners.yml
+      - AtlasOps.sln
+      - Directory.Build.props
+      - Directory.Build.targets
+      - Directory.Packages.props
+      - global.json
+      - nuget.config
+      - src/**
+      - tests/**
+  workflow_dispatch:
+
+concurrency:
+  group: atlasops-build-benchmark-${{ github.ref_name }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build Windows target on ${{ matrix.name }}
+    runs-on: ${{ matrix.runner }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - id: linux-x64
+            name: Linux x64
+            host_os: linux
+            runner: ubuntu-latest
+          - id: windows-x64
+            name: Windows x64
+            host_os: windows
+            runner: windows-latest
+
+    steps:
+      - name: Check out AtlasOps
+        uses: actions/checkout@v7
+
+      - name: Configure .NET SDK
+        uses: actions/setup-dotnet@v6
+        with:
+          global-json-file: global.json
+
+      - name: Build AtlasOps Windows target
+        run: |
+          New-Item -Path timing -ItemType Directory -Force | Out-Null
+
+          $stopwatch = [System.Diagnostics.Stopwatch]::StartNew()
+          dotnet build AtlasOps.sln --nologo --configuration Release -m:1 -p:EnableWindowsTargeting=true
+          $exitCode = $LASTEXITCODE
+          $stopwatch.Stop()
+
+          $duration = [math]::Round($stopwatch.Elapsed.TotalSeconds, 2)
+          $timing = [ordered]@{
+            id = '${{ matrix.id }}'
+            name = '${{ matrix.name }}'
+            hostOs = '${{ matrix.host_os }}'
+            runner = '${{ matrix.runner }}'
+            targetFramework = 'net10.0-windows'
+            durationSeconds = $duration
+            succeeded = ($exitCode -eq 0)
+          }
+
+          $timing | ConvertTo-Json | Set-Content -Path "timing/build-time-${{ matrix.id }}.json"
+
+          $result = if ($exitCode -eq 0) { 'success' } else { 'failure' }
+          @(
+            "## AtlasOps Windows-target build (${{ matrix.name }})",
+            '',
+            "- Host OS: ${{ matrix.host_os }}",
+            "- Runner: ${{ matrix.runner }}",
+            "- Target framework: net10.0-windows",
+            "- Build duration: ${duration}s",
+            "- Result: $result"
+          ) | Out-File -FilePath $Env:GITHUB_STEP_SUMMARY -Encoding utf8 -Append
+
+          exit $exitCode
+        shell: pwsh
+
+      - name: Upload build timing
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v7
+        with:
+          name: atlasops-build-time-${{ matrix.id }}
+          path: timing/build-time-${{ matrix.id }}.json
+
+  compare-timings:
+    name: Compare Windows-target build times
+    if: ${{ !cancelled() && needs.build.result != 'skipped' }}
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download build timings
+        uses: actions/download-artifact@v8
+        with:
+          pattern: atlasops-build-time-*
+          path: build-timings
+          merge-multiple: true
+
+      - name: Summarize build times
+        run: |
+          $timings = Get-ChildItem -Path build-timings -Filter *.json |
+            ForEach-Object { Get-Content $_.FullName -Raw | ConvertFrom-Json } |
+            Sort-Object durationSeconds
+
+          if (-not $timings) {
+            throw 'No AtlasOps build timing artifacts were found.'
+          }
+
+          $fastest = ($timings | Measure-Object -Property durationSeconds -Minimum).Minimum
+          $lines = @(
+            '## AtlasOps Windows-target build comparison',
+            '',
+            '| Host | Runner | Target | Duration (s) | Delta (s) | Result |',
+            '| --- | --- | --- | ---: | ---: | --- |'
+          )
+
+          foreach ($timing in $timings) {
+            $delta = [math]::Round([double]$timing.durationSeconds - [double]$fastest, 2)
+            $result = if ($timing.succeeded) { 'success' } else { 'failure' }
+            $lines += "| $($timing.name) | $($timing.runner) | $($timing.targetFramework) | $($timing.durationSeconds) | $delta | $result |"
+          }
+
+          $lines | Out-File -FilePath $Env:GITHUB_STEP_SUMMARY -Encoding utf8 -Append
+          $lines | ForEach-Object { Write-Host $_ }
+        shell: pwsh

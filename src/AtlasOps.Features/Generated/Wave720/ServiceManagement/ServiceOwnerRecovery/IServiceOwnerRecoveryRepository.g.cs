@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ServiceOwnerRecovery;
+
+using AtlasOps.Features;
+
+public interface IServiceOwnerRecoveryRepository : IAtlasOpsCapabilityRepository<ServiceOwnerRecoveryItem>;

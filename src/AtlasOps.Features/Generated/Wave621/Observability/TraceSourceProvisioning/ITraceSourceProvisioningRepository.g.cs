@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Observability.TraceSourceProvisioning;
+
+using AtlasOps.Features;
+
+public interface ITraceSourceProvisioningRepository : IAtlasOpsCapabilityRepository<TraceSourceProvisioningItem>;

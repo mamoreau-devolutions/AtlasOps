@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ServiceRequestRecovery;
+
+using AtlasOps.Features;
+
+public interface IServiceRequestRecoveryRepository : IAtlasOpsCapabilityRepository<ServiceRequestRecoveryItem>;

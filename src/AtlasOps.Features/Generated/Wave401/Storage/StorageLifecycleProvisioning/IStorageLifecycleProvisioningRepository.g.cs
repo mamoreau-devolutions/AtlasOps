@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Storage.StorageLifecycleProvisioning;
+
+using AtlasOps.Features;
+
+public interface IStorageLifecycleProvisioningRepository : IAtlasOpsCapabilityRepository<StorageLifecycleProvisioningItem>;

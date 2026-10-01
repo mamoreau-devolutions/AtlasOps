@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Desktop.DesktopHealthOptimization;
+
+using AtlasOps.Features;
+
+public interface IDesktopHealthOptimizationRepository : IAtlasOpsCapabilityRepository<DesktopHealthOptimizationItem>;

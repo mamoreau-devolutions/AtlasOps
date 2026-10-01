@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>preview</LangVersion>
+    <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Avalonia" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\GitProviders\AtlasOps.Integrations.GitProviders.Core\AtlasOps.Integrations.GitProviders.Core.csproj" />
+    <ProjectReference Include="..\..\WorkTracking\AtlasOps.Integrations.WorkTracking.Core\AtlasOps.Integrations.WorkTracking.Core.csproj" />
+    <ProjectReference Include="..\..\..\Operations\AtlasOps.Operations.Avalonia\AtlasOps.Operations.Avalonia.csproj" />
+  </ItemGroup>
+</Project>

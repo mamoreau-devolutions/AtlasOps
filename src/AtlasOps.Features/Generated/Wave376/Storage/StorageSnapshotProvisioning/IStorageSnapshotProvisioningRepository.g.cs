@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Storage.StorageSnapshotProvisioning;
+
+using AtlasOps.Features;
+
+public interface IStorageSnapshotProvisioningRepository : IAtlasOpsCapabilityRepository<StorageSnapshotProvisioningItem>;

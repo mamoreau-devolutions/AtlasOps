@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Storage.StorageEncryptionRecovery;
+
+using AtlasOps.Features;
+
+public interface IStorageEncryptionRecoveryRepository : IAtlasOpsCapabilityRepository<StorageEncryptionRecoveryItem>;

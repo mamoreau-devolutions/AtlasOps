@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Storage.BlockVolumeProvisioning;
+
+using AtlasOps.Features;
+
+public interface IBlockVolumeProvisioningRepository : IAtlasOpsCapabilityRepository<BlockVolumeProvisioningItem>;

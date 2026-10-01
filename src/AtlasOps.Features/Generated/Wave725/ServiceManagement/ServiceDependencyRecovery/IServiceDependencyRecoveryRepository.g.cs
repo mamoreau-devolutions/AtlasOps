@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ServiceDependencyRecovery;
+
+using AtlasOps.Features;
+
+public interface IServiceDependencyRecoveryRepository : IAtlasOpsCapabilityRepository<ServiceDependencyRecoveryItem>;

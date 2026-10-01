@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ServiceReviewMonitoring;
+
+using AtlasOps.Features;
+
+public interface IServiceReviewMonitoringRepository : IAtlasOpsCapabilityRepository<ServiceReviewMonitoringItem>;

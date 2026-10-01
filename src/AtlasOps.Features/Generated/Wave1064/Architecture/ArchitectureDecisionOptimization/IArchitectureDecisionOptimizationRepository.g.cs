@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Architecture.ArchitectureDecisionOptimization;
+
+using AtlasOps.Features;
+
+public interface IArchitectureDecisionOptimizationRepository : IAtlasOpsCapabilityRepository<ArchitectureDecisionOptimizationItem>;

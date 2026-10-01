@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Desktop.DesktopSessionGovernance;
+
+using AtlasOps.Features;
+
+public interface IDesktopSessionGovernanceRepository : IAtlasOpsCapabilityRepository<DesktopSessionGovernanceItem>;

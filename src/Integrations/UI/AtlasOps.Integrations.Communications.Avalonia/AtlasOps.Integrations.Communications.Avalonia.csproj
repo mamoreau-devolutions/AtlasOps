@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>preview</LangVersion>
+    <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Avalonia" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Messaging\AtlasOps.Integrations.Messaging.Core\AtlasOps.Integrations.Messaging.Core.csproj" />
+    <ProjectReference Include="..\..\Mail\AtlasOps.Integrations.Mail.Core\AtlasOps.Integrations.Mail.Core.csproj" />
+    <ProjectReference Include="..\..\Webhooks\AtlasOps.Integrations.Webhooks.Core\AtlasOps.Integrations.Webhooks.Core.csproj" />
+    <ProjectReference Include="..\..\..\Operations\AtlasOps.Operations.Avalonia\AtlasOps.Operations.Avalonia.csproj" />
+  </ItemGroup>
+</Project>

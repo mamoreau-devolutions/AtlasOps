@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Database.DatabaseMaintenanceMonitoring;
+
+using AtlasOps.Features;
+
+public interface IDatabaseMaintenanceMonitoringRepository : IAtlasOpsCapabilityRepository<DatabaseMaintenanceMonitoringItem>;

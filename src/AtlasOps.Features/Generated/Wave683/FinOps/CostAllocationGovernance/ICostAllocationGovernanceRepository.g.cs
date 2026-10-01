@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.FinOps.CostAllocationGovernance;
+
+using AtlasOps.Features;
+
+public interface ICostAllocationGovernanceRepository : IAtlasOpsCapabilityRepository<CostAllocationGovernanceItem>;

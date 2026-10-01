@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Observability.MetricAlertGovernance;
+
+using AtlasOps.Features;
+
+public interface IMetricAlertGovernanceRepository : IAtlasOpsCapabilityRepository<MetricAlertGovernanceItem>;

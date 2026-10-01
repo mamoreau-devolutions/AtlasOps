@@ -1,0 +1,4618 @@
+{
+  "supplemental": {
+    "version": {
+      "_unicodeVersion": "16.0.0",
+      "_cldrVersion": "48"
+    },
+    "languageData": {
+      "aa": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ab": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "abq": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "abq-alt-secondary": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "abr": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ace": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ach": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ada": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ady": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "ae": {
+        "_scripts": [
+          "Avst"
+        ]
+      },
+      "aeb": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "af": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "agq": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "aii": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "aii-alt-secondary": {
+        "_scripts": [
+          "Syrc"
+        ]
+      },
+      "ain-alt-secondary": {
+        "_scripts": [
+          "Kana",
+          "Latn"
+        ]
+      },
+      "ak": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "akk": {
+        "_scripts": [
+          "Xsux"
+        ]
+      },
+      "akz": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ale": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "aln": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "alt": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "am": {
+        "_scripts": [
+          "Ethi"
+        ]
+      },
+      "amo": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "an": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ang": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ann": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "anp": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "aoz": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "apc": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "apd": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "ar": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "ar-alt-secondary": {
+        "_scripts": [
+          "Syrc"
+        ]
+      },
+      "arc-alt-secondary": {
+        "_scripts": [
+          "Armi",
+          "Nbat",
+          "Palm"
+        ]
+      },
+      "arn": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "aro": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "arp": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "arq": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "ars": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "arw": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ary": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "arz": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "as": {
+        "_scripts": [
+          "Beng"
+        ]
+      },
+      "asa": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ast": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "atj": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "av": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "avk": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "awa": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "ay": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "az": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "az-alt-secondary": {
+        "_scripts": [
+          "Arab",
+          "Cyrl"
+        ]
+      },
+      "ba": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "bal": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "bal-alt-secondary": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ban": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ban-alt-secondary": {
+        "_scripts": [
+          "Bali"
+        ]
+      },
+      "bap": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "bar": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "bas": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "bax": {
+        "_scripts": [
+          "Bamu"
+        ]
+      },
+      "bbc": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "bbc-alt-secondary": {
+        "_scripts": [
+          "Batk"
+        ]
+      },
+      "bbj": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "bci": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "be": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "bej": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "bem": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "bew": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "bez": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "bfd": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "bfq": {
+        "_scripts": [
+          "Taml"
+        ]
+      },
+      "bft": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "bft-alt-secondary": {
+        "_scripts": [
+          "Tibt"
+        ]
+      },
+      "bfy": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "bg": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "bgc": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "bgn": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "bgx": {
+        "_scripts": [
+          "Grek"
+        ]
+      },
+      "bhb": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "bhi": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "bho": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "bi": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "bik": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "bin": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "bjj": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "bjn": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "bjt": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "bkm": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "bku": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "bku-alt-secondary": {
+        "_scripts": [
+          "Buhd"
+        ]
+      },
+      "bla": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "blo": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "blt": {
+        "_scripts": [
+          "Tavt"
+        ]
+      },
+      "bm": {
+        "_scripts": [
+          "Latn",
+          "Nkoo"
+        ]
+      },
+      "bmq": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "bn": {
+        "_scripts": [
+          "Beng"
+        ]
+      },
+      "bo": {
+        "_scripts": [
+          "Tibt"
+        ]
+      },
+      "bpy": {
+        "_scripts": [
+          "Beng"
+        ]
+      },
+      "bqi": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "bqv": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "br": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "bra": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "brh": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "brh-alt-secondary": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "brx": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "bs": {
+        "_scripts": [
+          "Latn",
+          "Cyrl"
+        ]
+      },
+      "bsc": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "bsq": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "bsq-alt-secondary": {
+        "_scripts": [
+          "Bass"
+        ]
+      },
+      "bss": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "bto": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "btv": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "bua": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "buc": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "bug": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "bug-alt-secondary": {
+        "_scripts": [
+          "Bugi"
+        ]
+      },
+      "bum": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "bvb": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "byn": {
+        "_scripts": [
+          "Ethi"
+        ]
+      },
+      "byv": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "bze": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "bzx": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ca": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "cad": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "car": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "cay": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "cch": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ccp": {
+        "_scripts": [
+          "Cakm",
+          "Beng"
+        ]
+      },
+      "ccr": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ce": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "ceb": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "cgg": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ch": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "chk": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "chm": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "chn": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "cho": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "chp": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "chp-alt-secondary": {
+        "_scripts": [
+          "Cans"
+        ]
+      },
+      "chr": {
+        "_scripts": [
+          "Cher"
+        ]
+      },
+      "chy": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "cic": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "cja": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "cja-alt-secondary": {
+        "_scripts": [
+          "Cham"
+        ]
+      },
+      "cjm": {
+        "_scripts": [
+          "Cham"
+        ]
+      },
+      "cjm-alt-secondary": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "cjs": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "ckb": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "ckt": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "clc": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "co": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "cop-alt-secondary": {
+        "_scripts": [
+          "Copt",
+          "Arab",
+          "Grek"
+        ]
+      },
+      "cps": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "cr": {
+        "_scripts": [
+          "Cans",
+          "Latn"
+        ]
+      },
+      "crg": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "crh": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "crj": {
+        "_scripts": [
+          "Cans"
+        ]
+      },
+      "crj-alt-secondary": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "crk": {
+        "_scripts": [
+          "Cans"
+        ]
+      },
+      "crl": {
+        "_scripts": [
+          "Cans"
+        ]
+      },
+      "crl-alt-secondary": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "crm": {
+        "_scripts": [
+          "Cans"
+        ]
+      },
+      "crs": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "cs": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "csb": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "csw": {
+        "_scripts": [
+          "Cans"
+        ]
+      },
+      "ctd": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "cu": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "cv": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "cy": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "da": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "dak": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "dar": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "dav": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "dcc": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "de": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "de-alt-secondary": {
+        "_scripts": [
+          "Runr"
+        ]
+      },
+      "del": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "den": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "den-alt-secondary": {
+        "_scripts": [
+          "Cans"
+        ]
+      },
+      "dgr": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "din": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "dje": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "dng": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "dnj": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "doi": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "doi-alt-secondary": {
+        "_scripts": [
+          "Arab",
+          "Takr"
+        ]
+      },
+      "dsb": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "dtm": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "dtp": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "dty": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "dua": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "dum": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "dv": {
+        "_scripts": [
+          "Thaa"
+        ]
+      },
+      "dyo": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "dyo-alt-secondary": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "dyu": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "dz": {
+        "_scripts": [
+          "Tibt"
+        ]
+      },
+      "ebu": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ecy": {
+        "_scripts": [
+          "Cprt"
+        ]
+      },
+      "ee": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "efi": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "egl": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "egy": {
+        "_scripts": [
+          "Egyp"
+        ]
+      },
+      "eka": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "eky": {
+        "_scripts": [
+          "Kali"
+        ]
+      },
+      "el": {
+        "_scripts": [
+          "Grek"
+        ]
+      },
+      "en": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "en-alt-secondary": {
+        "_scripts": [
+          "Dsrt",
+          "Shaw"
+        ]
+      },
+      "enm": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "eo": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "es": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "esu": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "et": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ett-alt-secondary": {
+        "_scripts": [
+          "Ital",
+          "Latn"
+        ]
+      },
+      "eu": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "evn": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "ewo": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ext": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "fa": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "fan": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ff": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ff-alt-secondary": {
+        "_scripts": [
+          "Adlm"
+        ]
+      },
+      "ffm": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "fi": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "fia": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "fil": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "fil-alt-secondary": {
+        "_scripts": [
+          "Tglg"
+        ]
+      },
+      "fit": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "fj": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "fo": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "fon": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "fr": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "fr-alt-secondary": {
+        "_scripts": [
+          "Dupl"
+        ]
+      },
+      "frc": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "frm": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "fro": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "frp": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "frr": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "frs": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "fud": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "fuq": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "fur": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "fuv": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "fvr": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "fy": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ga": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "gaa": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "gag": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "gag-alt-secondary": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "gan": {
+        "_scripts": [
+          "Hans"
+        ]
+      },
+      "gay": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "gba": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "gbm": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "gbz": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "gcr": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "gd": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "gez": {
+        "_scripts": [
+          "Ethi"
+        ]
+      },
+      "gil": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "gjk": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "gju": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "gl": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "gld": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "glk": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "gmh": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "gmy": {
+        "_scripts": [
+          "Linb"
+        ]
+      },
+      "gn": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "goh": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "gon": {
+        "_scripts": [
+          "Deva",
+          "Telu"
+        ]
+      },
+      "gor": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "gos": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "got": {
+        "_scripts": [
+          "Goth"
+        ]
+      },
+      "grb": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "grc": {
+        "_scripts": [
+          "Grek"
+        ]
+      },
+      "grr": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "grr-alt-secondary": {
+        "_scripts": [
+          "Tfng"
+        ]
+      },
+      "grt": {
+        "_scripts": [
+          "Beng"
+        ]
+      },
+      "gsw": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "gu": {
+        "_scripts": [
+          "Gujr"
+        ]
+      },
+      "gub": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "guc": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "gur": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "guz": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "gv": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "gvr": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "gwi": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ha": {
+        "_scripts": [
+          "Latn",
+          "Arab"
+        ]
+      },
+      "hai": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "hak": {
+        "_scripts": [
+          "Hans"
+        ]
+      },
+      "hak-alt-secondary": {
+        "_scripts": [
+          "Hant"
+        ]
+      },
+      "haw": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "haz": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "he": {
+        "_scripts": [
+          "Hebr"
+        ]
+      },
+      "hi": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "hi-alt-secondary": {
+        "_scripts": [
+          "Latn",
+          "Mahj"
+        ]
+      },
+      "hif": {
+        "_scripts": [
+          "Deva",
+          "Latn"
+        ]
+      },
+      "hil": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "hit": {
+        "_scripts": [
+          "Xsux"
+        ]
+      },
+      "hmd": {
+        "_scripts": [
+          "Plrd"
+        ]
+      },
+      "hmn": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "hmn-alt-secondary": {
+        "_scripts": [
+          "Hmng"
+        ]
+      },
+      "hnd": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "hne": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "hnj": {
+        "_scripts": [
+          "Laoo"
+        ]
+      },
+      "hnn": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "hnn-alt-secondary": {
+        "_scripts": [
+          "Hano"
+        ]
+      },
+      "hno": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "ho": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "hoc": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "hoc-alt-secondary": {
+        "_scripts": [
+          "Wara"
+        ]
+      },
+      "hoj": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "hop": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "hr": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "hsb": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "hsn": {
+        "_scripts": [
+          "Hans"
+        ]
+      },
+      "ht": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "hu": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "hup": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "hur": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "hy": {
+        "_scripts": [
+          "Armn"
+        ]
+      },
+      "hz": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ia": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "iba": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ibb": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "id": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "id-alt-secondary": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "ie": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ife": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ig": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ii": {
+        "_scripts": [
+          "Yiii"
+        ]
+      },
+      "ii-alt-secondary": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ik": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ikt": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ilo": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "inh": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "inh-alt-secondary": {
+        "_scripts": [
+          "Arab",
+          "Latn"
+        ]
+      },
+      "io": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "is": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "it": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "iu": {
+        "_scripts": [
+          "Cans",
+          "Latn"
+        ]
+      },
+      "izh": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ja": {
+        "_scripts": [
+          "Jpan"
+        ]
+      },
+      "jam": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "jbo": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "jgo": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "jmc": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "jml": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "jpr": {
+        "_scripts": [
+          "Hebr"
+        ]
+      },
+      "jrb": {
+        "_scripts": [
+          "Hebr"
+        ]
+      },
+      "jut": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "jv": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "jv-alt-secondary": {
+        "_scripts": [
+          "Java"
+        ]
+      },
+      "ka": {
+        "_scripts": [
+          "Geor"
+        ]
+      },
+      "kaa": {
+        "_scripts": [
+          "Cyrl",
+          "Latn"
+        ]
+      },
+      "kab": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "kac": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "kaj": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "kam": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "kao": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "kaw": {
+        "_scripts": [
+          "Bali"
+        ]
+      },
+      "kaw-alt-secondary": {
+        "_scripts": [
+          "Java",
+          "Kawi"
+        ]
+      },
+      "kbd": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "kca": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "kcg": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "kck": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "kde": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "kdt": {
+        "_scripts": [
+          "Thai"
+        ]
+      },
+      "kea": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ken": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "kfo": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "kfr": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "kfy": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "kg": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "kge": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "kgp": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "kha": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "kha-alt-secondary": {
+        "_scripts": [
+          "Beng"
+        ]
+      },
+      "khb": {
+        "_scripts": [
+          "Talu"
+        ]
+      },
+      "khn": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "khq": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "kht": {
+        "_scripts": [
+          "Mymr"
+        ]
+      },
+      "khw": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "ki": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "kiu": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "kj": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "kjg": {
+        "_scripts": [
+          "Laoo"
+        ]
+      },
+      "kjg-alt-secondary": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "kjh": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "kk": {
+        "_scripts": [
+          "Cyrl",
+          "Arab"
+        ]
+      },
+      "kkj": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "kl": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "kln": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "km": {
+        "_scripts": [
+          "Khmr"
+        ]
+      },
+      "kmb": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "kn": {
+        "_scripts": [
+          "Knda"
+        ]
+      },
+      "knf": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "knn": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "ko": {
+        "_scripts": [
+          "Kore"
+        ]
+      },
+      "koi": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "kok": {
+        "_scripts": [
+          "Deva",
+          "Latn"
+        ]
+      },
+      "kos": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "kpe": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "kpy": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "kr": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "krc": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "kri": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "krj": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "krl": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "kro": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "kru": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "ks": {
+        "_scripts": [
+          "Arab",
+          "Deva"
+        ]
+      },
+      "ksb": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ksf": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ksh": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ku": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ku-alt-secondary": {
+        "_scripts": [
+          "Arab",
+          "Cyrl"
+        ]
+      },
+      "kum": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "kut": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "kv": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "kv-alt-secondary": {
+        "_scripts": [
+          "Perm"
+        ]
+      },
+      "kvr": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "kvx": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "kw": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "kwk": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "kxm": {
+        "_scripts": [
+          "Thai"
+        ]
+      },
+      "kxp": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "kxv": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "kxv-alt-secondary": {
+        "_scripts": [
+          "Deva",
+          "Orya",
+          "Telu"
+        ]
+      },
+      "ky": {
+        "_scripts": [
+          "Cyrl",
+          "Arab",
+          "Latn"
+        ]
+      },
+      "kyu": {
+        "_scripts": [
+          "Kali"
+        ]
+      },
+      "la": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "lab": {
+        "_scripts": [
+          "Lina"
+        ]
+      },
+      "lad": {
+        "_scripts": [
+          "Hebr"
+        ]
+      },
+      "lag": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "lah": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "laj": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "lam": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "lb": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "lbe": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "lbw": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "lcp": {
+        "_scripts": [
+          "Thai"
+        ]
+      },
+      "len": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "lep": {
+        "_scripts": [
+          "Lepc"
+        ]
+      },
+      "lez": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "lez-alt-secondary": {
+        "_scripts": [
+          "Aghb"
+        ]
+      },
+      "lfn-alt-secondary": {
+        "_scripts": [
+          "Latn",
+          "Cyrl"
+        ]
+      },
+      "lg": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "li": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "lif": {
+        "_scripts": [
+          "Deva",
+          "Limb"
+        ]
+      },
+      "lij": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "lil": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "lis": {
+        "_scripts": [
+          "Lisu"
+        ]
+      },
+      "liv": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ljp": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "lki": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "lkt": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "lld": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "lmn": {
+        "_scripts": [
+          "Telu"
+        ]
+      },
+      "lmo": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ln": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "lo": {
+        "_scripts": [
+          "Laoo"
+        ]
+      },
+      "lol": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "loz": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "lrc": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "lt": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ltg": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "lu": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "lua": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "lui": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "lun": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "luo": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "lus": {
+        "_scripts": [
+          "Beng"
+        ]
+      },
+      "lut": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "luy": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "luz": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "lv": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "lwl": {
+        "_scripts": [
+          "Thai"
+        ]
+      },
+      "lzh": {
+        "_scripts": [
+          "Hant"
+        ]
+      },
+      "lzz": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "lzz-alt-secondary": {
+        "_scripts": [
+          "Geor"
+        ]
+      },
+      "mad": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "maf": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "mag": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "mai": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "mai-alt-secondary": {
+        "_scripts": [
+          "Tirh"
+        ]
+      },
+      "mak": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "mak-alt-secondary": {
+        "_scripts": [
+          "Bugi"
+        ]
+      },
+      "man": {
+        "_scripts": [
+          "Latn",
+          "Nkoo"
+        ]
+      },
+      "mas": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "maz": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "mdf": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "mdh": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "mdr": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "mdr-alt-secondary": {
+        "_scripts": [
+          "Bugi"
+        ]
+      },
+      "mdt": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "men": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "men-alt-secondary": {
+        "_scripts": [
+          "Mend"
+        ]
+      },
+      "mer": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "mey": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "mey-alt-secondary": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "mfa": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "mfe": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "mfv": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "mg": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "mgh": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "mgo": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "mgp": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "mgy": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "mh": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "mhn": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "mi": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "mic": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "min": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "mk": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "ml": {
+        "_scripts": [
+          "Mlym"
+        ]
+      },
+      "mls": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "mn": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "mn-alt-secondary": {
+        "_scripts": [
+          "Mong",
+          "Phag"
+        ]
+      },
+      "mnc": {
+        "_scripts": [
+          "Mong"
+        ]
+      },
+      "mni": {
+        "_scripts": [
+          "Beng"
+        ]
+      },
+      "mni-alt-secondary": {
+        "_scripts": [
+          "Mtei"
+        ]
+      },
+      "mns": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "mnw": {
+        "_scripts": [
+          "Mymr"
+        ]
+      },
+      "moe": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "moh": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "mos": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "mr": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "mr-alt-secondary": {
+        "_scripts": [
+          "Modi"
+        ]
+      },
+      "mrd": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "mrj": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "mro": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "mro-alt-secondary": {
+        "_scripts": [
+          "Mroo"
+        ]
+      },
+      "ms": {
+        "_scripts": [
+          "Latn",
+          "Arab"
+        ]
+      },
+      "mt": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "mtr": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "mua": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "mus": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "mvy": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "mwk": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "mwl": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "mwr": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "mwv": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "mww": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "mww-alt-secondary": {
+        "_scripts": [
+          "Hmnp"
+        ]
+      },
+      "mxc": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "my": {
+        "_scripts": [
+          "Mymr"
+        ]
+      },
+      "myv": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "myx": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "myz": {
+        "_scripts": [
+          "Mand"
+        ]
+      },
+      "mzb": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "mzb-alt-secondary": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "mzn": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "na": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "nan": {
+        "_scripts": [
+          "Hans"
+        ]
+      },
+      "nan-alt-secondary": {
+        "_scripts": [
+          "Hant"
+        ]
+      },
+      "nap": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "naq": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "nb": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "nch": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "nd": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ndc": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "nds": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ne": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "new": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "ng": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ngl": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "nhe": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "nhw": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "nia": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "nij": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "niu": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "njo": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "nl": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "nmg": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "nn": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "nnh": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "no": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "nod": {
+        "_scripts": [
+          "Lana"
+        ]
+      },
+      "noe": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "nog": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "non": {
+        "_scripts": [
+          "Runr"
+        ]
+      },
+      "nov": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "nqo": {
+        "_scripts": [
+          "Nkoo"
+        ]
+      },
+      "nr": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "nsk": {
+        "_scripts": [
+          "Cans"
+        ]
+      },
+      "nsk-alt-secondary": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "nso": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "nus": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "nv": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "nxq": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ny": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "nym": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "nyn": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "nyo": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "nzi": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "oc": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "oj": {
+        "_scripts": [
+          "Cans"
+        ]
+      },
+      "oj-alt-secondary": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ojs": {
+        "_scripts": [
+          "Cans"
+        ]
+      },
+      "ojw": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "oka": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "om": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "om-alt-secondary": {
+        "_scripts": [
+          "Ethi"
+        ]
+      },
+      "or": {
+        "_scripts": [
+          "Orya"
+        ]
+      },
+      "os": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "osa": {
+        "_scripts": [
+          "Osge"
+        ]
+      },
+      "osa-alt-secondary": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "osc-alt-secondary": {
+        "_scripts": [
+          "Ital",
+          "Latn"
+        ]
+      },
+      "otk": {
+        "_scripts": [
+          "Orkh"
+        ]
+      },
+      "pa": {
+        "_scripts": [
+          "Guru"
+        ]
+      },
+      "pa-alt-secondary": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "pag": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "pal-alt-secondary": {
+        "_scripts": [
+          "Phli",
+          "Phlp"
+        ]
+      },
+      "pam": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "pap": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "pau": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "pcd": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "pcm": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "pdc": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "pdt": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "peo": {
+        "_scripts": [
+          "Xpeo"
+        ]
+      },
+      "pfl": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "phn": {
+        "_scripts": [
+          "Phnx"
+        ]
+      },
+      "pi": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "pi-alt-secondary": {
+        "_scripts": [
+          "Deva",
+          "Mymr",
+          "Sinh",
+          "Thai"
+        ]
+      },
+      "pis": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "pko": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "pl": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "pms": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "pnt": {
+        "_scripts": [
+          "Grek"
+        ]
+      },
+      "pnt-alt-secondary": {
+        "_scripts": [
+          "Cyrl",
+          "Latn"
+        ]
+      },
+      "pon": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ppl": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "pqm": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "prd": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "prg": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "pro": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ps": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "pt": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "puu": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "qu": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "quc": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "qug": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "raj": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "rap": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "rar": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "rcf": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "rej": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "rej-alt-secondary": {
+        "_scripts": [
+          "Rjng"
+        ]
+      },
+      "rgn": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "rhg": {
+        "_scripts": [
+          "Rohg"
+        ]
+      },
+      "rhg-alt-secondary": {
+        "_scripts": [
+          "Arab",
+          "Latn"
+        ]
+      },
+      "ria": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "rif": {
+        "_scripts": [
+          "Latn",
+          "Tfng"
+        ]
+      },
+      "rjs": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "rkt": {
+        "_scripts": [
+          "Beng"
+        ]
+      },
+      "rm": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "rmf": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "rmo": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "rmt": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "rmu": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "rn": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "rng": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ro": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ro-alt-secondary": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "rob": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "rof": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "rom": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "rom-alt-secondary": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "rtm": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ru": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "rue": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "rug": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "rup": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "rw": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "rwk": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ryu": {
+        "_scripts": [
+          "Kana"
+        ]
+      },
+      "sa-alt-secondary": {
+        "_scripts": [
+          "Deva",
+          "Gran",
+          "Shrd",
+          "Sidd",
+          "Sinh"
+        ]
+      },
+      "sad": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "saf": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "sah": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "sam-alt-secondary": {
+        "_scripts": [
+          "Samr",
+          "Hebr"
+        ]
+      },
+      "saq": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "sas": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "sat": {
+        "_scripts": [
+          "Olck"
+        ]
+      },
+      "sat-alt-secondary": {
+        "_scripts": [
+          "Beng",
+          "Deva",
+          "Latn",
+          "Orya"
+        ]
+      },
+      "saz": {
+        "_scripts": [
+          "Saur"
+        ]
+      },
+      "sbp": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "sc": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "sck": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "scn": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "sco": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "scs": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "sd": {
+        "_scripts": [
+          "Arab",
+          "Deva"
+        ]
+      },
+      "sd-alt-secondary": {
+        "_scripts": [
+          "Khoj",
+          "Sind"
+        ]
+      },
+      "sdc": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "sdh": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "se": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "se-alt-secondary": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "see": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "sef": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "seh": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "sei": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "sel": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "ses": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "sg": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "sga": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "sga-alt-secondary": {
+        "_scripts": [
+          "Ogam"
+        ]
+      },
+      "sgs": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "shi": {
+        "_scripts": [
+          "Tfng",
+          "Latn",
+          "Arab"
+        ]
+      },
+      "shn": {
+        "_scripts": [
+          "Mymr"
+        ]
+      },
+      "si": {
+        "_scripts": [
+          "Sinh"
+        ]
+      },
+      "sid": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "sk": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "skr": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "sl": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "sli": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "sly": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "sm": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "sma": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "smj": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "smn": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "smp": {
+        "_scripts": [
+          "Samr"
+        ]
+      },
+      "sms": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "sn": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "snf": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "snk": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "so": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "so-alt-secondary": {
+        "_scripts": [
+          "Arab",
+          "Osma"
+        ]
+      },
+      "sou": {
+        "_scripts": [
+          "Thai"
+        ]
+      },
+      "sq": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "sq-alt-secondary": {
+        "_scripts": [
+          "Elba"
+        ]
+      },
+      "sr": {
+        "_scripts": [
+          "Cyrl",
+          "Latn"
+        ]
+      },
+      "srb": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "srb-alt-secondary": {
+        "_scripts": [
+          "Sora"
+        ]
+      },
+      "srn": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "srr": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "srx": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "ss": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ssy": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "st": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "stq": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "stu": {
+        "_scripts": [
+          "Lana"
+        ]
+      },
+      "stu-alt-secondary": {
+        "_scripts": [
+          "Tale"
+        ]
+      },
+      "su": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "su-alt-secondary": {
+        "_scripts": [
+          "Sund"
+        ]
+      },
+      "suk": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "sus": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "sus-alt-secondary": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "suz": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "suz-alt-secondary": {
+        "_scripts": [
+          "Sunu"
+        ]
+      },
+      "sv": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "sw": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "swb": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "swb-alt-secondary": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "swg": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "swv": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "sxn": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "syi": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "syl": {
+        "_scripts": [
+          "Beng"
+        ]
+      },
+      "syl-alt-secondary": {
+        "_scripts": [
+          "Sylo"
+        ]
+      },
+      "syr": {
+        "_scripts": [
+          "Syrc"
+        ]
+      },
+      "szl": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ta": {
+        "_scripts": [
+          "Taml"
+        ]
+      },
+      "tab": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "taj": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "taj-alt-secondary": {
+        "_scripts": [
+          "Tibt"
+        ]
+      },
+      "tbw": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "tbw-alt-secondary": {
+        "_scripts": [
+          "Tagb"
+        ]
+      },
+      "tcy": {
+        "_scripts": [
+          "Knda"
+        ]
+      },
+      "tdd": {
+        "_scripts": [
+          "Tale"
+        ]
+      },
+      "tdg": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "tdg-alt-secondary": {
+        "_scripts": [
+          "Tibt"
+        ]
+      },
+      "tdh": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "te": {
+        "_scripts": [
+          "Telu"
+        ]
+      },
+      "tem": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "teo": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ter": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "tet": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "tg": {
+        "_scripts": [
+          "Cyrl",
+          "Arab",
+          "Latn"
+        ]
+      },
+      "th": {
+        "_scripts": [
+          "Thai"
+        ]
+      },
+      "thl": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "thq": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "thr": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "ti": {
+        "_scripts": [
+          "Ethi"
+        ]
+      },
+      "tig": {
+        "_scripts": [
+          "Ethi"
+        ]
+      },
+      "tiv": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "tk": {
+        "_scripts": [
+          "Latn",
+          "Arab",
+          "Cyrl"
+        ]
+      },
+      "tkl": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "tkr": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "tkr-alt-secondary": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "tkt": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "tli": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "tly": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "tly-alt-secondary": {
+        "_scripts": [
+          "Arab",
+          "Cyrl"
+        ]
+      },
+      "tmh": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "tn": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "tnr": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "to": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "tog": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "tok": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "tpi": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "tr": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "tr-alt-secondary": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "tru": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "tru-alt-secondary": {
+        "_scripts": [
+          "Syrc"
+        ]
+      },
+      "trv": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "trw": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "ts": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "tsd": {
+        "_scripts": [
+          "Grek"
+        ]
+      },
+      "tsg": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "tsi": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "tsj": {
+        "_scripts": [
+          "Tibt"
+        ]
+      },
+      "tt": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "ttj": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "tts": {
+        "_scripts": [
+          "Thai"
+        ]
+      },
+      "ttt": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ttt-alt-secondary": {
+        "_scripts": [
+          "Arab",
+          "Cyrl"
+        ]
+      },
+      "tum": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "tvl": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "twq": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ty": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "tyv": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "tzm": {
+        "_scripts": [
+          "Latn",
+          "Tfng"
+        ]
+      },
+      "ude": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "udm": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "udm-alt-secondary": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ug": {
+        "_scripts": [
+          "Arab",
+          "Cyrl"
+        ]
+      },
+      "ug-alt-secondary": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "uga": {
+        "_scripts": [
+          "Ugar"
+        ]
+      },
+      "uk": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "uli": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "umb": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "unr": {
+        "_scripts": [
+          "Beng",
+          "Deva"
+        ]
+      },
+      "unx": {
+        "_scripts": [
+          "Beng",
+          "Deva"
+        ]
+      },
+      "ur": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "uz": {
+        "_scripts": [
+          "Latn",
+          "Cyrl",
+          "Arab"
+        ]
+      },
+      "vai": {
+        "_scripts": [
+          "Vaii",
+          "Latn"
+        ]
+      },
+      "ve": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "vec": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "vep": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "vi": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "vi-alt-secondary": {
+        "_scripts": [
+          "Hani"
+        ]
+      },
+      "vic": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "vls": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "vmf": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "vmw": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "vo": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "vot": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "vro": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "vun": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "wa": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "wae": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "wal": {
+        "_scripts": [
+          "Ethi"
+        ]
+      },
+      "war": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "was": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "wbp": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "wbq": {
+        "_scripts": [
+          "Telu"
+        ]
+      },
+      "wbr": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "wls": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "wni": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "wo": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "wo-alt-secondary": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "wtm": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "wuu": {
+        "_scripts": [
+          "Hans"
+        ]
+      },
+      "xal": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "xav": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "xcr": {
+        "_scripts": [
+          "Cari"
+        ]
+      },
+      "xh": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "xlc": {
+        "_scripts": [
+          "Lyci"
+        ]
+      },
+      "xld": {
+        "_scripts": [
+          "Lydi"
+        ]
+      },
+      "xmf": {
+        "_scripts": [
+          "Geor"
+        ]
+      },
+      "xmn": {
+        "_scripts": [
+          "Mani"
+        ]
+      },
+      "xmr": {
+        "_scripts": [
+          "Merc"
+        ]
+      },
+      "xna": {
+        "_scripts": [
+          "Narb"
+        ]
+      },
+      "xnr": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "xog": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "xpr": {
+        "_scripts": [
+          "Prti"
+        ]
+      },
+      "xsa": {
+        "_scripts": [
+          "Sarb"
+        ]
+      },
+      "xsr": {
+        "_scripts": [
+          "Deva"
+        ]
+      },
+      "xum-alt-secondary": {
+        "_scripts": [
+          "Latn",
+          "Ital"
+        ]
+      },
+      "yao": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "yap": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "yav": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "ybb": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "yi": {
+        "_scripts": [
+          "Hebr"
+        ]
+      },
+      "yo": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "yrk": {
+        "_scripts": [
+          "Cyrl"
+        ]
+      },
+      "yrl": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "yua": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "yue": {
+        "_scripts": [
+          "Hant"
+        ]
+      },
+      "yue-alt-secondary": {
+        "_scripts": [
+          "Hans"
+        ]
+      },
+      "za": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "za-alt-secondary": {
+        "_scripts": [
+          "Hans"
+        ]
+      },
+      "zag": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "zap": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "zdj": {
+        "_scripts": [
+          "Arab"
+        ]
+      },
+      "zea": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "zen": {
+        "_scripts": [
+          "Tfng"
+        ]
+      },
+      "zgh": {
+        "_scripts": [
+          "Tfng"
+        ]
+      },
+      "zh": {
+        "_scripts": [
+          "Hans"
+        ]
+      },
+      "zh-alt-secondary": {
+        "_scripts": [
+          "Hant",
+          "Bopo",
+          "Latn",
+          "Phag"
+        ]
+      },
+      "zmi": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "zu": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "zun": {
+        "_scripts": [
+          "Latn"
+        ]
+      },
+      "zza": {
+        "_scripts": [
+          "Latn"
+        ]
+      }
+    }
+  }
+}

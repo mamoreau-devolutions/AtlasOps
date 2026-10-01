@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.ReleaseGateProvisioning;
+
+using AtlasOps.Features;
+
+public interface IReleaseGateProvisioningRepository : IAtlasOpsCapabilityRepository<ReleaseGateProvisioningItem>;

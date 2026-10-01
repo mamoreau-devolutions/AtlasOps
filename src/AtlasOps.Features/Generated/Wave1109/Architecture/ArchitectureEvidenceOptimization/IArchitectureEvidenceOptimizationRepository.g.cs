@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Architecture.ArchitectureEvidenceOptimization;
+
+using AtlasOps.Features;
+
+public interface IArchitectureEvidenceOptimizationRepository : IAtlasOpsCapabilityRepository<ArchitectureEvidenceOptimizationItem>;

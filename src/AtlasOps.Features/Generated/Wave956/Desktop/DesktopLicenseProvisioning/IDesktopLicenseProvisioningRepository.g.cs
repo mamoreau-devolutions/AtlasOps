@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Desktop.DesktopLicenseProvisioning;
+
+using AtlasOps.Features;
+
+public interface IDesktopLicenseProvisioningRepository : IAtlasOpsCapabilityRepository<DesktopLicenseProvisioningItem>;

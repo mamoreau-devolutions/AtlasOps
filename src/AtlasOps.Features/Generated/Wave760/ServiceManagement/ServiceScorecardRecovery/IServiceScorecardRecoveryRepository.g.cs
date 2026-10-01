@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ServiceScorecardRecovery;
+
+using AtlasOps.Features;
+
+public interface IServiceScorecardRecoveryRepository : IAtlasOpsCapabilityRepository<ServiceScorecardRecoveryItem>;

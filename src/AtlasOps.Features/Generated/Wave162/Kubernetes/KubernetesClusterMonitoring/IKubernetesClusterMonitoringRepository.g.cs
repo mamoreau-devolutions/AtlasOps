@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Kubernetes.KubernetesClusterMonitoring;
+
+using AtlasOps.Features;
+
+public interface IKubernetesClusterMonitoringRepository : IAtlasOpsCapabilityRepository<KubernetesClusterMonitoringItem>;

@@ -1,0 +1,8 @@
+<UserControl
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AtlasOps.Operations.Avalonia"
+    x:Class="AtlasOps.Operations.Avalonia.OperationsCommandCenterView"
+    x:DataType="local:OperationsCommandCenterViewModel">
+    <local:OperationsWorkbenchView />
+</UserControl>

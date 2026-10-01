@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Edge.EdgeDeploymentOptimization;
+
+using AtlasOps.Features;
+
+public interface IEdgeDeploymentOptimizationRepository : IAtlasOpsCapabilityRepository<EdgeDeploymentOptimizationItem>;

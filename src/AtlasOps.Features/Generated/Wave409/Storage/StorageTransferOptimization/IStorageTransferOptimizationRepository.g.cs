@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Storage.StorageTransferOptimization;
+
+using AtlasOps.Features;
+
+public interface IStorageTransferOptimizationRepository : IAtlasOpsCapabilityRepository<StorageTransferOptimizationItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Kubernetes.KubernetesWorkloadMonitoring;
+
+using AtlasOps.Features;
+
+public interface IKubernetesWorkloadMonitoringRepository : IAtlasOpsCapabilityRepository<KubernetesWorkloadMonitoringItem>;

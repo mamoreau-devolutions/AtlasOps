@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>preview</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Google.Apis" />
+    <PackageReference Include="Google.GenAI" />
+    <PackageReference Include="MailKit" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" />
+    <PackageReference Include="Microsoft.Graph" />
+    <PackageReference Include="Microsoft.Graph.Core" />
+    <PackageReference Include="Microsoft.Kiota.Abstractions" />
+    <PackageReference Include="Microsoft.Kiota.Bundle" />
+    <PackageReference Include="ModelContextProtocol" />
+    <PackageReference Include="Octokit" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AtlasOps.Connectors.Contracts\AtlasOps.Connectors.Contracts.csproj" />
+  </ItemGroup>
+</Project>

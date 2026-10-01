@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Desktop.DesktopLicenseGovernance;
+
+using AtlasOps.Features;
+
+public interface IDesktopLicenseGovernanceRepository : IAtlasOpsCapabilityRepository<DesktopLicenseGovernanceItem>;

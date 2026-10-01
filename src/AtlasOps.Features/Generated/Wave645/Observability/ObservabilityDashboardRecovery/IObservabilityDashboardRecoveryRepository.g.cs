@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Observability.ObservabilityDashboardRecovery;
+
+using AtlasOps.Features;
+
+public interface IObservabilityDashboardRecoveryRepository : IAtlasOpsCapabilityRepository<ObservabilityDashboardRecoveryItem>;

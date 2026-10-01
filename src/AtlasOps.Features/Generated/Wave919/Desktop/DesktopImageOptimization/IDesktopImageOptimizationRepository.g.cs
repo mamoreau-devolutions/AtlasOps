@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Desktop.DesktopImageOptimization;
+
+using AtlasOps.Features;
+
+public interface IDesktopImageOptimizationRepository : IAtlasOpsCapabilityRepository<DesktopImageOptimizationItem>;

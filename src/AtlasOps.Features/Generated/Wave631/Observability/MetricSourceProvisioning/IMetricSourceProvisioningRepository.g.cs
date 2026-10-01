@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Observability.MetricSourceProvisioning;
+
+using AtlasOps.Features;
+
+public interface IMetricSourceProvisioningRepository : IAtlasOpsCapabilityRepository<MetricSourceProvisioningItem>;

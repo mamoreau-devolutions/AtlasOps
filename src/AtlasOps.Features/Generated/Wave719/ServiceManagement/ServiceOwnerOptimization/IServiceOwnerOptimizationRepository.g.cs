@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ServiceOwnerOptimization;
+
+using AtlasOps.Features;
+
+public interface IServiceOwnerOptimizationRepository : IAtlasOpsCapabilityRepository<ServiceOwnerOptimizationItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Observability.ObservabilityExportRecovery;
+
+using AtlasOps.Features;
+
+public interface IObservabilityExportRecoveryRepository : IAtlasOpsCapabilityRepository<ObservabilityExportRecoveryItem>;

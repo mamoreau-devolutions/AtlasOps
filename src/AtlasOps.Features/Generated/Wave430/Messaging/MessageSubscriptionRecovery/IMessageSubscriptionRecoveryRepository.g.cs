@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Messaging.MessageSubscriptionRecovery;
+
+using AtlasOps.Features;
+
+public interface IMessageSubscriptionRecoveryRepository : IAtlasOpsCapabilityRepository<MessageSubscriptionRecoveryItem>;

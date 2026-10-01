@@ -1,0 +1,13 @@
+{
+  "name": "cldr-localenames-full",
+  "version": "48.2.0",
+  "dependencies": {
+    "cldr-core": "48.2.0"
+  },
+  "main": "main/**/*.json",
+  "ignore": [
+    ".gitattributes",
+    "README.md"
+  ],
+  "license": "Unicode-3.0"
+}

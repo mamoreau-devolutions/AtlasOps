@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Storage.BlockVolumeOptimization;
+
+using AtlasOps.Features;
+
+public interface IBlockVolumeOptimizationRepository : IAtlasOpsCapabilityRepository<BlockVolumeOptimizationItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Database.NoSqlDatabaseOptimization;
+
+using AtlasOps.Features;
+
+public interface INoSqlDatabaseOptimizationRepository : IAtlasOpsCapabilityRepository<NoSqlDatabaseOptimizationItem>;

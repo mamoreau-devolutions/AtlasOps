@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.SourceRepositoryOptimization;
+
+using AtlasOps.Features;
+
+public interface ISourceRepositoryOptimizationRepository : IAtlasOpsCapabilityRepository<SourceRepositoryOptimizationItem>;

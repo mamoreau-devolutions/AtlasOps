@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Cloud.CloudFunctionGovernance;
+
+using AtlasOps.Features;
+
+public interface ICloudFunctionGovernanceRepository : IAtlasOpsCapabilityRepository<CloudFunctionGovernanceItem>;

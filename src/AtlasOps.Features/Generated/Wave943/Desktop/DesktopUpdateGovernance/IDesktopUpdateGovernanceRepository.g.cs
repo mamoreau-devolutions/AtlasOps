@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Desktop.DesktopUpdateGovernance;
+
+using AtlasOps.Features;
+
+public interface IDesktopUpdateGovernanceRepository : IAtlasOpsCapabilityRepository<DesktopUpdateGovernanceItem>;

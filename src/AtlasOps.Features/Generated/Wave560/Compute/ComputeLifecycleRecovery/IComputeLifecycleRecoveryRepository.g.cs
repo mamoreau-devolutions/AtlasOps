@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.ComputeLifecycleRecovery;
+
+using AtlasOps.Features;
+
+public interface IComputeLifecycleRecoveryRepository : IAtlasOpsCapabilityRepository<ComputeLifecycleRecoveryItem>;

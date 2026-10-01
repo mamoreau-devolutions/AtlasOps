@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ServiceCatalogProvisioning;
+
+using AtlasOps.Features;
+
+public interface IServiceCatalogProvisioningRepository : IAtlasOpsCapabilityRepository<ServiceCatalogProvisioningItem>;

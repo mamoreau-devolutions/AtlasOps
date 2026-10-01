@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.ComputeScaleSetProvisioning;
+
+using AtlasOps.Features;
+
+public interface IComputeScaleSetProvisioningRepository : IAtlasOpsCapabilityRepository<ComputeScaleSetProvisioningItem>;

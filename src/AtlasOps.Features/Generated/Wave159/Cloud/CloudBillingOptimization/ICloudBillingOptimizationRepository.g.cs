@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Cloud.CloudBillingOptimization;
+
+using AtlasOps.Features;
+
+public interface ICloudBillingOptimizationRepository : IAtlasOpsCapabilityRepository<CloudBillingOptimizationItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Storage.ObjectBucketProvisioning;
+
+using AtlasOps.Features;
+
+public interface IObjectBucketProvisioningRepository : IAtlasOpsCapabilityRepository<ObjectBucketProvisioningItem>;

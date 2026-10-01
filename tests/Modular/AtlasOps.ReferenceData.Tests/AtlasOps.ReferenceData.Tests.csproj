@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>preview</LangVersion>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="MSTest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\src\Modular\Modules\Geography\AtlasOps.Modules.Geography.Core\AtlasOps.Modules.Geography.Core.csproj" />
+    <ProjectReference Include="..\..\..\src\Modular\Modules\Geospatial\AtlasOps.Modules.Geospatial.Core\AtlasOps.Modules.Geospatial.Core.csproj" />
+    <ProjectReference Include="..\..\..\src\Modular\Modules\Lifecycle\AtlasOps.Modules.Lifecycle.Core\AtlasOps.Modules.Lifecycle.Core.csproj" />
+  </ItemGroup>
+</Project>

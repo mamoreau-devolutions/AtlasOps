@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ServiceReviewGovernance;
+
+using AtlasOps.Features;
+
+public interface IServiceReviewGovernanceRepository : IAtlasOpsCapabilityRepository<ServiceReviewGovernanceItem>;

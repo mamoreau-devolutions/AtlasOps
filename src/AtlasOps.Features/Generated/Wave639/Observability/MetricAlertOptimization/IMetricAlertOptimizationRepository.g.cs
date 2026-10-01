@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Observability.MetricAlertOptimization;
+
+using AtlasOps.Features;
+
+public interface IMetricAlertOptimizationRepository : IAtlasOpsCapabilityRepository<MetricAlertOptimizationItem>;

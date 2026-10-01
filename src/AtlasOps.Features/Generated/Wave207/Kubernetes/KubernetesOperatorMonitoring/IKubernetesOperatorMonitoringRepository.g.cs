@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Kubernetes.KubernetesOperatorMonitoring;
+
+using AtlasOps.Features;
+
+public interface IKubernetesOperatorMonitoringRepository : IAtlasOpsCapabilityRepository<KubernetesOperatorMonitoringItem>;

@@ -1,0 +1,45 @@
+<views:NavigationRegion
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:core="clr-namespace:AtlasOps.Core;assembly=AtlasOps.Core"
+    xmlns:viewModels="clr-namespace:AtlasOps.App.ViewModels"
+    xmlns:views="clr-namespace:AtlasOps.App.Views"
+    x:Class="AtlasOps.App.Views.NavigationRegion"
+    x:DataType="viewModels:MainViewModel">
+    <Grid RowDefinitions="Auto,*,Auto" Margin="12">
+        <TextBlock Text="NAVIGATION"
+                   Margin="10,4,0,12"
+                   FontSize="11"
+                   FontWeight="SemiBold"
+                   Foreground="#788BA8" />
+        <ListBox Grid.Row="1"
+                 ItemsSource="{Binding ModelDescriptors}"
+                 SelectedItem="{Binding SelectedModelDescriptor, Mode=TwoWay}"
+                 Background="Transparent">
+            <ListBox.ItemTemplate>
+                <DataTemplate x:DataType="core:AtlasOpsModelDescriptor">
+                    <Grid Margin="3,6" ColumnDefinitions="*,Auto">
+                        <StackPanel>
+                            <TextBlock Text="{Binding DisplayName}" FontWeight="SemiBold" />
+                            <TextBlock Text="{Binding Category}" FontSize="10" Foreground="#788BA8" />
+                        </StackPanel>
+                        <TextBlock Grid.Column="1"
+                                   Text="{Binding Fields.Count}"
+                                   VerticalAlignment="Center"
+                                   Foreground="#9CC2FF" />
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Border Grid.Row="2" Padding="10" CornerRadius="6" Background="#16243A">
+            <StackPanel Spacing="4">
+                <TextBlock Text="Persistence" FontSize="11" Foreground="#788BA8" />
+                <TextBlock Text="{Binding PersistenceKind}" FontWeight="SemiBold" />
+                <TextBlock Text="TURSO_DATABASE_URL enables remote libSQL storage."
+                           TextWrapping="Wrap"
+                           FontSize="11"
+                           Foreground="#91A1B8" />
+            </StackPanel>
+        </Border>
+    </Grid>
+</views:NavigationRegion>

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Observability.TraceSpanProvisioning;
+
+using AtlasOps.Features;
+
+public interface ITraceSpanProvisioningRepository : IAtlasOpsCapabilityRepository<TraceSpanProvisioningItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Database.DatabaseIndexProvisioning;
+
+using AtlasOps.Features;
+
+public interface IDatabaseIndexProvisioningRepository : IAtlasOpsCapabilityRepository<DatabaseIndexProvisioningItem>;

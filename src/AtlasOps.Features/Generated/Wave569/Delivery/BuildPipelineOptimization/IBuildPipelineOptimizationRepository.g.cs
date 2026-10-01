@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.BuildPipelineOptimization;
+
+using AtlasOps.Features;
+
+public interface IBuildPipelineOptimizationRepository : IAtlasOpsCapabilityRepository<BuildPipelineOptimizationItem>;

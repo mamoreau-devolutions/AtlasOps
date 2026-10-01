@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Desktop.DesktopApplicationRecovery;
+
+using AtlasOps.Features;
+
+public interface IDesktopApplicationRecoveryRepository : IAtlasOpsCapabilityRepository<DesktopApplicationRecoveryItem>;

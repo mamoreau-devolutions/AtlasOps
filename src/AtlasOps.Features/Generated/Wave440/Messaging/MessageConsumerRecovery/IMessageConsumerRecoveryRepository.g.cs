@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Messaging.MessageConsumerRecovery;
+
+using AtlasOps.Features;
+
+public interface IMessageConsumerRecoveryRepository : IAtlasOpsCapabilityRepository<MessageConsumerRecoveryItem>;

@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>preview</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" />
+    <PackageReference Include="Microsoft.AspNetCore.WebUtilities" />
+    <PackageReference Include="Nager.PublicSuffix" />
+    <PackageReference Include="Newtonsoft.Json" />
+    <PackageReference Include="Newtonsoft.Json.Schema" />
+    <PackageReference Include="NJsonSchema" />
+    <PackageReference Include="NSwag.Annotations" />
+    <PackageReference Include="NSwag.AspNetCore" />
+    <PackageReference Include="RestSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AtlasOps.Connectors.Contracts\AtlasOps.Connectors.Contracts.csproj" />
+  </ItemGroup>
+</Project>

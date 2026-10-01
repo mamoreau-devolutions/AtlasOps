@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Architecture.ArchitectureRiskOptimization;
+
+using AtlasOps.Features;
+
+public interface IArchitectureRiskOptimizationRepository : IAtlasOpsCapabilityRepository<ArchitectureRiskOptimizationItem>;

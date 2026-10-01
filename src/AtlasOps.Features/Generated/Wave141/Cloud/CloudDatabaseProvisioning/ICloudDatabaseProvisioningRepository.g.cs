@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Cloud.CloudDatabaseProvisioning;
+
+using AtlasOps.Features;
+
+public interface ICloudDatabaseProvisioningRepository : IAtlasOpsCapabilityRepository<CloudDatabaseProvisioningItem>;

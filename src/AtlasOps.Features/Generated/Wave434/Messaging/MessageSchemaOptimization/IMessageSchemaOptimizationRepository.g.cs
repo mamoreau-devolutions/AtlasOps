@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Messaging.MessageSchemaOptimization;
+
+using AtlasOps.Features;
+
+public interface IMessageSchemaOptimizationRepository : IAtlasOpsCapabilityRepository<MessageSchemaOptimizationItem>;

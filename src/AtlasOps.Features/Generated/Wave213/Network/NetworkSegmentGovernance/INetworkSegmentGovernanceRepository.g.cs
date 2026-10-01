@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Network.NetworkSegmentGovernance;
+
+using AtlasOps.Features;
+
+public interface INetworkSegmentGovernanceRepository : IAtlasOpsCapabilityRepository<NetworkSegmentGovernanceItem>;

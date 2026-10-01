@@ -1,0 +1,36 @@
+<local:LogQueryProvisioningView
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:AtlasOps.Features.Observability.LogQueryProvisioning"
+    x:Class="AtlasOps.Features.Observability.LogQueryProvisioning.LogQueryProvisioningView"
+    x:DataType="local:LogQueryProvisioningViewModel"
+    MinWidth="320"
+    MinHeight="180">
+    <Border Padding="16" CornerRadius="8" Background="#17243A">
+        <Grid RowDefinitions="Auto,Auto,Auto,*" ColumnDefinitions="*,Auto">
+            <TextBlock Text="{Binding Title}" FontSize="18" FontWeight="SemiBold" />
+            <Border Grid.Column="1" Padding="8,4" CornerRadius="10" Background="#294263">
+                <TextBlock Text="{Binding State}" />
+            </Border>
+            <TextBlock Grid.Row="1" Grid.ColumnSpan="2" Margin="0,6,0,0" Text="{Binding Area, StringFormat='Wave 616 · {0}'}" Foreground="#91A1B8" />
+            <TextBlock Grid.Row="2" Grid.ColumnSpan="2" Margin="0,12,0,0" Text="{Binding Status}" TextWrapping="Wrap" />
+            <StackPanel Grid.Row="3" Grid.ColumnSpan="2" Margin="0,16,0,0" Orientation="Horizontal" Spacing="8">
+                <Button Content="Advance" Click="Advance_OnClick" />
+                <ItemsControl ItemsSource="{Binding AvailableActions}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel Orientation="Horizontal" Spacing="6" />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border Padding="6,3" CornerRadius="4" Background="#203653">
+                                <TextBlock Text="{Binding}" FontSize="11" />
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+        </Grid>
+    </Border>
+</local:LogQueryProvisioningView>

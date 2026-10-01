@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Network.NetworkFirewallOptimization;
+
+using AtlasOps.Features;
+
+public interface INetworkFirewallOptimizationRepository : IAtlasOpsCapabilityRepository<NetworkFirewallOptimizationItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.BusinessContinuity.RecoveryEvidenceMonitoring;
+
+using AtlasOps.Features;
+
+public interface IRecoveryEvidenceMonitoringRepository : IAtlasOpsCapabilityRepository<RecoveryEvidenceMonitoringItem>;

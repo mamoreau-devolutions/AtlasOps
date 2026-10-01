@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.MaintenanceWindowRecovery;
+
+using AtlasOps.Features;
+
+public interface IMaintenanceWindowRecoveryRepository : IAtlasOpsCapabilityRepository<MaintenanceWindowRecoveryItem>;

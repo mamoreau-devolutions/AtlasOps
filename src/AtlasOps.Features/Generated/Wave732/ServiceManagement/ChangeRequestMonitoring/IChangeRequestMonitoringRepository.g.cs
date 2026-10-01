@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ChangeRequestMonitoring;
+
+using AtlasOps.Features;
+
+public interface IChangeRequestMonitoringRepository : IAtlasOpsCapabilityRepository<ChangeRequestMonitoringItem>;

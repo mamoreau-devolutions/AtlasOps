@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Data.DataRetentionOptimization;
+
+using AtlasOps.Features;
+
+public interface IDataRetentionOptimizationRepository : IAtlasOpsCapabilityRepository<DataRetentionOptimizationItem>;

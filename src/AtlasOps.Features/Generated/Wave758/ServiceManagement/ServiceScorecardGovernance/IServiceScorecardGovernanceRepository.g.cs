@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ServiceScorecardGovernance;
+
+using AtlasOps.Features;
+
+public interface IServiceScorecardGovernanceRepository : IAtlasOpsCapabilityRepository<ServiceScorecardGovernanceItem>;

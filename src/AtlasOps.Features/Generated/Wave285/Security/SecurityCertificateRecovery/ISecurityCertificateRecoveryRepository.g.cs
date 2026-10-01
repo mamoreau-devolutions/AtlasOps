@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Security.SecurityCertificateRecovery;
+
+using AtlasOps.Features;
+
+public interface ISecurityCertificateRecoveryRepository : IAtlasOpsCapabilityRepository<SecurityCertificateRecoveryItem>;

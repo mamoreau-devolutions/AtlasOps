@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Kubernetes.KubernetesVolumeGovernance;
+
+using AtlasOps.Features;
+
+public interface IKubernetesVolumeGovernanceRepository : IAtlasOpsCapabilityRepository<KubernetesVolumeGovernanceItem>;

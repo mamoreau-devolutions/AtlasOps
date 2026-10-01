@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Security.SecurityExceptionGovernance;
+
+using AtlasOps.Features;
+
+public interface ISecurityExceptionGovernanceRepository : IAtlasOpsCapabilityRepository<SecurityExceptionGovernanceItem>;

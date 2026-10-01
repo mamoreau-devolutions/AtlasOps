@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Messaging.MessageSubscriptionGovernance;
+
+using AtlasOps.Features;
+
+public interface IMessageSubscriptionGovernanceRepository : IAtlasOpsCapabilityRepository<MessageSubscriptionGovernanceItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ServiceCatalogMonitoring;
+
+using AtlasOps.Features;
+
+public interface IServiceCatalogMonitoringRepository : IAtlasOpsCapabilityRepository<ServiceCatalogMonitoringItem>;

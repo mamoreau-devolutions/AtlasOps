@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Storage.StorageSnapshotMonitoring;
+
+using AtlasOps.Features;
+
+public interface IStorageSnapshotMonitoringRepository : IAtlasOpsCapabilityRepository<StorageSnapshotMonitoringItem>;

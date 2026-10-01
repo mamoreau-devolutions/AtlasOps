@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Mobile.MobileCertificateGovernance;
+
+using AtlasOps.Features;
+
+public interface IMobileCertificateGovernanceRepository : IAtlasOpsCapabilityRepository<MobileCertificateGovernanceItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Observability.ObservabilityExportGovernance;
+
+using AtlasOps.Features;
+
+public interface IObservabilityExportGovernanceRepository : IAtlasOpsCapabilityRepository<ObservabilityExportGovernanceItem>;

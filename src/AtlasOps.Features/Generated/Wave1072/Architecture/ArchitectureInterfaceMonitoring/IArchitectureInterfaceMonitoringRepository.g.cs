@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Architecture.ArchitectureInterfaceMonitoring;
+
+using AtlasOps.Features;
+
+public interface IArchitectureInterfaceMonitoringRepository : IAtlasOpsCapabilityRepository<ArchitectureInterfaceMonitoringItem>;

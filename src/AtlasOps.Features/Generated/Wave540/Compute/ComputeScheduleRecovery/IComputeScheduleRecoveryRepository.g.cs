@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.ComputeScheduleRecovery;
+
+using AtlasOps.Features;
+
+public interface IComputeScheduleRecoveryRepository : IAtlasOpsCapabilityRepository<ComputeScheduleRecoveryItem>;

@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>preview</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Avalonia" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Enterprise\AtlasOps.Enterprise.Avalonia\AtlasOps.Enterprise.Avalonia.csproj" />
+    <ProjectReference Include="..\..\Modules\Automation\AtlasOps.Modules.Automation.Avalonia\AtlasOps.Modules.Automation.Avalonia.csproj" />
+    <ProjectReference Include="..\..\Modules\CloudEconomics\AtlasOps.Modules.CloudEconomics.Avalonia\AtlasOps.Modules.CloudEconomics.Avalonia.csproj" />
+    <ProjectReference Include="..\..\Modules\Compliance\AtlasOps.Modules.Compliance.Avalonia\AtlasOps.Modules.Compliance.Avalonia.csproj" />
+    <ProjectReference Include="..\..\Modules\Connections\AtlasOps.Modules.Connections.Avalonia\AtlasOps.Modules.Connections.Avalonia.csproj" />
+    <ProjectReference Include="..\..\Modules\Credentials\AtlasOps.Modules.Credentials.Avalonia\AtlasOps.Modules.Credentials.Avalonia.csproj" />
+    <ProjectReference Include="..\..\Modules\Deployments\AtlasOps.Modules.Deployments.Avalonia\AtlasOps.Modules.Deployments.Avalonia.csproj" />
+    <ProjectReference Include="..\..\Modules\Documents\AtlasOps.Modules.Documents.Avalonia\AtlasOps.Modules.Documents.Avalonia.csproj" />
+    <ProjectReference Include="..\..\Modules\Geography\AtlasOps.Modules.Geography.Avalonia\AtlasOps.Modules.Geography.Avalonia.csproj" />
+    <ProjectReference Include="..\..\Modules\Geospatial\AtlasOps.Modules.Geospatial.Avalonia\AtlasOps.Modules.Geospatial.Avalonia.csproj" />
+    <ProjectReference Include="..\..\Modules\Governance\AtlasOps.Modules.Governance.Avalonia\AtlasOps.Modules.Governance.Avalonia.csproj" />
+    <ProjectReference Include="..\..\Modules\Identity\AtlasOps.Modules.Identity.Avalonia\AtlasOps.Modules.Identity.Avalonia.csproj" />
+    <ProjectReference Include="..\..\Modules\Incidents\AtlasOps.Modules.Incidents.Avalonia\AtlasOps.Modules.Incidents.Avalonia.csproj" />
+    <ProjectReference Include="..\..\Modules\Inventory\AtlasOps.Modules.Inventory.Avalonia\AtlasOps.Modules.Inventory.Avalonia.csproj" />
+    <ProjectReference Include="..\..\Modules\Lifecycle\AtlasOps.Modules.Lifecycle.Avalonia\AtlasOps.Modules.Lifecycle.Avalonia.csproj" />
+    <ProjectReference Include="..\..\Modules\Localization\AtlasOps.Modules.Localization.Avalonia\AtlasOps.Modules.Localization.Avalonia.csproj" />
+    <ProjectReference Include="..\..\Modules\NetworkIntelligence\AtlasOps.Modules.NetworkIntelligence.Avalonia\AtlasOps.Modules.NetworkIntelligence.Avalonia.csproj" />
+    <ProjectReference Include="..\..\Modules\Observability\AtlasOps.Modules.Observability.Avalonia\AtlasOps.Modules.Observability.Avalonia.csproj" />
+    <ProjectReference Include="..\..\Modules\Workspaces\AtlasOps.Modules.Workspaces.Avalonia\AtlasOps.Modules.Workspaces.Avalonia.csproj" />
+  </ItemGroup>
+</Project>

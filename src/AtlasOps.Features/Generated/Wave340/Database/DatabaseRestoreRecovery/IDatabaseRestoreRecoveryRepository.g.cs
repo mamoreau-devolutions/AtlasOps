@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Database.DatabaseRestoreRecovery;
+
+using AtlasOps.Features;
+
+public interface IDatabaseRestoreRecoveryRepository : IAtlasOpsCapabilityRepository<DatabaseRestoreRecoveryItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Identity.IdentityClaimProvisioning;
+
+using AtlasOps.Features;
+
+public interface IIdentityClaimProvisioningRepository : IAtlasOpsCapabilityRepository<IdentityClaimProvisioningItem>;

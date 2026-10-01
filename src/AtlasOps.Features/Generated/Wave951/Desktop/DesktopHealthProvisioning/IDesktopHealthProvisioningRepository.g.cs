@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Desktop.DesktopHealthProvisioning;
+
+using AtlasOps.Features;
+
+public interface IDesktopHealthProvisioningRepository : IAtlasOpsCapabilityRepository<DesktopHealthProvisioningItem>;

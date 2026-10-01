@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Security.SecurityBaselineOptimization;
+
+using AtlasOps.Features;
+
+public interface ISecurityBaselineOptimizationRepository : IAtlasOpsCapabilityRepository<SecurityBaselineOptimizationItem>;

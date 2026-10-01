@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.BusinessContinuity.ContinuityPlanRecovery;
+
+using AtlasOps.Features;
+
+public interface IContinuityPlanRecoveryRepository : IAtlasOpsCapabilityRepository<ContinuityPlanRecoveryItem>;

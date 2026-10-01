@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Network.NetworkDnsZoneMonitoring;
+
+using AtlasOps.Features;
+
+public interface INetworkDnsZoneMonitoringRepository : IAtlasOpsCapabilityRepository<NetworkDnsZoneMonitoringItem>;

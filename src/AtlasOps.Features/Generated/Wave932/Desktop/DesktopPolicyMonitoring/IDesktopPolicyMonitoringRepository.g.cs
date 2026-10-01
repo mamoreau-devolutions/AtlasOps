@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Desktop.DesktopPolicyMonitoring;
+
+using AtlasOps.Features;
+
+public interface IDesktopPolicyMonitoringRepository : IAtlasOpsCapabilityRepository<DesktopPolicyMonitoringItem>;

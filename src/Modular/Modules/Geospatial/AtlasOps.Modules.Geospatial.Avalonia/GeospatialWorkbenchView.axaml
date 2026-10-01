@@ -1,0 +1,13 @@
+<local:GeospatialWorkbenchView xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="using:AtlasOps.Modules.Geospatial.Avalonia" xmlns:core="using:AtlasOps.Modules.Geospatial.Core" x:Class="AtlasOps.Modules.Geospatial.Avalonia.GeospatialWorkbenchView" x:DataType="local:GeospatialWorkbenchViewModel" MinWidth="640" MinHeight="420">
+  <Grid Margin="24" RowDefinitions="Auto,Auto,Auto,*" RowSpacing="12">
+    <TextBlock FontSize="24" FontWeight="SemiBold" Text="{Binding Title}" />
+    <TextBlock Grid.Row="1" Opacity="0.72" Text="{Binding Summary}" />
+    <TextBox Grid.Row="2" Text="{Binding SearchText}" PlaceholderText="Filter capabilities" />
+    <Grid Grid.Row="3" ColumnDefinitions="2*,3*" ColumnSpacing="16">
+      <ListBox ItemsSource="{Binding Capabilities}" SelectedItem="{Binding SelectedCapability}">
+        <ListBox.ItemTemplate><DataTemplate x:DataType="core:GeospatialCapabilityDescriptor"><StackPanel Margin="8" Spacing="3"><TextBlock FontWeight="SemiBold" Text="{Binding DisplayName}" /><TextBlock FontSize="12" Opacity="0.7" Text="{Binding Concern}" /></StackPanel></DataTemplate></ListBox.ItemTemplate>
+      </ListBox>
+      <Border Grid.Column="1" Padding="20" Background="#0BFFFFFF" CornerRadius="8"><StackPanel Spacing="10"><TextBlock FontSize="20" FontWeight="SemiBold" Text="{Binding SelectedCapability.DisplayName, FallbackValue='Select a capability'}" /><TextBlock TextWrapping="Wrap" Text="{Binding SelectedCapability.Description}" /><TextBlock Opacity="0.7" Text="{Binding SelectedCapability.Id}" /><TextBlock Opacity="0.7" Text="{Binding SelectedCapability.Area}" /></StackPanel></Border>
+    </Grid>
+  </Grid>
+</local:GeospatialWorkbenchView>

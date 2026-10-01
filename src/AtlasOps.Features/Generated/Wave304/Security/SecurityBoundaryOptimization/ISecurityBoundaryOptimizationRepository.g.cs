@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Security.SecurityBoundaryOptimization;
+
+using AtlasOps.Features;
+
+public interface ISecurityBoundaryOptimizationRepository : IAtlasOpsCapabilityRepository<SecurityBoundaryOptimizationItem>;

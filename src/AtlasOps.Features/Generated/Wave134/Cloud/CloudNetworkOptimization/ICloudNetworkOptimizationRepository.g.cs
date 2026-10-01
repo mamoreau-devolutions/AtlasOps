@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Cloud.CloudNetworkOptimization;
+
+using AtlasOps.Features;
+
+public interface ICloudNetworkOptimizationRepository : IAtlasOpsCapabilityRepository<CloudNetworkOptimizationItem>;

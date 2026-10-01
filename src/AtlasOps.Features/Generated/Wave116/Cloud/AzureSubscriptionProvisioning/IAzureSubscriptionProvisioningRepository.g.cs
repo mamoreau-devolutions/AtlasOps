@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Cloud.AzureSubscriptionProvisioning;
+
+using AtlasOps.Features;
+
+public interface IAzureSubscriptionProvisioningRepository : IAtlasOpsCapabilityRepository<AzureSubscriptionProvisioningItem>;

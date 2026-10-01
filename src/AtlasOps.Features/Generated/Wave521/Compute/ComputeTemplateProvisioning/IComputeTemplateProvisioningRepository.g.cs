@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.ComputeTemplateProvisioning;
+
+using AtlasOps.Features;
+
+public interface IComputeTemplateProvisioningRepository : IAtlasOpsCapabilityRepository<ComputeTemplateProvisioningItem>;

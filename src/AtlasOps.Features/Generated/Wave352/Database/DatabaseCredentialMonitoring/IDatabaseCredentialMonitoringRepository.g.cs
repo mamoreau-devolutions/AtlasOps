@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Database.DatabaseCredentialMonitoring;
+
+using AtlasOps.Features;
+
+public interface IDatabaseCredentialMonitoringRepository : IAtlasOpsCapabilityRepository<DatabaseCredentialMonitoringItem>;

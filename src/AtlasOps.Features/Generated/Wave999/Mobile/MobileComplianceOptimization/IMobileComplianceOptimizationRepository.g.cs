@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Mobile.MobileComplianceOptimization;
+
+using AtlasOps.Features;
+
+public interface IMobileComplianceOptimizationRepository : IAtlasOpsCapabilityRepository<MobileComplianceOptimizationItem>;

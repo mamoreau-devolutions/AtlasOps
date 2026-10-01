@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Desktop.DesktopProfileMonitoring;
+
+using AtlasOps.Features;
+
+public interface IDesktopProfileMonitoringRepository : IAtlasOpsCapabilityRepository<DesktopProfileMonitoringItem>;

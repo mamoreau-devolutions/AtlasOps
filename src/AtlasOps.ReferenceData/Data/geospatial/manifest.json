@@ -1,0 +1,76 @@
+{
+  "name": "Natural Earth vector layers",
+  "version": "master snapshot 2026-03",
+  "license": "Public domain",
+  "retrievedAt": "2026-10-01T12:00:53.7675287+00:00",
+  "sources": [
+    "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_admin_0_countries.geojson",
+    "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_1_states_provinces.geojson",
+    "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_populated_places.geojson",
+    "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_airports.geojson",
+    "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_ports.geojson",
+    "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_time_zones.geojson",
+    "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_roads.geojson",
+    "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_railroads.geojson",
+    "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_rivers_lake_centerlines.geojson",
+    "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_lakes.geojson"
+  ],
+  "fileCount": 11,
+  "files": [
+    {
+      "path": "LICENSE.html",
+      "bytes": 37992,
+      "sha256": "9378258f2ba26293d216d02fbb33a8bca3da705111cb79f4eb378bcc66353086"
+    },
+    {
+      "path": "ne_10m_airports.geojson",
+      "bytes": 1217477,
+      "sha256": "28892a892f670f1cf654c62253c6169fdc2504b92c956addb4ac8224f50cebe0"
+    },
+    {
+      "path": "ne_10m_lakes.geojson",
+      "bytes": 5043554,
+      "sha256": "2d036f53dedec578001c5c30c2959ee7d4eebc1306900fa4367c49929ec8f2d9"
+    },
+    {
+      "path": "ne_10m_populated_places.geojson",
+      "bytes": 19359003,
+      "sha256": "9b8e3de09048ef00dfc70357dbb9fa324493f214b5e0ae4daf1aa79a8d10116b"
+    },
+    {
+      "path": "ne_10m_ports.geojson",
+      "bytes": 279075,
+      "sha256": "c5a5028f5187a5e1b9fe7f0fab99804a8be7482099a2365d404fb7e9dd6b5457"
+    },
+    {
+      "path": "ne_10m_railroads.geojson",
+      "bytes": 39598080,
+      "sha256": "a0962d7866060ae3e24df255f6d662389ac9ba7e0df40cf329c2281190b861e6"
+    },
+    {
+      "path": "ne_10m_rivers_lake_centerlines.geojson",
+      "bytes": 7307743,
+      "sha256": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a"
+    },
+    {
+      "path": "ne_10m_roads.geojson",
+      "bytes": 50474096,
+      "sha256": "66a0c7b438e92fd124822cc5921cfa11042f48c294ade5e0f03f2c6640fd0248"
+    },
+    {
+      "path": "ne_10m_time_zones.geojson",
+      "bytes": 3527701,
+      "sha256": "aa52ab97e5f906693f31fe2e625c9d6be78a4e74fcd4142a7261235b355cacfe"
+    },
+    {
+      "path": "ne_110m_admin_0_countries.geojson",
+      "bytes": 838726,
+      "sha256": "6866c877d39cba9c357620878839b336d569f8c662d3cfab4cb1dbe2d39c977f"
+    },
+    {
+      "path": "ne_50m_admin_1_states_provinces.geojson",
+      "bytes": 2325694,
+      "sha256": "69a0e06e640b2d505858ae1cb63034e4677f3000b35a98e16312932b98c426b9"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Network.NetworkSegmentMonitoring;
+
+using AtlasOps.Features;
+
+public interface INetworkSegmentMonitoringRepository : IAtlasOpsCapabilityRepository<NetworkSegmentMonitoringItem>;

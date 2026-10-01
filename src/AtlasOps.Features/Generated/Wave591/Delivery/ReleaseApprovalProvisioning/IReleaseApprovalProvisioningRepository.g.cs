@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.ReleaseApprovalProvisioning;
+
+using AtlasOps.Features;
+
+public interface IReleaseApprovalProvisioningRepository : IAtlasOpsCapabilityRepository<ReleaseApprovalProvisioningItem>;

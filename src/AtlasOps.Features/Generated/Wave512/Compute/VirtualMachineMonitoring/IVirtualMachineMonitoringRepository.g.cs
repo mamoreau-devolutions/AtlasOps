@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.VirtualMachineMonitoring;
+
+using AtlasOps.Features;
+
+public interface IVirtualMachineMonitoringRepository : IAtlasOpsCapabilityRepository<VirtualMachineMonitoringItem>;

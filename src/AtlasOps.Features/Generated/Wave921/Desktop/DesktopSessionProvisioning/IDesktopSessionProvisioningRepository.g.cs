@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Desktop.DesktopSessionProvisioning;
+
+using AtlasOps.Features;
+
+public interface IDesktopSessionProvisioningRepository : IAtlasOpsCapabilityRepository<DesktopSessionProvisioningItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Security.SecurityBaselineMonitoring;
+
+using AtlasOps.Features;
+
+public interface ISecurityBaselineMonitoringRepository : IAtlasOpsCapabilityRepository<SecurityBaselineMonitoringItem>;

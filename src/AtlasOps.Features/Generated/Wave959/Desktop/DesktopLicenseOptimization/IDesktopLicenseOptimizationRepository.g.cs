@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Desktop.DesktopLicenseOptimization;
+
+using AtlasOps.Features;
+
+public interface IDesktopLicenseOptimizationRepository : IAtlasOpsCapabilityRepository<DesktopLicenseOptimizationItem>;

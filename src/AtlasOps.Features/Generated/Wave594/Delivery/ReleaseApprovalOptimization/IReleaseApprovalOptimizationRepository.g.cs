@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.ReleaseApprovalOptimization;
+
+using AtlasOps.Features;
+
+public interface IReleaseApprovalOptimizationRepository : IAtlasOpsCapabilityRepository<ReleaseApprovalOptimizationItem>;

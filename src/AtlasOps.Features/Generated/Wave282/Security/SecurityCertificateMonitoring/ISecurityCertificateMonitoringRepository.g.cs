@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Security.SecurityCertificateMonitoring;
+
+using AtlasOps.Features;
+
+public interface ISecurityCertificateMonitoringRepository : IAtlasOpsCapabilityRepository<SecurityCertificateMonitoringItem>;

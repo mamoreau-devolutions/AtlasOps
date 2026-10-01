@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.ComputeMetricGovernance;
+
+using AtlasOps.Features;
+
+public interface IComputeMetricGovernanceRepository : IAtlasOpsCapabilityRepository<ComputeMetricGovernanceItem>;

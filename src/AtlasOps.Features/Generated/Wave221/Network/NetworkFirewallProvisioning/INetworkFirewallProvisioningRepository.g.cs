@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Network.NetworkFirewallProvisioning;
+
+using AtlasOps.Features;
+
+public interface INetworkFirewallProvisioningRepository : IAtlasOpsCapabilityRepository<NetworkFirewallProvisioningItem>;

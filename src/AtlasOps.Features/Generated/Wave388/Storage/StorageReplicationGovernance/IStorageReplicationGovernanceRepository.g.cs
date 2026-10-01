@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Storage.StorageReplicationGovernance;
+
+using AtlasOps.Features;
+
+public interface IStorageReplicationGovernanceRepository : IAtlasOpsCapabilityRepository<StorageReplicationGovernanceItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.FinOps.CostAllocationProvisioning;
+
+using AtlasOps.Features;
+
+public interface ICostAllocationProvisioningRepository : IAtlasOpsCapabilityRepository<CostAllocationProvisioningItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Desktop.DesktopUpdateOptimization;
+
+using AtlasOps.Features;
+
+public interface IDesktopUpdateOptimizationRepository : IAtlasOpsCapabilityRepository<DesktopUpdateOptimizationItem>;

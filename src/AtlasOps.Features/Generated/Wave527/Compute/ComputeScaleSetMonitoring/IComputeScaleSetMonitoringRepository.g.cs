@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.ComputeScaleSetMonitoring;
+
+using AtlasOps.Features;
+
+public interface IComputeScaleSetMonitoringRepository : IAtlasOpsCapabilityRepository<ComputeScaleSetMonitoringItem>;

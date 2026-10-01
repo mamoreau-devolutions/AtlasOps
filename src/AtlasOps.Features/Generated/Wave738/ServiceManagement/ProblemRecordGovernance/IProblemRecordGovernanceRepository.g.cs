@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ProblemRecordGovernance;
+
+using AtlasOps.Features;
+
+public interface IProblemRecordGovernanceRepository : IAtlasOpsCapabilityRepository<ProblemRecordGovernanceItem>;

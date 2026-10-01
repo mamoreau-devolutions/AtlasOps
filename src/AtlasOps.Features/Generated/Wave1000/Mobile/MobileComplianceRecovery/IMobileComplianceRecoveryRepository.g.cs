@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Mobile.MobileComplianceRecovery;
+
+using AtlasOps.Features;
+
+public interface IMobileComplianceRecoveryRepository : IAtlasOpsCapabilityRepository<MobileComplianceRecoveryItem>;

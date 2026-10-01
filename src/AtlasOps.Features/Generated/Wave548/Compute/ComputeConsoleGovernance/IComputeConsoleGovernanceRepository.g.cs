@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.ComputeConsoleGovernance;
+
+using AtlasOps.Features;
+
+public interface IComputeConsoleGovernanceRepository : IAtlasOpsCapabilityRepository<ComputeConsoleGovernanceItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Security.SecuritySessionMonitoring;
+
+using AtlasOps.Features;
+
+public interface ISecuritySessionMonitoringRepository : IAtlasOpsCapabilityRepository<SecuritySessionMonitoringItem>;

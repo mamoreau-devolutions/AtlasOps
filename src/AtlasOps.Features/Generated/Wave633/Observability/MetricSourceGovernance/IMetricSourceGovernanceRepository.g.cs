@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Observability.MetricSourceGovernance;
+
+using AtlasOps.Features;
+
+public interface IMetricSourceGovernanceRepository : IAtlasOpsCapabilityRepository<MetricSourceGovernanceItem>;

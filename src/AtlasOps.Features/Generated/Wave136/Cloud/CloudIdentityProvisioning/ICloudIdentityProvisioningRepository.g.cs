@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Cloud.CloudIdentityProvisioning;
+
+using AtlasOps.Features;
+
+public interface ICloudIdentityProvisioningRepository : IAtlasOpsCapabilityRepository<CloudIdentityProvisioningItem>;

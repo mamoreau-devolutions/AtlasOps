@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Messaging.MessageProducerOptimization;
+
+using AtlasOps.Features;
+
+public interface IMessageProducerOptimizationRepository : IAtlasOpsCapabilityRepository<MessageProducerOptimizationItem>;

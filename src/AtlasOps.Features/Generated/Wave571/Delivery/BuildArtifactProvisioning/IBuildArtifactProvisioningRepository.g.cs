@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.BuildArtifactProvisioning;
+
+using AtlasOps.Features;
+
+public interface IBuildArtifactProvisioningRepository : IAtlasOpsCapabilityRepository<BuildArtifactProvisioningItem>;

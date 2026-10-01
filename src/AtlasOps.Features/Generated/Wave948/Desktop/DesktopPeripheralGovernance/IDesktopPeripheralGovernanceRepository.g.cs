@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Desktop.DesktopPeripheralGovernance;
+
+using AtlasOps.Features;
+
+public interface IDesktopPeripheralGovernanceRepository : IAtlasOpsCapabilityRepository<DesktopPeripheralGovernanceItem>;

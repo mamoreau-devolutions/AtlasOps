@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Messaging.MessageRetentionOptimization;
+
+using AtlasOps.Features;
+
+public interface IMessageRetentionOptimizationRepository : IAtlasOpsCapabilityRepository<MessageRetentionOptimizationItem>;

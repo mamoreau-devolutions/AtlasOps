@@ -1,0 +1,169 @@
+<local:PolicyStudioView
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:common="using:AtlasOps.Enterprise.Avalonia.Common"
+    xmlns:contracts="using:AtlasOps.Enterprise.Contracts.Policy"
+    xmlns:local="using:AtlasOps.Enterprise.Avalonia.Policy"
+    x:Class="AtlasOps.Enterprise.Avalonia.Policy.PolicyStudioView"
+    x:DataType="local:PolicyStudioViewModel"
+    MinWidth="760"
+    MinHeight="480">
+    <Grid
+        Margin="20"
+        RowDefinitions="Auto,Auto,Auto,*"
+        RowSpacing="12">
+        <StackPanel Spacing="3">
+            <TextBlock
+                FontSize="24"
+                FontWeight="SemiBold"
+                Text="{Binding Title}" />
+            <TextBlock
+                Opacity="0.72"
+                Text="{Binding Summary}"
+                TextWrapping="Wrap" />
+        </StackPanel>
+        <ItemsControl
+            Grid.Row="1"
+            ItemsSource="{Binding Metrics}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <UniformGrid Rows="1" />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate x:DataType="common:EnterpriseMetric">
+                    <Border
+                        Margin="0,0,8,0"
+                        Padding="12"
+                        Background="#16243A"
+                        CornerRadius="7">
+                        <StackPanel>
+                            <TextBlock
+                                FontSize="11"
+                                Foreground="#91A1B8"
+                                Text="{Binding Label}" />
+                            <TextBlock
+                                FontSize="20"
+                                FontWeight="Bold"
+                                Text="{Binding Value}" />
+                            <TextBlock
+                                FontSize="10"
+                                Foreground="#91A1B8"
+                                Text="{Binding Detail}"
+                                TextTrimming="CharacterEllipsis" />
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        <TextBox
+            Grid.Row="2"
+            Text="{Binding SearchText, Mode=TwoWay}"
+            PlaceholderText="Filter subjects, actions, or resources" />
+        <Grid
+            Grid.Row="3"
+            ColumnDefinitions="280,5,*">
+            <ListBox
+                ItemsSource="{Binding Requests}"
+                SelectedItem="{Binding SelectedRequest, Mode=TwoWay}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate x:DataType="contracts:PolicyRequest">
+                        <StackPanel
+                            Margin="8"
+                            Spacing="3">
+                            <TextBlock
+                                FontWeight="SemiBold"
+                                Text="{Binding Action}" />
+                            <TextBlock
+                                FontSize="11"
+                                Foreground="#91A1B8"
+                                Text="{Binding Subject.Id, StringFormat='Subject: {0}'}" />
+                            <TextBlock
+                                FontSize="11"
+                                Foreground="#91A1B8"
+                                Text="{Binding Resource.Id, StringFormat='Resource: {0}'}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <GridSplitter
+                Grid.Column="1"
+                ResizeDirection="Columns" />
+            <ScrollViewer Grid.Column="2">
+                <StackPanel
+                    Margin="16,0,0,0"
+                    Spacing="12">
+                    <Border
+                        Padding="14"
+                        Background="#111C2E"
+                        CornerRadius="7">
+                        <Grid ColumnDefinitions="Auto,*">
+                            <Border
+                                Padding="10,4"
+                                Background="#203B63"
+                                CornerRadius="10">
+                                <TextBlock
+                                    FontWeight="Bold"
+                                    Foreground="#9CC2FF"
+                                    Text="{Binding DecisionKind}" />
+                            </Border>
+                            <TextBlock
+                                Grid.Column="1"
+                                Margin="12,0,0,0"
+                                VerticalAlignment="Center"
+                                Text="{Binding DecisionSummary}"
+                                TextWrapping="Wrap" />
+                        </Grid>
+                    </Border>
+                    <TextBlock
+                        FontSize="17"
+                        FontWeight="SemiBold"
+                        Text="Decision trace" />
+                    <ItemsControl ItemsSource="{Binding Trace}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate x:DataType="common:EnterpriseDetailRow">
+                                <Border
+                                    Margin="0,0,0,7"
+                                    Padding="10"
+                                    Background="#0F192A"
+                                    CornerRadius="6">
+                                    <Grid ColumnDefinitions="*,Auto">
+                                        <StackPanel>
+                                            <TextBlock
+                                                FontWeight="SemiBold"
+                                                Text="{Binding Title}" />
+                                            <TextBlock
+                                                FontSize="11"
+                                                Foreground="#91A1B8"
+                                                Text="{Binding Subtitle}"
+                                                TextWrapping="Wrap" />
+                                        </StackPanel>
+                                        <TextBlock
+                                            Grid.Column="1"
+                                            Foreground="#9CC2FF"
+                                            Text="{Binding Status}" />
+                                    </Grid>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                    <TextBlock
+                        FontSize="17"
+                        FontWeight="SemiBold"
+                        Text="Static analysis" />
+                    <ItemsControl ItemsSource="{Binding Diagnostics}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate x:DataType="common:EnterpriseDetailRow">
+                                <TextBlock
+                                    Margin="4"
+                                    Foreground="#F4B183"
+                                    Text="{Binding Subtitle}"
+                                    TextWrapping="Wrap" />
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+</local:PolicyStudioView>

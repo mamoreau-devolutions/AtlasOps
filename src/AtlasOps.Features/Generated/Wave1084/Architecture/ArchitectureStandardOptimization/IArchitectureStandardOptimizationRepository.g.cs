@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Architecture.ArchitectureStandardOptimization;
+
+using AtlasOps.Features;
+
+public interface IArchitectureStandardOptimizationRepository : IAtlasOpsCapabilityRepository<ArchitectureStandardOptimizationItem>;

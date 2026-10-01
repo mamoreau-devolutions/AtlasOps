@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Storage.StorageQuotaProvisioning;
+
+using AtlasOps.Features;
+
+public interface IStorageQuotaProvisioningRepository : IAtlasOpsCapabilityRepository<StorageQuotaProvisioningItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Kubernetes.KubernetesWorkloadRecovery;
+
+using AtlasOps.Features;
+
+public interface IKubernetesWorkloadRecoveryRepository : IAtlasOpsCapabilityRepository<KubernetesWorkloadRecoveryItem>;

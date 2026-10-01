@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Security.SecurityBoundaryProvisioning;
+
+using AtlasOps.Features;
+
+public interface ISecurityBoundaryProvisioningRepository : IAtlasOpsCapabilityRepository<SecurityBoundaryProvisioningItem>;

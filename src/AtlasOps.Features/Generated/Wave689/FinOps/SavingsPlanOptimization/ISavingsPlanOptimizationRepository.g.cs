@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.FinOps.SavingsPlanOptimization;
+
+using AtlasOps.Features;
+
+public interface ISavingsPlanOptimizationRepository : IAtlasOpsCapabilityRepository<SavingsPlanOptimizationItem>;

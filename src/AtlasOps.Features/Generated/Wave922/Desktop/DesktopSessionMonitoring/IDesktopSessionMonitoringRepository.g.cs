@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Desktop.DesktopSessionMonitoring;
+
+using AtlasOps.Features;
+
+public interface IDesktopSessionMonitoringRepository : IAtlasOpsCapabilityRepository<DesktopSessionMonitoringItem>;

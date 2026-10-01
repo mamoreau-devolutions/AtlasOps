@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Observability.ObservabilityRetentionGovernance;
+
+using AtlasOps.Features;
+
+public interface IObservabilityRetentionGovernanceRepository : IAtlasOpsCapabilityRepository<ObservabilityRetentionGovernanceItem>;

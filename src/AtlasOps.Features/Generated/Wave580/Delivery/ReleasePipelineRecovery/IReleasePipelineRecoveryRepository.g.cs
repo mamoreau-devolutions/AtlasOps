@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.ReleasePipelineRecovery;
+
+using AtlasOps.Features;
+
+public interface IReleasePipelineRecoveryRepository : IAtlasOpsCapabilityRepository<ReleasePipelineRecoveryItem>;

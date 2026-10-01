@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.BusinessContinuity.RecoveryExerciseProvisioning;
+
+using AtlasOps.Features;
+
+public interface IRecoveryExerciseProvisioningRepository : IAtlasOpsCapabilityRepository<RecoveryExerciseProvisioningItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Database.DatabaseCredentialOptimization;
+
+using AtlasOps.Features;
+
+public interface IDatabaseCredentialOptimizationRepository : IAtlasOpsCapabilityRepository<DatabaseCredentialOptimizationItem>;

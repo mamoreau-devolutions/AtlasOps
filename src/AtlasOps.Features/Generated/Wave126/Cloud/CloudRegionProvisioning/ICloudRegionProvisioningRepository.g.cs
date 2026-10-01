@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Cloud.CloudRegionProvisioning;
+
+using AtlasOps.Features;
+
+public interface ICloudRegionProvisioningRepository : IAtlasOpsCapabilityRepository<CloudRegionProvisioningItem>;

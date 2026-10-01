@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Network.NetworkLoadBalancerRecovery;
+
+using AtlasOps.Features;
+
+public interface INetworkLoadBalancerRecoveryRepository : IAtlasOpsCapabilityRepository<NetworkLoadBalancerRecoveryItem>;

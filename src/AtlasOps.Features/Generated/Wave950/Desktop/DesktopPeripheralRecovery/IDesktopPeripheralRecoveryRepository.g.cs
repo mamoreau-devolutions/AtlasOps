@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Desktop.DesktopPeripheralRecovery;
+
+using AtlasOps.Features;
+
+public interface IDesktopPeripheralRecoveryRepository : IAtlasOpsCapabilityRepository<DesktopPeripheralRecoveryItem>;

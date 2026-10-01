@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Data.DataRetentionProvisioning;
+
+using AtlasOps.Features;
+
+public interface IDataRetentionProvisioningRepository : IAtlasOpsCapabilityRepository<DataRetentionProvisioningItem>;

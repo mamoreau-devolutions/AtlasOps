@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Database.DatabaseCredentialProvisioning;
+
+using AtlasOps.Features;
+
+public interface IDatabaseCredentialProvisioningRepository : IAtlasOpsCapabilityRepository<DatabaseCredentialProvisioningItem>;

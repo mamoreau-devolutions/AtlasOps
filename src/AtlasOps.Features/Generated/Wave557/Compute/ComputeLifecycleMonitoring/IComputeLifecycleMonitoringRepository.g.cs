@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.ComputeLifecycleMonitoring;
+
+using AtlasOps.Features;
+
+public interface IComputeLifecycleMonitoringRepository : IAtlasOpsCapabilityRepository<ComputeLifecycleMonitoringItem>;

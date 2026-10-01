@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Kubernetes.KubernetesIngressRecovery;
+
+using AtlasOps.Features;
+
+public interface IKubernetesIngressRecoveryRepository : IAtlasOpsCapabilityRepository<KubernetesIngressRecoveryItem>;

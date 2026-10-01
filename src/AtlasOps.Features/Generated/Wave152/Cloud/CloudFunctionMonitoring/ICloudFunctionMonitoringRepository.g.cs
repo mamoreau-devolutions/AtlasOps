@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Cloud.CloudFunctionMonitoring;
+
+using AtlasOps.Features;
+
+public interface ICloudFunctionMonitoringRepository : IAtlasOpsCapabilityRepository<CloudFunctionMonitoringItem>;

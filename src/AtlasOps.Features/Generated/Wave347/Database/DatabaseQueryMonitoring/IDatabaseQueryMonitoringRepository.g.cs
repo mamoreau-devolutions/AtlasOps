@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Database.DatabaseQueryMonitoring;
+
+using AtlasOps.Features;
+
+public interface IDatabaseQueryMonitoringRepository : IAtlasOpsCapabilityRepository<DatabaseQueryMonitoringItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.BuildArtifactMonitoring;
+
+using AtlasOps.Features;
+
+public interface IBuildArtifactMonitoringRepository : IAtlasOpsCapabilityRepository<BuildArtifactMonitoringItem>;

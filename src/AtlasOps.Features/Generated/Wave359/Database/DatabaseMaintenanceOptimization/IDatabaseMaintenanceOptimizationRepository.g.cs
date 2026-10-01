@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Database.DatabaseMaintenanceOptimization;
+
+using AtlasOps.Features;
+
+public interface IDatabaseMaintenanceOptimizationRepository : IAtlasOpsCapabilityRepository<DatabaseMaintenanceOptimizationItem>;

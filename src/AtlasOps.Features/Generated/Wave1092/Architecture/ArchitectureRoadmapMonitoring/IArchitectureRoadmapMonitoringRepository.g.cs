@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Architecture.ArchitectureRoadmapMonitoring;
+
+using AtlasOps.Features;
+
+public interface IArchitectureRoadmapMonitoringRepository : IAtlasOpsCapabilityRepository<ArchitectureRoadmapMonitoringItem>;

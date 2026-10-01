@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>preview</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Avalonia" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AtlasOps.Modules.Governance.Contracts\AtlasOps.Modules.Governance.Contracts.csproj" />
+    <ProjectReference Include="..\AtlasOps.Modules.Governance.Core\AtlasOps.Modules.Governance.Core.csproj" />
+    <ProjectReference Include="..\..\..\Platform\AtlasOps.DesignSystem\AtlasOps.DesignSystem.csproj" />
+  </ItemGroup>
+</Project>

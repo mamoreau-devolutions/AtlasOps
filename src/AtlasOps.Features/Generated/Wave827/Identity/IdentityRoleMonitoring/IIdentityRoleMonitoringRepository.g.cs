@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Identity.IdentityRoleMonitoring;
+
+using AtlasOps.Features;
+
+public interface IIdentityRoleMonitoringRepository : IAtlasOpsCapabilityRepository<IdentityRoleMonitoringItem>;

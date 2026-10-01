@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ServiceDependencyProvisioning;
+
+using AtlasOps.Features;
+
+public interface IServiceDependencyProvisioningRepository : IAtlasOpsCapabilityRepository<ServiceDependencyProvisioningItem>;

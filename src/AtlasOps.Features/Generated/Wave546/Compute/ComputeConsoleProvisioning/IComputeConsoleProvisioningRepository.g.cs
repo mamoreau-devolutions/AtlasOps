@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.ComputeConsoleProvisioning;
+
+using AtlasOps.Features;
+
+public interface IComputeConsoleProvisioningRepository : IAtlasOpsCapabilityRepository<ComputeConsoleProvisioningItem>;

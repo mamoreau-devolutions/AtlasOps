@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Desktop.DesktopUpdateProvisioning;
+
+using AtlasOps.Features;
+
+public interface IDesktopUpdateProvisioningRepository : IAtlasOpsCapabilityRepository<DesktopUpdateProvisioningItem>;

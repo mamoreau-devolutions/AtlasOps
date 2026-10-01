@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.FinOps.CloudInvoiceOptimization;
+
+using AtlasOps.Features;
+
+public interface ICloudInvoiceOptimizationRepository : IAtlasOpsCapabilityRepository<CloudInvoiceOptimizationItem>;

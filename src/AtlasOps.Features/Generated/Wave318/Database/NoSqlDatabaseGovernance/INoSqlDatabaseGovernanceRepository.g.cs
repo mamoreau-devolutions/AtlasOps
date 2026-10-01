@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Database.NoSqlDatabaseGovernance;
+
+using AtlasOps.Features;
+
+public interface INoSqlDatabaseGovernanceRepository : IAtlasOpsCapabilityRepository<NoSqlDatabaseGovernanceItem>;

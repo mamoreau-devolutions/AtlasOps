@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Kubernetes.KubernetesWorkloadGovernance;
+
+using AtlasOps.Features;
+
+public interface IKubernetesWorkloadGovernanceRepository : IAtlasOpsCapabilityRepository<KubernetesWorkloadGovernanceItem>;

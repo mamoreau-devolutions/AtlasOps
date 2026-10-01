@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Identity.IdentityUserMonitoring;
+
+using AtlasOps.Features;
+
+public interface IIdentityUserMonitoringRepository : IAtlasOpsCapabilityRepository<IdentityUserMonitoringItem>;

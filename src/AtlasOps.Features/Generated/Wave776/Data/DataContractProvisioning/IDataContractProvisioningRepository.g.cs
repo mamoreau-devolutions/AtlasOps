@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Data.DataContractProvisioning;
+
+using AtlasOps.Features;
+
+public interface IDataContractProvisioningRepository : IAtlasOpsCapabilityRepository<DataContractProvisioningItem>;

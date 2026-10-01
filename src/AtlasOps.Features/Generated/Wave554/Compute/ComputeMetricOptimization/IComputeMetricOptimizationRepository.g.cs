@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.ComputeMetricOptimization;
+
+using AtlasOps.Features;
+
+public interface IComputeMetricOptimizationRepository : IAtlasOpsCapabilityRepository<ComputeMetricOptimizationItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Network.NetworkLoadBalancerGovernance;
+
+using AtlasOps.Features;
+
+public interface INetworkLoadBalancerGovernanceRepository : IAtlasOpsCapabilityRepository<NetworkLoadBalancerGovernanceItem>;

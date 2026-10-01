@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Observability.ObservabilityRetentionProvisioning;
+
+using AtlasOps.Features;
+
+public interface IObservabilityRetentionProvisioningRepository : IAtlasOpsCapabilityRepository<ObservabilityRetentionProvisioningItem>;

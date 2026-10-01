@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Security.SecurityPatchGovernance;
+
+using AtlasOps.Features;
+
+public interface ISecurityPatchGovernanceRepository : IAtlasOpsCapabilityRepository<SecurityPatchGovernanceItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Security.SecurityExceptionRecovery;
+
+using AtlasOps.Features;
+
+public interface ISecurityExceptionRecoveryRepository : IAtlasOpsCapabilityRepository<SecurityExceptionRecoveryItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Edge.EdgeDeploymentProvisioning;
+
+using AtlasOps.Features;
+
+public interface IEdgeDeploymentProvisioningRepository : IAtlasOpsCapabilityRepository<EdgeDeploymentProvisioningItem>;

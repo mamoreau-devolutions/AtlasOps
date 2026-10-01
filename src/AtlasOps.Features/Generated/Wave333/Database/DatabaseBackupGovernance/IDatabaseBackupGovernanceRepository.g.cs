@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Database.DatabaseBackupGovernance;
+
+using AtlasOps.Features;
+
+public interface IDatabaseBackupGovernanceRepository : IAtlasOpsCapabilityRepository<DatabaseBackupGovernanceItem>;

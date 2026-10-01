@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Cloud.AzureSubscriptionMonitoring;
+
+using AtlasOps.Features;
+
+public interface IAzureSubscriptionMonitoringRepository : IAtlasOpsCapabilityRepository<AzureSubscriptionMonitoringItem>;

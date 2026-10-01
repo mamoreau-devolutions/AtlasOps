@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Network.NetworkDnsZoneGovernance;
+
+using AtlasOps.Features;
+
+public interface INetworkDnsZoneGovernanceRepository : IAtlasOpsCapabilityRepository<NetworkDnsZoneGovernanceItem>;

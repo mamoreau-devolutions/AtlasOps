@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Kubernetes.KubernetesPodMonitoring;
+
+using AtlasOps.Features;
+
+public interface IKubernetesPodMonitoringRepository : IAtlasOpsCapabilityRepository<KubernetesPodMonitoringItem>;

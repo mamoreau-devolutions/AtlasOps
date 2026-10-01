@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.BusinessContinuity.RecoveryEvidenceProvisioning;
+
+using AtlasOps.Features;
+
+public interface IRecoveryEvidenceProvisioningRepository : IAtlasOpsCapabilityRepository<RecoveryEvidenceProvisioningItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ChangeRequestRecovery;
+
+using AtlasOps.Features;
+
+public interface IChangeRequestRecoveryRepository : IAtlasOpsCapabilityRepository<ChangeRequestRecoveryItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Network.NetworkAddressGovernance;
+
+using AtlasOps.Features;
+
+public interface INetworkAddressGovernanceRepository : IAtlasOpsCapabilityRepository<NetworkAddressGovernanceItem>;

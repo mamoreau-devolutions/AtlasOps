@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Network.NetworkFirewallRecovery;
+
+using AtlasOps.Features;
+
+public interface INetworkFirewallRecoveryRepository : IAtlasOpsCapabilityRepository<NetworkFirewallRecoveryItem>;

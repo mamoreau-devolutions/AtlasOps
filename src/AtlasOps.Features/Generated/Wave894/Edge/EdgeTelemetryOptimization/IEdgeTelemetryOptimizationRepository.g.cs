@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Edge.EdgeTelemetryOptimization;
+
+using AtlasOps.Features;
+
+public interface IEdgeTelemetryOptimizationRepository : IAtlasOpsCapabilityRepository<EdgeTelemetryOptimizationItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Network.NetworkFirewallGovernance;
+
+using AtlasOps.Features;
+
+public interface INetworkFirewallGovernanceRepository : IAtlasOpsCapabilityRepository<NetworkFirewallGovernanceItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.FinOps.ResourceCommitmentRecovery;
+
+using AtlasOps.Features;
+
+public interface IResourceCommitmentRecoveryRepository : IAtlasOpsCapabilityRepository<ResourceCommitmentRecoveryItem>;

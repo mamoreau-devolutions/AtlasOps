@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Desktop.DesktopPeripheralProvisioning;
+
+using AtlasOps.Features;
+
+public interface IDesktopPeripheralProvisioningRepository : IAtlasOpsCapabilityRepository<DesktopPeripheralProvisioningItem>;

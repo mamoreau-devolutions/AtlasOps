@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Storage.StorageTransferMonitoring;
+
+using AtlasOps.Features;
+
+public interface IStorageTransferMonitoringRepository : IAtlasOpsCapabilityRepository<StorageTransferMonitoringItem>;

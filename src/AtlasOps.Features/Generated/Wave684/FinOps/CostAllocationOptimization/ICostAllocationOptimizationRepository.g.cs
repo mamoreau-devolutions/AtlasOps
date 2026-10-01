@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.FinOps.CostAllocationOptimization;
+
+using AtlasOps.Features;
+
+public interface ICostAllocationOptimizationRepository : IAtlasOpsCapabilityRepository<CostAllocationOptimizationItem>;

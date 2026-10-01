@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Mobile.MobileFleetProvisioning;
+
+using AtlasOps.Features;
+
+public interface IMobileFleetProvisioningRepository : IAtlasOpsCapabilityRepository<MobileFleetProvisioningItem>;

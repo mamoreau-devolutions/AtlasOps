@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.ComputeReservationRecovery;
+
+using AtlasOps.Features;
+
+public interface IComputeReservationRecoveryRepository : IAtlasOpsCapabilityRepository<ComputeReservationRecoveryItem>;

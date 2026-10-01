@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Network.NetworkPeerProvisioning;
+
+using AtlasOps.Features;
+
+public interface INetworkPeerProvisioningRepository : IAtlasOpsCapabilityRepository<NetworkPeerProvisioningItem>;

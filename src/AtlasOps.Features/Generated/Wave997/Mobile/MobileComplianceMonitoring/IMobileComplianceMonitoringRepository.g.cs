@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Mobile.MobileComplianceMonitoring;
+
+using AtlasOps.Features;
+
+public interface IMobileComplianceMonitoringRepository : IAtlasOpsCapabilityRepository<MobileComplianceMonitoringItem>;

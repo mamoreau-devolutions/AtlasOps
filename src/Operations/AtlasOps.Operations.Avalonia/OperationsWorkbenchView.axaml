@@ -1,0 +1,64 @@
+<UserControl
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AtlasOps.Operations.Avalonia"
+    x:Class="AtlasOps.Operations.Avalonia.OperationsWorkbenchView"
+    x:DataType="local:OperationsWorkbenchViewModel"
+    MinWidth="720"
+    MinHeight="480">
+    <Grid Margin="20" RowDefinitions="Auto,Auto,Auto,*" RowSpacing="12">
+        <Grid ColumnDefinitions="*,Auto" ColumnSpacing="16">
+            <StackPanel Spacing="4">
+                <TextBlock FontSize="24" FontWeight="SemiBold" Text="{Binding Title}" />
+                <TextBlock Opacity="0.72" Text="{Binding Summary}" TextWrapping="Wrap" />
+            </StackPanel>
+            <TextBlock
+                Grid.Column="1"
+                VerticalAlignment="Bottom"
+                Opacity="0.72"
+                Text="{Binding VisibleCount, StringFormat='{}{0} visible'}" />
+        </Grid>
+        <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+            <StackPanel Orientation="Horizontal" Spacing="8">
+                <Button Content="Refresh" Command="{Binding RefreshCommand}" />
+                <Button Content="Retry selected" Command="{Binding RetryCommand}" />
+                <Button Content="Cancel selected" Command="{Binding CancelCommand}" />
+            </StackPanel>
+        </ScrollViewer>
+        <TextBox
+            Grid.Row="2"
+            Text="{Binding SearchText, Mode=TwoWay}"
+            PlaceholderText="Search operations" />
+        <Grid Grid.Row="3" ColumnDefinitions="2*,3*" ColumnSpacing="12">
+            <ListBox ItemsSource="{Binding Rows}" SelectedItem="{Binding SelectedRow, Mode=TwoWay}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate x:DataType="local:OperationRowViewModel">
+                        <Grid Margin="8" ColumnDefinitions="*,Auto" ColumnSpacing="12">
+                            <StackPanel Spacing="3">
+                                <TextBlock FontWeight="SemiBold" Text="{Binding Title}" />
+                                <TextBlock FontSize="12" Opacity="0.72" Text="{Binding Category}" />
+                            </StackPanel>
+                            <Border Grid.Column="1" Padding="8,3" CornerRadius="10" Background="#203B63">
+                                <TextBlock FontSize="11" Text="{Binding Status}" />
+                            </Border>
+                        </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <Border Grid.Column="1" Padding="18" Background="#0BFFFFFF" CornerRadius="8">
+                <Grid RowDefinitions="Auto,Auto,Auto,*" RowSpacing="10">
+                    <TextBlock
+                        FontSize="20"
+                        FontWeight="SemiBold"
+                        Text="{Binding SelectedRow.Title, FallbackValue='Select an operation'}" />
+                    <TextBlock Grid.Row="1" Opacity="0.72" Text="{Binding SelectedRow.Id}" />
+                    <TextBlock Grid.Row="2" Opacity="0.72" Text="{Binding SelectedRow.UpdatedAt}" />
+                    <TextBlock
+                        Grid.Row="3"
+                        Text="{Binding SelectedRow.Detail}"
+                        TextWrapping="Wrap" />
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl>

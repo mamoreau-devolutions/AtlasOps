@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Database.DatabaseSchemaProvisioning;
+
+using AtlasOps.Features;
+
+public interface IDatabaseSchemaProvisioningRepository : IAtlasOpsCapabilityRepository<DatabaseSchemaProvisioningItem>;

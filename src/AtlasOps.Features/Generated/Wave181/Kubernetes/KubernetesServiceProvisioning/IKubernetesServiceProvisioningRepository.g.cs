@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Kubernetes.KubernetesServiceProvisioning;
+
+using AtlasOps.Features;
+
+public interface IKubernetesServiceProvisioningRepository : IAtlasOpsCapabilityRepository<KubernetesServiceProvisioningItem>;

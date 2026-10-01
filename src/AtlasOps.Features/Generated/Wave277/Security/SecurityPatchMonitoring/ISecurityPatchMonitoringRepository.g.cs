@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Security.SecurityPatchMonitoring;
+
+using AtlasOps.Features;
+
+public interface ISecurityPatchMonitoringRepository : IAtlasOpsCapabilityRepository<SecurityPatchMonitoringItem>;

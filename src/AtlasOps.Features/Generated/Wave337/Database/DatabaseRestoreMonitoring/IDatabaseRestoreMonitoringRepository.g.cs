@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Database.DatabaseRestoreMonitoring;
+
+using AtlasOps.Features;
+
+public interface IDatabaseRestoreMonitoringRepository : IAtlasOpsCapabilityRepository<DatabaseRestoreMonitoringItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.FinOps.CloudInvoiceProvisioning;
+
+using AtlasOps.Features;
+
+public interface ICloudInvoiceProvisioningRepository : IAtlasOpsCapabilityRepository<CloudInvoiceProvisioningItem>;

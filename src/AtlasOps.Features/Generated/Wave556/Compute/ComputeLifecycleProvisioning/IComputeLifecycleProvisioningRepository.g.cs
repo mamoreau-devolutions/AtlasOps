@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.ComputeLifecycleProvisioning;
+
+using AtlasOps.Features;
+
+public interface IComputeLifecycleProvisioningRepository : IAtlasOpsCapabilityRepository<ComputeLifecycleProvisioningItem>;

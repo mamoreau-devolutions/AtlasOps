@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.ComputeReservationOptimization;
+
+using AtlasOps.Features;
+
+public interface IComputeReservationOptimizationRepository : IAtlasOpsCapabilityRepository<ComputeReservationOptimizationItem>;

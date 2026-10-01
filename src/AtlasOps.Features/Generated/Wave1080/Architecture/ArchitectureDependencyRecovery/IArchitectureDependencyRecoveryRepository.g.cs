@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Architecture.ArchitectureDependencyRecovery;
+
+using AtlasOps.Features;
+
+public interface IArchitectureDependencyRecoveryRepository : IAtlasOpsCapabilityRepository<ArchitectureDependencyRecoveryItem>;

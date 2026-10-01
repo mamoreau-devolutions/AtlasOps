@@ -1,0 +1,341 @@
+{
+  "releases": {
+    "studio-2+": {
+      "name": "studio-2+",
+      "releaseLabel": "Surface Studio 2+",
+      "releaseDate": "2022-10-25",
+      "eol": "2028-10-02"
+    },
+    "studio-2": {
+      "name": "studio-2",
+      "releaseLabel": "Surface Studio 2",
+      "releaseDate": "2018-10-02",
+      "eol": "2024-10-02"
+    },
+    "studio-1st-gen": {
+      "name": "studio-1st-gen",
+      "releaseLabel": "Surface Studio (1st gen)",
+      "releaseDate": "2016-12-15",
+      "eol": "2021-11-13"
+    },
+    "rt": {
+      "name": "rt",
+      "releaseLabel": "Surface RT",
+      "releaseDate": "2012-10-26",
+      "eol": "2017-04-11"
+    },
+    "pro-x-wi-fi": {
+      "name": "pro-x-wi-fi",
+      "releaseLabel": "Surface Pro X Wi-Fi",
+      "releaseDate": "2021-10-05",
+      "eol": "2027-10-05"
+    },
+    "pro-x-sq2": {
+      "name": "pro-x-sq2",
+      "releaseLabel": "Surface Pro X (SQ2)",
+      "releaseDate": "2020-10-13",
+      "eol": "2025-08-10"
+    },
+    "pro-x-sq1": {
+      "name": "pro-x-sq1",
+      "releaseLabel": "Surface Pro X (SQ1)",
+      "releaseDate": "2019-11-05",
+      "eol": "2025-08-10"
+    },
+    "pro-with-lte-advanced-5th-gen": {
+      "name": "pro-with-lte-advanced-5th-gen",
+      "releaseLabel": "Surface Pro with LTE Advanced (5th gen)",
+      "releaseDate": "2017-12-01",
+      "eol": "2024-01-15"
+    },
+    "pro-with-5g-11th-edition-snapdragon": {
+      "name": "pro-with-5g-11th-edition-snapdragon",
+      "releaseLabel": "Surface Pro with 5G 11th Edition (Snapdragon)",
+      "releaseDate": "2024-09-03",
+      "eol": "2030-09-26"
+    },
+    "pro-for-business-12th-edition-intel": {
+      "name": "pro-for-business-12th-edition-intel",
+      "releaseLabel": "Surface Pro for Business 12th Edition (Intel)",
+      "releaseDate": "2026-05-19",
+      "eol": "2032-05-19"
+    },
+    "pro-for-business-11th-edition-intel": {
+      "name": "pro-for-business-11th-edition-intel",
+      "releaseLabel": "Surface Pro for Business 11th Edition (Intel)",
+      "releaseDate": "2025-02-18",
+      "eol": "2031-02-18"
+    },
+    "pro-9": {
+      "name": "pro-9",
+      "releaseLabel": "Surface Pro 9",
+      "releaseDate": "2022-10-25",
+      "eol": "2028-10-25"
+    },
+    "pro-8": {
+      "name": "pro-8",
+      "releaseLabel": "Surface Pro 8",
+      "releaseDate": "2021-10-05",
+      "eol": "2027-10-05"
+    },
+    "pro-7+": {
+      "name": "pro-7+",
+      "releaseLabel": "Surface Pro 7+",
+      "releaseDate": "2021-01-15",
+      "eol": "2027-01-15"
+    },
+    "pro-7": {
+      "name": "pro-7",
+      "releaseLabel": "Surface Pro 7",
+      "releaseDate": "2019-10-22",
+      "eol": "2025-10-30"
+    },
+    "pro-6": {
+      "name": "pro-6",
+      "releaseLabel": "Surface Pro 6",
+      "releaseDate": "2018-10-16",
+      "eol": "2023-06-30"
+    },
+    "pro-5th-gen": {
+      "name": "pro-5th-gen",
+      "releaseLabel": "Surface Pro (5th gen)",
+      "releaseDate": "2017-06-15",
+      "eol": "2024-01-15"
+    },
+    "pro-4": {
+      "name": "pro-4",
+      "releaseLabel": "Surface Pro 4",
+      "releaseDate": "2015-10-26",
+      "eol": "2021-11-13"
+    },
+    "pro-3": {
+      "name": "pro-3",
+      "releaseLabel": "Surface Pro 3",
+      "releaseDate": "2014-06-20",
+      "eol": "2021-11-13"
+    },
+    "pro-2": {
+      "name": "pro-2",
+      "releaseLabel": "Surface Pro 2",
+      "releaseDate": "2013-10-22",
+      "eol": "2018-04-10"
+    },
+    "pro-12th-edition-snapdragon": {
+      "name": "pro-12th-edition-snapdragon",
+      "releaseLabel": "Surface Pro 12th Edition (Snapdragon)",
+      "releaseDate": "2026-06-16",
+      "eol": "2032-06-16"
+    },
+    "pro-12-inch-1st-edition-snapdragon": {
+      "name": "pro-12-inch-1st-edition-snapdragon",
+      "releaseLabel": "Surface Pro 12-inch 1st Edition (Snapdragon)",
+      "releaseDate": "2025-05-20",
+      "eol": "2031-05-20"
+    },
+    "pro-11th-edition-snapdragon": {
+      "name": "pro-11th-edition-snapdragon",
+      "releaseLabel": "Surface Pro 11th Edition (Snapdragon)",
+      "releaseDate": "2024-06-18",
+      "eol": "2030-09-10"
+    },
+    "pro-10-with-5g-for-business": {
+      "name": "pro-10-with-5g-for-business",
+      "releaseLabel": "Surface Pro 10 with 5G for Business",
+      "releaseDate": "2024-10-11",
+      "eol": "2030-10-11"
+    },
+    "pro-10-for-business": {
+      "name": "pro-10-for-business",
+      "releaseLabel": "Surface Pro 10 for Business",
+      "releaseDate": "2024-04-09",
+      "eol": "2030-04-09"
+    },
+    "pro": {
+      "name": "pro",
+      "releaseLabel": "Surface Pro",
+      "releaseDate": "2013-02-09",
+      "eol": "2017-04-11"
+    },
+    "laptop-studio-2": {
+      "name": "laptop-studio-2",
+      "releaseLabel": "Surface Laptop Studio 2",
+      "releaseDate": "2023-10-03",
+      "eol": "2029-10-03"
+    },
+    "laptop-studio": {
+      "name": "laptop-studio",
+      "releaseLabel": "Surface Laptop Studio",
+      "releaseDate": "2021-10-05",
+      "eol": "2027-10-05"
+    },
+    "laptop-se": {
+      "name": "laptop-se",
+      "releaseLabel": "Surface Laptop SE",
+      "releaseDate": "2022-01-11",
+      "eol": "2028-01-11"
+    },
+    "laptop-go-3": {
+      "name": "laptop-go-3",
+      "releaseLabel": "Surface Laptop Go 3",
+      "releaseDate": "2023-10-03",
+      "eol": "2029-10-03"
+    },
+    "laptop-go-2": {
+      "name": "laptop-go-2",
+      "releaseLabel": "Surface Laptop Go 2",
+      "releaseDate": "2022-06-07",
+      "eol": "2028-06-07"
+    },
+    "laptop-go": {
+      "name": "laptop-go",
+      "releaseLabel": "Surface Laptop Go",
+      "releaseDate": "2020-10-13",
+      "eol": "2024-10-13"
+    },
+    "laptop-for-business-8th-edition-intel": {
+      "name": "laptop-for-business-8th-edition-intel",
+      "releaseLabel": "Surface Laptop for Business 8th Edition (Intel)",
+      "releaseDate": "2026-05-19",
+      "eol": "2032-05-19"
+    },
+    "laptop-for-business-7th-edition-intel": {
+      "name": "laptop-for-business-7th-edition-intel",
+      "releaseLabel": "Surface Laptop for Business 7th Edition (Intel)",
+      "releaseDate": "2025-02-18",
+      "eol": "2031-02-18"
+    },
+    "laptop-for-business-13-inch-1st-edition-intel": {
+      "name": "laptop-for-business-13-inch-1st-edition-intel",
+      "releaseLabel": "Surface Laptop for Business 13-inch 1st Edition (Intel)",
+      "releaseDate": "2026-05-19",
+      "eol": "2032-05-19"
+    },
+    "laptop-8th-edition-snapdragon": {
+      "name": "laptop-8th-edition-snapdragon",
+      "releaseLabel": "Surface Laptop 8th Edition (Snapdragon)",
+      "releaseDate": "2026-06-16",
+      "eol": "2032-06-16"
+    },
+    "laptop-7th-edition-snapdragon": {
+      "name": "laptop-7th-edition-snapdragon",
+      "releaseLabel": "Surface Laptop 7th Edition (Snapdragon)",
+      "releaseDate": "2024-06-18",
+      "eol": "2030-09-10"
+    },
+    "laptop-6-for-business": {
+      "name": "laptop-6-for-business",
+      "releaseLabel": "Surface Laptop 6 for Business",
+      "releaseDate": "2024-04-09",
+      "eol": "2030-04-09"
+    },
+    "laptop-5g-for-business-7th-edition-intel": {
+      "name": "laptop-5g-for-business-7th-edition-intel",
+      "releaseLabel": "Surface Laptop 5G for Business 7th Edition (Intel)",
+      "releaseDate": "2025-08-26",
+      "eol": "2031-08-26"
+    },
+    "laptop-5": {
+      "name": "laptop-5",
+      "releaseLabel": "Surface Laptop 5",
+      "releaseDate": "2022-10-25",
+      "eol": "2028-10-25"
+    },
+    "laptop-4": {
+      "name": "laptop-4",
+      "releaseLabel": "Surface Laptop 4",
+      "releaseDate": "2021-04-15",
+      "eol": "2027-04-15"
+    },
+    "laptop-3": {
+      "name": "laptop-3",
+      "releaseLabel": "Surface Laptop 3",
+      "releaseDate": "2019-10-22",
+      "eol": "2024-07-30"
+    },
+    "laptop-2": {
+      "name": "laptop-2",
+      "releaseLabel": "Surface Laptop 2",
+      "releaseDate": "2018-10-16",
+      "eol": "2022-12-27"
+    },
+    "laptop-1st-gen": {
+      "name": "laptop-1st-gen",
+      "releaseLabel": "Surface Laptop (1st gen)",
+      "releaseDate": "2017-06-14",
+      "eol": "2021-11-13"
+    },
+    "laptop-13-inch-1st-edition-snapdragon": {
+      "name": "laptop-13-inch-1st-edition-snapdragon",
+      "releaseLabel": "Surface Laptop 13-inch 1st Edition (Snapdragon)",
+      "releaseDate": "2025-05-20",
+      "eol": "2031-05-20"
+    },
+    "go-with-lte-advanced": {
+      "name": "go-with-lte-advanced",
+      "releaseLabel": "Surface Go with LTE Advanced",
+      "releaseDate": "2018-11-20",
+      "eol": "2022-11-20"
+    },
+    "go-4": {
+      "name": "go-4",
+      "releaseLabel": "Surface Go 4",
+      "releaseDate": "2023-09-21",
+      "eol": "2029-09-21"
+    },
+    "go-3": {
+      "name": "go-3",
+      "releaseLabel": "Surface Go 3",
+      "releaseDate": "2021-10-05",
+      "eol": "2027-10-05"
+    },
+    "go-2": {
+      "name": "go-2",
+      "releaseLabel": "Surface Go 2",
+      "releaseDate": "2020-05-06",
+      "eol": "2024-12-30"
+    },
+    "go": {
+      "name": "go",
+      "releaseLabel": "Surface Go",
+      "releaseDate": "2018-08-02",
+      "eol": "2022-08-02"
+    },
+    "book-with-performance-base": {
+      "name": "book-with-performance-base",
+      "releaseLabel": "Surface Book with Performance Base",
+      "releaseDate": "2016-11-10",
+      "eol": "2021-11-13"
+    },
+    "book-3": {
+      "name": "book-3",
+      "releaseLabel": "Surface Book 3",
+      "releaseDate": "2020-05-26",
+      "eol": "2025-04-01"
+    },
+    "book-2": {
+      "name": "book-2",
+      "releaseLabel": "Surface Book 2",
+      "releaseDate": "2017-11-17",
+      "eol": "2023-06-30"
+    },
+    "book": {
+      "name": "book",
+      "releaseLabel": "Surface Book",
+      "releaseDate": "2015-10-26",
+      "eol": "2021-11-13"
+    },
+    "3": {
+      "name": "3",
+      "releaseLabel": "Surface 3",
+      "releaseDate": "2015-05-05",
+      "eol": "2021-11-13"
+    },
+    "2": {
+      "name": "2",
+      "releaseLabel": "Surface 2",
+      "releaseDate": "2013-10-22",
+      "eol": "2018-04-10"
+    }
+  },
+  "versions": {}
+}

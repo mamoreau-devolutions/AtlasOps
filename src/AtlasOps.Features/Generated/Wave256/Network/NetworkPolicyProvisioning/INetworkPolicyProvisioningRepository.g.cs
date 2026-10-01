@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Network.NetworkPolicyProvisioning;
+
+using AtlasOps.Features;
+
+public interface INetworkPolicyProvisioningRepository : IAtlasOpsCapabilityRepository<NetworkPolicyProvisioningItem>;

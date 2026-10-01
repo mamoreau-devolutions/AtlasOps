@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Security.SecurityScanMonitoring;
+
+using AtlasOps.Features;
+
+public interface ISecurityScanMonitoringRepository : IAtlasOpsCapabilityRepository<SecurityScanMonitoringItem>;

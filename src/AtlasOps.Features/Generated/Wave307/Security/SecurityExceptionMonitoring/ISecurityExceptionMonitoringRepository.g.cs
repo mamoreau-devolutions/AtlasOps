@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Security.SecurityExceptionMonitoring;
+
+using AtlasOps.Features;
+
+public interface ISecurityExceptionMonitoringRepository : IAtlasOpsCapabilityRepository<SecurityExceptionMonitoringItem>;

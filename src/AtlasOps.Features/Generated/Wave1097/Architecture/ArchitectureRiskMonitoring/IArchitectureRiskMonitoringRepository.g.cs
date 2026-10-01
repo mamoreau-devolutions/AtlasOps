@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Architecture.ArchitectureRiskMonitoring;
+
+using AtlasOps.Features;
+
+public interface IArchitectureRiskMonitoringRepository : IAtlasOpsCapabilityRepository<ArchitectureRiskMonitoringItem>;

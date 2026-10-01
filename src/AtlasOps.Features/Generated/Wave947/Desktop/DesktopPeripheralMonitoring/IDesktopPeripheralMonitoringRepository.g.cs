@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Desktop.DesktopPeripheralMonitoring;
+
+using AtlasOps.Features;
+
+public interface IDesktopPeripheralMonitoringRepository : IAtlasOpsCapabilityRepository<DesktopPeripheralMonitoringItem>;

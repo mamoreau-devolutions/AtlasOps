@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Messaging.MessageRetentionProvisioning;
+
+using AtlasOps.Features;
+
+public interface IMessageRetentionProvisioningRepository : IAtlasOpsCapabilityRepository<MessageRetentionProvisioningItem>;

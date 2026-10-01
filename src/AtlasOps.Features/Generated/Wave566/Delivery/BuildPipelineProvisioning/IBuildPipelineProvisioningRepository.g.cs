@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.BuildPipelineProvisioning;
+
+using AtlasOps.Features;
+
+public interface IBuildPipelineProvisioningRepository : IAtlasOpsCapabilityRepository<BuildPipelineProvisioningItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.ReleaseCalendarProvisioning;
+
+using AtlasOps.Features;
+
+public interface IReleaseCalendarProvisioningRepository : IAtlasOpsCapabilityRepository<ReleaseCalendarProvisioningItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Mobile.MobileProfileProvisioning;
+
+using AtlasOps.Features;
+
+public interface IMobileProfileProvisioningRepository : IAtlasOpsCapabilityRepository<MobileProfileProvisioningItem>;

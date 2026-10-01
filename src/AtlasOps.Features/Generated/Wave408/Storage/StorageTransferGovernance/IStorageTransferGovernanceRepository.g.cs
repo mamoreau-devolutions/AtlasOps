@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Storage.StorageTransferGovernance;
+
+using AtlasOps.Features;
+
+public interface IStorageTransferGovernanceRepository : IAtlasOpsCapabilityRepository<StorageTransferGovernanceItem>;

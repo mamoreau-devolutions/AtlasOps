@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.ReleaseMetricMonitoring;
+
+using AtlasOps.Features;
+
+public interface IReleaseMetricMonitoringRepository : IAtlasOpsCapabilityRepository<ReleaseMetricMonitoringItem>;

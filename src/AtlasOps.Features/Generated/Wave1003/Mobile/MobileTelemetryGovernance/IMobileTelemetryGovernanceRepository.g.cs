@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Mobile.MobileTelemetryGovernance;
+
+using AtlasOps.Features;
+
+public interface IMobileTelemetryGovernanceRepository : IAtlasOpsCapabilityRepository<MobileTelemetryGovernanceItem>;

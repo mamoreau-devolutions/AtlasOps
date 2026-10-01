@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Database.DatabaseCredentialRecovery;
+
+using AtlasOps.Features;
+
+public interface IDatabaseCredentialRecoveryRepository : IAtlasOpsCapabilityRepository<DatabaseCredentialRecoveryItem>;

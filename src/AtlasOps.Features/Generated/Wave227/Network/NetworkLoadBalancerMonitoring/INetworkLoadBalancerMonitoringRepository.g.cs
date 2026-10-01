@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Network.NetworkLoadBalancerMonitoring;
+
+using AtlasOps.Features;
+
+public interface INetworkLoadBalancerMonitoringRepository : IAtlasOpsCapabilityRepository<NetworkLoadBalancerMonitoringItem>;

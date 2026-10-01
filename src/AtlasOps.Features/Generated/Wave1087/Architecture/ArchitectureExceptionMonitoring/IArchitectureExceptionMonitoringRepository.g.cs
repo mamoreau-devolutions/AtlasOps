@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Architecture.ArchitectureExceptionMonitoring;
+
+using AtlasOps.Features;
+
+public interface IArchitectureExceptionMonitoringRepository : IAtlasOpsCapabilityRepository<ArchitectureExceptionMonitoringItem>;

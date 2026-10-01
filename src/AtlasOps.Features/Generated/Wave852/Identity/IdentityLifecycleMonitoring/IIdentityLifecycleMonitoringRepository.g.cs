@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Identity.IdentityLifecycleMonitoring;
+
+using AtlasOps.Features;
+
+public interface IIdentityLifecycleMonitoringRepository : IAtlasOpsCapabilityRepository<IdentityLifecycleMonitoringItem>;

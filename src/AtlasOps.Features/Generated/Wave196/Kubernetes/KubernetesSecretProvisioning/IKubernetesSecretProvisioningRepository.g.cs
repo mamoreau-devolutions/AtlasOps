@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Kubernetes.KubernetesSecretProvisioning;
+
+using AtlasOps.Features;
+
+public interface IKubernetesSecretProvisioningRepository : IAtlasOpsCapabilityRepository<KubernetesSecretProvisioningItem>;

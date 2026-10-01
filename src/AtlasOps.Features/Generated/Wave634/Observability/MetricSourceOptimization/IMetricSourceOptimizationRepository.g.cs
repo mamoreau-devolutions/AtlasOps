@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Observability.MetricSourceOptimization;
+
+using AtlasOps.Features;
+
+public interface IMetricSourceOptimizationRepository : IAtlasOpsCapabilityRepository<MetricSourceOptimizationItem>;

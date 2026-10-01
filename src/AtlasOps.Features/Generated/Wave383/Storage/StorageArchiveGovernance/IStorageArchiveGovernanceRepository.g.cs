@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Storage.StorageArchiveGovernance;
+
+using AtlasOps.Features;
+
+public interface IStorageArchiveGovernanceRepository : IAtlasOpsCapabilityRepository<StorageArchiveGovernanceItem>;

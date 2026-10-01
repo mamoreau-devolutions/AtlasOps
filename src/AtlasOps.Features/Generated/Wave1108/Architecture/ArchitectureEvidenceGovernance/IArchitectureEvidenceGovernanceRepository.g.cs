@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Architecture.ArchitectureEvidenceGovernance;
+
+using AtlasOps.Features;
+
+public interface IArchitectureEvidenceGovernanceRepository : IAtlasOpsCapabilityRepository<ArchitectureEvidenceGovernanceItem>;

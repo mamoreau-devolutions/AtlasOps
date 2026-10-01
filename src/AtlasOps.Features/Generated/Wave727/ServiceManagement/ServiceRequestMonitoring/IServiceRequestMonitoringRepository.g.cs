@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ServiceRequestMonitoring;
+
+using AtlasOps.Features;
+
+public interface IServiceRequestMonitoringRepository : IAtlasOpsCapabilityRepository<ServiceRequestMonitoringItem>;

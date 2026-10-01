@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Desktop.DesktopHealthMonitoring;
+
+using AtlasOps.Features;
+
+public interface IDesktopHealthMonitoringRepository : IAtlasOpsCapabilityRepository<DesktopHealthMonitoringItem>;

@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>preview</LangVersion>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Avalonia.Headless" />
+    <PackageReference Include="MSTest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\src\Modular\Modules\Deployments\AtlasOps.Modules.Deployments.Core\AtlasOps.Modules.Deployments.Core.csproj" />
+    <ProjectReference Include="..\..\..\src\Modular\Modules\Governance\AtlasOps.Modules.Governance.Core\AtlasOps.Modules.Governance.Core.csproj" />
+    <ProjectReference Include="..\..\..\src\Modular\Platform\AtlasOps.Composition\AtlasOps.Composition.csproj" />
+  </ItemGroup>
+</Project>

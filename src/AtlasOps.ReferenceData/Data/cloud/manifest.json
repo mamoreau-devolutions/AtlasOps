@@ -1,0 +1,24 @@
+{
+  "name": "Vantage cloud instance catalogs",
+  "version": "2026-03 snapshot",
+  "license": "MIT",
+  "retrievedAt": "2026-10-01T11:50:36.3069441+00:00",
+  "sources": [
+    "https://instances.vantage.sh/instances.json",
+    "https://instances.vantage.sh/azure/instances.json",
+    "https://instances.vantage.sh/gcp/instances.json"
+  ],
+  "fileCount": 2,
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1074,
+      "sha256": "0d5fed886246ffc85fc460dfacad54dd0df47f960f3498318a58f9cc3b4cb05b"
+    },
+    {
+      "path": "offers.ndjson",
+      "bytes": 28841065,
+      "sha256": "1bbd7974bdb13801d96a42fb5084884b5a796bfee39d6d003c6fddeb9349c8e7"
+    }
+  ]
+}

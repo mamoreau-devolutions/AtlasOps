@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Cloud.CloudStorageProvisioning;
+
+using AtlasOps.Features;
+
+public interface ICloudStorageProvisioningRepository : IAtlasOpsCapabilityRepository<CloudStorageProvisioningItem>;

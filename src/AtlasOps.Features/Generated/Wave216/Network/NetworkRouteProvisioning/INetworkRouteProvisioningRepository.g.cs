@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Network.NetworkRouteProvisioning;
+
+using AtlasOps.Features;
+
+public interface INetworkRouteProvisioningRepository : IAtlasOpsCapabilityRepository<NetworkRouteProvisioningItem>;

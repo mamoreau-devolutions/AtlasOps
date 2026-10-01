@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Observability.TraceSpanOptimization;
+
+using AtlasOps.Features;
+
+public interface ITraceSpanOptimizationRepository : IAtlasOpsCapabilityRepository<TraceSpanOptimizationItem>;

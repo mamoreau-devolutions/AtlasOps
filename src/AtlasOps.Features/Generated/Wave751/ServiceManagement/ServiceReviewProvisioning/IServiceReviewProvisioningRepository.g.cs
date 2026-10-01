@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ServiceReviewProvisioning;
+
+using AtlasOps.Features;
+
+public interface IServiceReviewProvisioningRepository : IAtlasOpsCapabilityRepository<ServiceReviewProvisioningItem>;

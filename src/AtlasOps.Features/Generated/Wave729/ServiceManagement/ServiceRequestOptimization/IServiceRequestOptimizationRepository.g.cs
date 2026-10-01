@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ServiceRequestOptimization;
+
+using AtlasOps.Features;
+
+public interface IServiceRequestOptimizationRepository : IAtlasOpsCapabilityRepository<ServiceRequestOptimizationItem>;

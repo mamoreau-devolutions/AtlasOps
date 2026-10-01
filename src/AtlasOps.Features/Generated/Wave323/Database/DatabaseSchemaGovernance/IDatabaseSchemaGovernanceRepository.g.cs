@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Database.DatabaseSchemaGovernance;
+
+using AtlasOps.Features;
+
+public interface IDatabaseSchemaGovernanceRepository : IAtlasOpsCapabilityRepository<DatabaseSchemaGovernanceItem>;

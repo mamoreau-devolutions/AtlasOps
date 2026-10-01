@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ServiceCatalogRecovery;
+
+using AtlasOps.Features;
+
+public interface IServiceCatalogRecoveryRepository : IAtlasOpsCapabilityRepository<ServiceCatalogRecoveryItem>;

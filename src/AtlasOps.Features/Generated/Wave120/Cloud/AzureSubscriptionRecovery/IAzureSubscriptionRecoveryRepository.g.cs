@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Cloud.AzureSubscriptionRecovery;
+
+using AtlasOps.Features;
+
+public interface IAzureSubscriptionRecoveryRepository : IAtlasOpsCapabilityRepository<AzureSubscriptionRecoveryItem>;

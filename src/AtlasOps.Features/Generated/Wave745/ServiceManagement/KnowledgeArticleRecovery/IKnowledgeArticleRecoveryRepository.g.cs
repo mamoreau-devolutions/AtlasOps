@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.KnowledgeArticleRecovery;
+
+using AtlasOps.Features;
+
+public interface IKnowledgeArticleRecoveryRepository : IAtlasOpsCapabilityRepository<KnowledgeArticleRecoveryItem>;

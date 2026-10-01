@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Cloud.CloudFunctionOptimization;
+
+using AtlasOps.Features;
+
+public interface ICloudFunctionOptimizationRepository : IAtlasOpsCapabilityRepository<CloudFunctionOptimizationItem>;

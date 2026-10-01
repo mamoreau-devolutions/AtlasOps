@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.ComputeScheduleGovernance;
+
+using AtlasOps.Features;
+
+public interface IComputeScheduleGovernanceRepository : IAtlasOpsCapabilityRepository<ComputeScheduleGovernanceItem>;

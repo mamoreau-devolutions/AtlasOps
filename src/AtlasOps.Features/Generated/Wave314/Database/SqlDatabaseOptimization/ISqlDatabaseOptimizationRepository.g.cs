@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Database.SqlDatabaseOptimization;
+
+using AtlasOps.Features;
+
+public interface ISqlDatabaseOptimizationRepository : IAtlasOpsCapabilityRepository<SqlDatabaseOptimizationItem>;

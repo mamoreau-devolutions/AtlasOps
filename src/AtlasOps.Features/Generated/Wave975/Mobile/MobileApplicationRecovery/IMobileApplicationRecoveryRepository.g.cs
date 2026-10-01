@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Mobile.MobileApplicationRecovery;
+
+using AtlasOps.Features;
+
+public interface IMobileApplicationRecoveryRepository : IAtlasOpsCapabilityRepository<MobileApplicationRecoveryItem>;

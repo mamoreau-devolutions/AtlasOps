@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Storage.StorageEncryptionGovernance;
+
+using AtlasOps.Features;
+
+public interface IStorageEncryptionGovernanceRepository : IAtlasOpsCapabilityRepository<StorageEncryptionGovernanceItem>;

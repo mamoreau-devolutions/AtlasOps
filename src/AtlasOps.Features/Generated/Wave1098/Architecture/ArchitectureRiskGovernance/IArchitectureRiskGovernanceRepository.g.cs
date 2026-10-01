@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Architecture.ArchitectureRiskGovernance;
+
+using AtlasOps.Features;
+
+public interface IArchitectureRiskGovernanceRepository : IAtlasOpsCapabilityRepository<ArchitectureRiskGovernanceItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Kubernetes.KubernetesIngressProvisioning;
+
+using AtlasOps.Features;
+
+public interface IKubernetesIngressProvisioningRepository : IAtlasOpsCapabilityRepository<KubernetesIngressProvisioningItem>;

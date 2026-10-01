@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.ReleaseGateOptimization;
+
+using AtlasOps.Features;
+
+public interface IReleaseGateOptimizationRepository : IAtlasOpsCapabilityRepository<ReleaseGateOptimizationItem>;

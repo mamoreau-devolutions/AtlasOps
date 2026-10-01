@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Architecture.ArchitectureRoadmapGovernance;
+
+using AtlasOps.Features;
+
+public interface IArchitectureRoadmapGovernanceRepository : IAtlasOpsCapabilityRepository<ArchitectureRoadmapGovernanceItem>;

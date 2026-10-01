@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.SourceRepositoryRecovery;
+
+using AtlasOps.Features;
+
+public interface ISourceRepositoryRecoveryRepository : IAtlasOpsCapabilityRepository<SourceRepositoryRecoveryItem>;

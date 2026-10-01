@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Desktop.DesktopPolicyProvisioning;
+
+using AtlasOps.Features;
+
+public interface IDesktopPolicyProvisioningRepository : IAtlasOpsCapabilityRepository<DesktopPolicyProvisioningItem>;

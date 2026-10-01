@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Architecture.ArchitectureRiskRecovery;
+
+using AtlasOps.Features;
+
+public interface IArchitectureRiskRecoveryRepository : IAtlasOpsCapabilityRepository<ArchitectureRiskRecoveryItem>;

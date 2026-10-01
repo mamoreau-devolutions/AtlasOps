@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Architecture.ArchitectureExceptionProvisioning;
+
+using AtlasOps.Features;
+
+public interface IArchitectureExceptionProvisioningRepository : IAtlasOpsCapabilityRepository<ArchitectureExceptionProvisioningItem>;

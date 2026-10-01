@@ -1,0 +1,159 @@
+<local:IncidentStudioView
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:common="using:AtlasOps.Enterprise.Avalonia.Common"
+    xmlns:contracts="using:AtlasOps.Enterprise.Contracts.Incidents"
+    xmlns:local="using:AtlasOps.Enterprise.Avalonia.Incidents"
+    x:Class="AtlasOps.Enterprise.Avalonia.Incidents.IncidentStudioView"
+    x:DataType="local:IncidentStudioViewModel"
+    MinWidth="760"
+    MinHeight="480">
+    <Grid
+        Margin="20"
+        RowDefinitions="Auto,Auto,Auto,*"
+        RowSpacing="12">
+        <StackPanel Spacing="3">
+            <TextBlock
+                FontSize="24"
+                FontWeight="SemiBold"
+                Text="{Binding Title}" />
+            <TextBlock
+                Opacity="0.72"
+                Text="{Binding Summary}"
+                TextWrapping="Wrap" />
+        </StackPanel>
+        <ItemsControl
+            Grid.Row="1"
+            ItemsSource="{Binding Metrics}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <UniformGrid Rows="1" />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate x:DataType="common:EnterpriseMetric">
+                    <Border
+                        Margin="0,0,8,0"
+                        Padding="12"
+                        Background="#16243A"
+                        CornerRadius="7">
+                        <StackPanel>
+                            <TextBlock
+                                FontSize="11"
+                                Foreground="#91A1B8"
+                                Text="{Binding Label}" />
+                            <TextBlock
+                                FontSize="20"
+                                FontWeight="Bold"
+                                Text="{Binding Value}" />
+                            <TextBlock
+                                FontSize="10"
+                                Foreground="#91A1B8"
+                                Text="{Binding Detail}"
+                                TextTrimming="CharacterEllipsis" />
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        <TextBox
+            Grid.Row="2"
+            Text="{Binding SearchText, Mode=TwoWay}"
+            PlaceholderText="Filter incidents, services, or owners" />
+        <Grid
+            Grid.Row="3"
+            ColumnDefinitions="330,5,*">
+            <ListBox
+                ItemsSource="{Binding Incidents}"
+                SelectedItem="{Binding SelectedIncident, Mode=TwoWay}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate x:DataType="contracts:Incident">
+                        <Grid
+                            Margin="8"
+                            ColumnDefinitions="*,Auto">
+                            <StackPanel>
+                                <TextBlock
+                                    FontWeight="SemiBold"
+                                    Text="{Binding Title}"
+                                    TextTrimming="CharacterEllipsis" />
+                                <TextBlock
+                                    FontSize="11"
+                                    Foreground="#91A1B8"
+                                    Text="{Binding Id}" />
+                            </StackPanel>
+                            <StackPanel
+                                Grid.Column="1"
+                                HorizontalAlignment="Right">
+                                <TextBlock
+                                    Foreground="#F4B183"
+                                    Text="{Binding Severity}" />
+                                <TextBlock
+                                    FontSize="10"
+                                    Foreground="#91A1B8"
+                                    Text="{Binding State}" />
+                            </StackPanel>
+                        </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <GridSplitter
+                Grid.Column="1"
+                ResizeDirection="Columns" />
+            <ScrollViewer Grid.Column="2">
+                <StackPanel
+                    Margin="16,0,0,0"
+                    Spacing="12">
+                    <Border
+                        Padding="12"
+                        Background="#111C2E"
+                        CornerRadius="7">
+                        <StackPanel Spacing="5">
+                            <TextBlock
+                                FontSize="17"
+                                FontWeight="SemiBold"
+                                Text="Service-level status" />
+                            <TextBlock
+                                Text="{Binding SlaSummary}"
+                                TextWrapping="Wrap" />
+                            <TextBlock
+                                Foreground="#F4B183"
+                                Text="{Binding EscalationSummary}"
+                                TextWrapping="Wrap" />
+                        </StackPanel>
+                    </Border>
+                    <TextBlock
+                        FontSize="17"
+                        FontWeight="SemiBold"
+                        Text="Impacted services" />
+                    <ItemsControl ItemsSource="{Binding ImpactedServices}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate x:DataType="common:EnterpriseDetailRow">
+                                <Border
+                                    Margin="0,0,0,7"
+                                    Padding="10"
+                                    Background="#0F192A"
+                                    CornerRadius="6">
+                                    <Grid ColumnDefinitions="*,Auto">
+                                        <StackPanel>
+                                            <TextBlock
+                                                FontWeight="SemiBold"
+                                                Text="{Binding Title}" />
+                                            <TextBlock
+                                                FontSize="11"
+                                                Foreground="#91A1B8"
+                                                Text="{Binding Subtitle}" />
+                                        </StackPanel>
+                                        <TextBlock
+                                            Grid.Column="1"
+                                            Foreground="#9CC2FF"
+                                            Text="{Binding Status}" />
+                                    </Grid>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+</local:IncidentStudioView>

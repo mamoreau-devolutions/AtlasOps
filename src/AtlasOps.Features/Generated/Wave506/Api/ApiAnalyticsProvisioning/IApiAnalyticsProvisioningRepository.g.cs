@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Api.ApiAnalyticsProvisioning;
+
+using AtlasOps.Features;
+
+public interface IApiAnalyticsProvisioningRepository : IAtlasOpsCapabilityRepository<ApiAnalyticsProvisioningItem>;

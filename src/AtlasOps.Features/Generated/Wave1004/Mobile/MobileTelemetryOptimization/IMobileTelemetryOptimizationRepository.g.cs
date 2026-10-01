@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Mobile.MobileTelemetryOptimization;
+
+using AtlasOps.Features;
+
+public interface IMobileTelemetryOptimizationRepository : IAtlasOpsCapabilityRepository<MobileTelemetryOptimizationItem>;

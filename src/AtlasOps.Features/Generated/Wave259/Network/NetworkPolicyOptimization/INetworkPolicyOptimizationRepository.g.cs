@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Network.NetworkPolicyOptimization;
+
+using AtlasOps.Features;
+
+public interface INetworkPolicyOptimizationRepository : IAtlasOpsCapabilityRepository<NetworkPolicyOptimizationItem>;

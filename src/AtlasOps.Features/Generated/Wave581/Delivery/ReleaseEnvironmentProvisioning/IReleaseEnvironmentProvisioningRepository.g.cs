@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.ReleaseEnvironmentProvisioning;
+
+using AtlasOps.Features;
+
+public interface IReleaseEnvironmentProvisioningRepository : IAtlasOpsCapabilityRepository<ReleaseEnvironmentProvisioningItem>;

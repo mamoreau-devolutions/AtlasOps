@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.SourceRepositoryMonitoring;
+
+using AtlasOps.Features;
+
+public interface ISourceRepositoryMonitoringRepository : IAtlasOpsCapabilityRepository<SourceRepositoryMonitoringItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.ComputeMetricMonitoring;
+
+using AtlasOps.Features;
+
+public interface IComputeMetricMonitoringRepository : IAtlasOpsCapabilityRepository<ComputeMetricMonitoringItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Security.SecurityBaselineRecovery;
+
+using AtlasOps.Features;
+
+public interface ISecurityBaselineRecoveryRepository : IAtlasOpsCapabilityRepository<SecurityBaselineRecoveryItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Observability.ObservabilityExportMonitoring;
+
+using AtlasOps.Features;
+
+public interface IObservabilityExportMonitoringRepository : IAtlasOpsCapabilityRepository<ObservabilityExportMonitoringItem>;

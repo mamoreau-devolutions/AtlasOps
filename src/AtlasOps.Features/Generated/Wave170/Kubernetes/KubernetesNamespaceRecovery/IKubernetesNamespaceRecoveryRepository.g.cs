@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Kubernetes.KubernetesNamespaceRecovery;
+
+using AtlasOps.Features;
+
+public interface IKubernetesNamespaceRecoveryRepository : IAtlasOpsCapabilityRepository<KubernetesNamespaceRecoveryItem>;

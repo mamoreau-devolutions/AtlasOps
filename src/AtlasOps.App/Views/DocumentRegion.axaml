@@ -1,0 +1,36 @@
+<views:DocumentRegion
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:core="clr-namespace:AtlasOps.Core;assembly=AtlasOps.Core"
+    xmlns:viewModels="clr-namespace:AtlasOps.App.ViewModels"
+    xmlns:views="clr-namespace:AtlasOps.App.Views"
+    x:Class="AtlasOps.App.Views.DocumentRegion"
+    x:DataType="viewModels:MainViewModel">
+    <Grid RowDefinitions="Auto,*,Auto">
+        <TextBlock Text="OPEN DOCUMENTS"
+                   Margin="4,4,0,12"
+                   FontSize="11"
+                   FontWeight="SemiBold"
+                   Foreground="#788BA8" />
+        <ListBox Grid.Row="1" ItemsSource="{Binding Documents}" Background="Transparent">
+            <ListBox.ItemTemplate>
+                <DataTemplate x:DataType="core:AtlasOpsEditorDocument">
+                    <Border Margin="0,0,0,8" Padding="11" CornerRadius="6" Background="#16243A">
+                        <StackPanel>
+                            <TextBlock Text="{Binding Title}" FontWeight="SemiBold" />
+                            <TextBlock Text="{Binding Language}" FontSize="11" Foreground="#91A1B8" />
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Border Grid.Row="2" Padding="10" CornerRadius="6" Background="#16243A">
+            <StackPanel Spacing="5">
+                <TextBlock Text="Generator pipeline" FontWeight="SemiBold" />
+                <TextBlock Text="PowerShell schema → C# models" FontSize="11" Foreground="#91A1B8" />
+                <TextBlock Text="Roslyn → serializers + editors" FontSize="11" Foreground="#91A1B8" />
+                <TextBlock Text="Turso → persisted entities" FontSize="11" Foreground="#91A1B8" />
+            </StackPanel>
+        </Border>
+    </Grid>
+</views:DocumentRegion>

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Security.SecurityCertificateProvisioning;
+
+using AtlasOps.Features;
+
+public interface ISecurityCertificateProvisioningRepository : IAtlasOpsCapabilityRepository<SecurityCertificateProvisioningItem>;

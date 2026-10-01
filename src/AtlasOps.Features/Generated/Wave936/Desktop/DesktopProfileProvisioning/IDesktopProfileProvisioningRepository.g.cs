@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Desktop.DesktopProfileProvisioning;
+
+using AtlasOps.Features;
+
+public interface IDesktopProfileProvisioningRepository : IAtlasOpsCapabilityRepository<DesktopProfileProvisioningItem>;

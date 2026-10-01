@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Data.DataPipelineOptimization;
+
+using AtlasOps.Features;
+
+public interface IDataPipelineOptimizationRepository : IAtlasOpsCapabilityRepository<DataPipelineOptimizationItem>;

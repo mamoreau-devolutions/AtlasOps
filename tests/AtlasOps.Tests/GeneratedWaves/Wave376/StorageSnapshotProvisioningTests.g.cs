@@ -1,0 +1,90 @@
+namespace AtlasOps.Tests.GeneratedWaves;
+
+using AtlasOps.Features;
+using AtlasOps.Features.Storage.StorageSnapshotProvisioning;
+
+[TestClass]
+public sealed class StorageSnapshotProvisioningTests
+{
+    private static UpdateStorageSnapshotProvisioningCommand CreateCommand(string targetState = "Ready")
+    {
+        return new("storage.storagesnapshotprovisioning-1", "Storage Snapshot Provisioning", "Operations", targetState, 6, true);
+    }
+
+    [TestMethod]
+    public void Descriptor_HasExpectedWaveAndArea()
+    {
+        AtlasOpsCapabilityDescriptor descriptor = AtlasOpsCapabilityCatalog.All.Single(static item => item.Id == "storage.storagesnapshotprovisioning");
+
+        Assert.AreEqual(376, descriptor.Wave);
+        Assert.AreEqual("Storage", descriptor.Area);
+        Assert.AreEqual(typeof(StorageSnapshotProvisioningItem), descriptor.ModelType);
+    }
+
+    [TestMethod]
+    public void Validator_AcceptsValidCommand()
+    {
+        StorageSnapshotProvisioningValidator validator = new();
+
+        Assert.AreEqual(0, validator.Validate(CreateCommand()).Count);
+    }
+
+    [DataTestMethod]
+    [DataRow("", "Operations", "Ready", 1, "Name")]
+    [DataRow("Name", "", "Ready", 1, "Owner")]
+    [DataRow("Name", "Operations", "", 1, "State")]
+    [DataRow("Name", "Operations", "Ready", 0, "Priority")]
+    public void Validator_RejectsInvalidFields(string name, string owner, string state, int priority, string expectedField)
+    {
+        StorageSnapshotProvisioningValidator validator = new();
+        UpdateStorageSnapshotProvisioningCommand command = new("id", name, owner, state, priority, true);
+
+        Assert.IsTrue(validator.Validate(command).Any(issue => issue.Field == expectedField));
+    }
+
+    [TestMethod]
+    public void Policy_ExposesDeterministicTransitions()
+    {
+        StorageSnapshotProvisioningPolicy policy = new();
+
+        CollectionAssert.AreEqual(new[] { "Cancelled", "Ready" }, policy.GetAvailableTransitions("Draft").ToArray());
+    }
+
+    [TestMethod]
+    public async Task Service_PersistsValidTransition()
+    {
+        InMemoryAtlasOpsCapabilityRepository<StorageSnapshotProvisioningItem> repository = new();
+        StorageSnapshotProvisioningService service = new(repository, TimeProvider.System);
+
+        AtlasOpsOperationResult<StorageSnapshotProvisioningChanged> result = await service.ExecuteAsync(CreateCommand(), "operator", CancellationToken.None);
+        StorageSnapshotProvisioningItem? stored = await repository.GetAsync("storage.storagesnapshotprovisioning-1", CancellationToken.None);
+
+        Assert.IsTrue(result.IsSuccess);
+        Assert.IsNotNull(stored);
+        Assert.AreEqual("Ready", stored.State);
+        Assert.AreEqual(1, stored.Revision);
+    }
+
+    [TestMethod]
+    public async Task Service_RejectsIllegalTransition()
+    {
+        InMemoryAtlasOpsCapabilityRepository<StorageSnapshotProvisioningItem> repository = new();
+        StorageSnapshotProvisioningService service = new(repository, TimeProvider.System);
+
+        AtlasOpsOperationResult<StorageSnapshotProvisioningChanged> result = await service.ExecuteAsync(CreateCommand("Completed"), "operator", CancellationToken.None);
+
+        Assert.IsFalse(result.IsSuccess);
+        Assert.IsTrue(result.Issues.Any(issue => issue.Field == "State"));
+    }
+
+    [TestMethod]
+    public void ViewModel_AdvancesUsingPolicy()
+    {
+        StorageSnapshotProvisioningViewModel viewModel = new();
+
+        viewModel.Advance();
+
+        Assert.AreEqual("Cancelled", viewModel.State);
+        StringAssert.Contains(viewModel.Status, "Cancelled");
+    }
+}

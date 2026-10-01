@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.VirtualMachineOptimization;
+
+using AtlasOps.Features;
+
+public interface IVirtualMachineOptimizationRepository : IAtlasOpsCapabilityRepository<VirtualMachineOptimizationItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.ReleaseMetricOptimization;
+
+using AtlasOps.Features;
+
+public interface IReleaseMetricOptimizationRepository : IAtlasOpsCapabilityRepository<ReleaseMetricOptimizationItem>;

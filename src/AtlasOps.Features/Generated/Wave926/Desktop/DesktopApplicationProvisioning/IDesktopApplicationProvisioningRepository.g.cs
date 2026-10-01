@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Desktop.DesktopApplicationProvisioning;
+
+using AtlasOps.Features;
+
+public interface IDesktopApplicationProvisioningRepository : IAtlasOpsCapabilityRepository<DesktopApplicationProvisioningItem>;

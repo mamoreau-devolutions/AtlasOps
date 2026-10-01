@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.FinOps.ResourceCommitmentMonitoring;
+
+using AtlasOps.Features;
+
+public interface IResourceCommitmentMonitoringRepository : IAtlasOpsCapabilityRepository<ResourceCommitmentMonitoringItem>;

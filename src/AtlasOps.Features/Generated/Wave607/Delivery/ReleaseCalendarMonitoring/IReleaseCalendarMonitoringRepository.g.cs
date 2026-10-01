@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.ReleaseCalendarMonitoring;
+
+using AtlasOps.Features;
+
+public interface IReleaseCalendarMonitoringRepository : IAtlasOpsCapabilityRepository<ReleaseCalendarMonitoringItem>;

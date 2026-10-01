@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Mobile.MobileSupportGovernance;
+
+using AtlasOps.Features;
+
+public interface IMobileSupportGovernanceRepository : IAtlasOpsCapabilityRepository<MobileSupportGovernanceItem>;

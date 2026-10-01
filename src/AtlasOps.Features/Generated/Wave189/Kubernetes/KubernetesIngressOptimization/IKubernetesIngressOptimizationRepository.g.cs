@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Kubernetes.KubernetesIngressOptimization;
+
+using AtlasOps.Features;
+
+public interface IKubernetesIngressOptimizationRepository : IAtlasOpsCapabilityRepository<KubernetesIngressOptimizationItem>;

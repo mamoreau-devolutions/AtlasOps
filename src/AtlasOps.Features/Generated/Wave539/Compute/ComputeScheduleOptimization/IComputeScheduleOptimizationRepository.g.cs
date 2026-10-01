@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.ComputeScheduleOptimization;
+
+using AtlasOps.Features;
+
+public interface IComputeScheduleOptimizationRepository : IAtlasOpsCapabilityRepository<ComputeScheduleOptimizationItem>;

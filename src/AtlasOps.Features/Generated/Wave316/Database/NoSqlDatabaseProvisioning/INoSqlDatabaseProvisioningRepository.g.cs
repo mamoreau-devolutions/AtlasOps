@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Database.NoSqlDatabaseProvisioning;
+
+using AtlasOps.Features;
+
+public interface INoSqlDatabaseProvisioningRepository : IAtlasOpsCapabilityRepository<NoSqlDatabaseProvisioningItem>;

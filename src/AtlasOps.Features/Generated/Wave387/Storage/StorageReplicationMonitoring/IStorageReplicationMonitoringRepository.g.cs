@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Storage.StorageReplicationMonitoring;
+
+using AtlasOps.Features;
+
+public interface IStorageReplicationMonitoringRepository : IAtlasOpsCapabilityRepository<StorageReplicationMonitoringItem>;

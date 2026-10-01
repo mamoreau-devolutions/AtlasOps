@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ServiceCatalogOptimization;
+
+using AtlasOps.Features;
+
+public interface IServiceCatalogOptimizationRepository : IAtlasOpsCapabilityRepository<ServiceCatalogOptimizationItem>;

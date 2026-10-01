@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Database.DatabaseQueryOptimization;
+
+using AtlasOps.Features;
+
+public interface IDatabaseQueryOptimizationRepository : IAtlasOpsCapabilityRepository<DatabaseQueryOptimizationItem>;

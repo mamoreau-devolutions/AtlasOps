@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Observability.LogSourceOptimization;
+
+using AtlasOps.Features;
+
+public interface ILogSourceOptimizationRepository : IAtlasOpsCapabilityRepository<LogSourceOptimizationItem>;

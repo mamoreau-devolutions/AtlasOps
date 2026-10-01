@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ServiceReviewOptimization;
+
+using AtlasOps.Features;
+
+public interface IServiceReviewOptimizationRepository : IAtlasOpsCapabilityRepository<ServiceReviewOptimizationItem>;

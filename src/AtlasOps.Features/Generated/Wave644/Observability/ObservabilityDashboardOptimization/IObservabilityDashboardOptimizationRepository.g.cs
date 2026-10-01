@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Observability.ObservabilityDashboardOptimization;
+
+using AtlasOps.Features;
+
+public interface IObservabilityDashboardOptimizationRepository : IAtlasOpsCapabilityRepository<ObservabilityDashboardOptimizationItem>;

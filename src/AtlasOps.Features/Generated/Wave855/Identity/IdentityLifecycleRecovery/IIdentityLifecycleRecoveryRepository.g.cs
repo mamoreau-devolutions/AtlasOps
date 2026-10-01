@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Identity.IdentityLifecycleRecovery;
+
+using AtlasOps.Features;
+
+public interface IIdentityLifecycleRecoveryRepository : IAtlasOpsCapabilityRepository<IdentityLifecycleRecoveryItem>;

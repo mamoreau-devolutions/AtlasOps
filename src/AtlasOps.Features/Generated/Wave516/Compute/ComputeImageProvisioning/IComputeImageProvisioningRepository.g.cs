@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.ComputeImageProvisioning;
+
+using AtlasOps.Features;
+
+public interface IComputeImageProvisioningRepository : IAtlasOpsCapabilityRepository<ComputeImageProvisioningItem>;

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Cloud.CloudNetworkProvisioning;
+
+using AtlasOps.Features;
+
+public interface ICloudNetworkProvisioningRepository : IAtlasOpsCapabilityRepository<CloudNetworkProvisioningItem>;

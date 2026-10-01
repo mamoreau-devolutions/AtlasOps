@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.ComputeScaleSetRecovery;
+
+using AtlasOps.Features;
+
+public interface IComputeScaleSetRecoveryRepository : IAtlasOpsCapabilityRepository<ComputeScaleSetRecoveryItem>;

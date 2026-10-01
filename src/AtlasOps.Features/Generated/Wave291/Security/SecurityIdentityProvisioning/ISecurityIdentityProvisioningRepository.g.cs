@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Security.SecurityIdentityProvisioning;
+
+using AtlasOps.Features;
+
+public interface ISecurityIdentityProvisioningRepository : IAtlasOpsCapabilityRepository<SecurityIdentityProvisioningItem>;

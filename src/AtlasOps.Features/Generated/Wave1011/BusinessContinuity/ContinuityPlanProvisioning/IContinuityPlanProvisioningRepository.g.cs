@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.BusinessContinuity.ContinuityPlanProvisioning;
+
+using AtlasOps.Features;
+
+public interface IContinuityPlanProvisioningRepository : IAtlasOpsCapabilityRepository<ContinuityPlanProvisioningItem>;

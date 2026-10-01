@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.ReleasePipelineGovernance;
+
+using AtlasOps.Features;
+
+public interface IReleasePipelineGovernanceRepository : IAtlasOpsCapabilityRepository<ReleasePipelineGovernanceItem>;

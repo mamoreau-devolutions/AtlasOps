@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Edge.EdgeTelemetryProvisioning;
+
+using AtlasOps.Features;
+
+public interface IEdgeTelemetryProvisioningRepository : IAtlasOpsCapabilityRepository<EdgeTelemetryProvisioningItem>;

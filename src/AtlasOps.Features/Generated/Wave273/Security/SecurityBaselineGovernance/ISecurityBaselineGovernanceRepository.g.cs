@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Security.SecurityBaselineGovernance;
+
+using AtlasOps.Features;
+
+public interface ISecurityBaselineGovernanceRepository : IAtlasOpsCapabilityRepository<SecurityBaselineGovernanceItem>;

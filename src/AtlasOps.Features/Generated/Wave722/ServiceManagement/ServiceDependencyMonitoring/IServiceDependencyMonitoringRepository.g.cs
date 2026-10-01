@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ServiceDependencyMonitoring;
+
+using AtlasOps.Features;
+
+public interface IServiceDependencyMonitoringRepository : IAtlasOpsCapabilityRepository<ServiceDependencyMonitoringItem>;

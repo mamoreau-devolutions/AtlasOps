@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.ComputeScheduleProvisioning;
+
+using AtlasOps.Features;
+
+public interface IComputeScheduleProvisioningRepository : IAtlasOpsCapabilityRepository<ComputeScheduleProvisioningItem>;

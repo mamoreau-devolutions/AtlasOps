@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.FinOps.CostAnomalyProvisioning;
+
+using AtlasOps.Features;
+
+public interface ICostAnomalyProvisioningRepository : IAtlasOpsCapabilityRepository<CostAnomalyProvisioningItem>;

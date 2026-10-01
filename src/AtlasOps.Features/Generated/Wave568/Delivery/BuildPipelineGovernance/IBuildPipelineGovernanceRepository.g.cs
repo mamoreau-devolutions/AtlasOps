@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Delivery.BuildPipelineGovernance;
+
+using AtlasOps.Features;
+
+public interface IBuildPipelineGovernanceRepository : IAtlasOpsCapabilityRepository<BuildPipelineGovernanceItem>;

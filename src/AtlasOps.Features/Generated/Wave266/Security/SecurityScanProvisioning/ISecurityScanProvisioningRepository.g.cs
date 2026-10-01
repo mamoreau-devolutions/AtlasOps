@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Security.SecurityScanProvisioning;
+
+using AtlasOps.Features;
+
+public interface ISecurityScanProvisioningRepository : IAtlasOpsCapabilityRepository<SecurityScanProvisioningItem>;

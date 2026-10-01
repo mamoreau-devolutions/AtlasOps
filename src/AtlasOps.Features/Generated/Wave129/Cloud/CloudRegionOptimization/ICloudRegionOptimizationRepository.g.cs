@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Cloud.CloudRegionOptimization;
+
+using AtlasOps.Features;
+
+public interface ICloudRegionOptimizationRepository : IAtlasOpsCapabilityRepository<CloudRegionOptimizationItem>;

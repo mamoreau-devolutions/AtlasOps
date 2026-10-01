@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Observability.ObservabilityExportOptimization;
+
+using AtlasOps.Features;
+
+public interface IObservabilityExportOptimizationRepository : IAtlasOpsCapabilityRepository<ObservabilityExportOptimizationItem>;

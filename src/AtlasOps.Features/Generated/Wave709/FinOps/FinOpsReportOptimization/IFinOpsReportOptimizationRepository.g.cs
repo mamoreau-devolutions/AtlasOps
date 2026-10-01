@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.FinOps.FinOpsReportOptimization;
+
+using AtlasOps.Features;
+
+public interface IFinOpsReportOptimizationRepository : IAtlasOpsCapabilityRepository<FinOpsReportOptimizationItem>;

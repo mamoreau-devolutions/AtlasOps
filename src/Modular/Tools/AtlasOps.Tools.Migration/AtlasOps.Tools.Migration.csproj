@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>preview</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" />
+    <PackageReference Include="MongoDB.Driver" />
+    <PackageReference Include="MySqlConnector" />
+    <PackageReference Include="Npgsql" />
+    <PackageReference Include="OpenSearch.Client" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Platform\AtlasOps.Configuration\AtlasOps.Configuration.csproj" />
+    <ProjectReference Include="..\..\Platform\AtlasOps.Domain\AtlasOps.Domain.csproj" />
+    <ProjectReference Include="..\..\Platform\AtlasOps.Serialization\AtlasOps.Serialization.csproj" />
+    <ProjectReference Include="..\..\Platform\AtlasOps.Telemetry\AtlasOps.Telemetry.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Network.NetworkDnsZoneOptimization;
+
+using AtlasOps.Features;
+
+public interface INetworkDnsZoneOptimizationRepository : IAtlasOpsCapabilityRepository<NetworkDnsZoneOptimizationItem>;

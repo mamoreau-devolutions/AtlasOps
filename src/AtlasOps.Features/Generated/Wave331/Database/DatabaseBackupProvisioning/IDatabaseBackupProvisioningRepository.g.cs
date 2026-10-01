@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Database.DatabaseBackupProvisioning;
+
+using AtlasOps.Features;
+
+public interface IDatabaseBackupProvisioningRepository : IAtlasOpsCapabilityRepository<DatabaseBackupProvisioningItem>;

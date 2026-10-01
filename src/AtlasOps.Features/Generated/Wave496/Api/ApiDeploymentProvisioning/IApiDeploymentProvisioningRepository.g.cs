@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Api.ApiDeploymentProvisioning;
+
+using AtlasOps.Features;
+
+public interface IApiDeploymentProvisioningRepository : IAtlasOpsCapabilityRepository<ApiDeploymentProvisioningItem>;

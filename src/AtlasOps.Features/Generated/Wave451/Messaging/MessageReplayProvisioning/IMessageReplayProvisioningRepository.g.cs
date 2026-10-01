@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Messaging.MessageReplayProvisioning;
+
+using AtlasOps.Features;
+
+public interface IMessageReplayProvisioningRepository : IAtlasOpsCapabilityRepository<MessageReplayProvisioningItem>;

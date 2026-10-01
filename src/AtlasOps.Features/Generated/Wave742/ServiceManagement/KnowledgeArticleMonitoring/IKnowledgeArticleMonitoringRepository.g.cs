@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.KnowledgeArticleMonitoring;
+
+using AtlasOps.Features;
+
+public interface IKnowledgeArticleMonitoringRepository : IAtlasOpsCapabilityRepository<KnowledgeArticleMonitoringItem>;

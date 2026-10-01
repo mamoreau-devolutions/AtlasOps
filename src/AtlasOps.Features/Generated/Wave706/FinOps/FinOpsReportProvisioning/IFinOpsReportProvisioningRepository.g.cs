@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.FinOps.FinOpsReportProvisioning;
+
+using AtlasOps.Features;
+
+public interface IFinOpsReportProvisioningRepository : IAtlasOpsCapabilityRepository<FinOpsReportProvisioningItem>;

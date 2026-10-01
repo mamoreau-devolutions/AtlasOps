@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Mobile.MobileProfileGovernance;
+
+using AtlasOps.Features;
+
+public interface IMobileProfileGovernanceRepository : IAtlasOpsCapabilityRepository<MobileProfileGovernanceItem>;

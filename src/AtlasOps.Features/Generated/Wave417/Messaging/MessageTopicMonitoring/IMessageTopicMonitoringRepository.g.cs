@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Messaging.MessageTopicMonitoring;
+
+using AtlasOps.Features;
+
+public interface IMessageTopicMonitoringRepository : IAtlasOpsCapabilityRepository<MessageTopicMonitoringItem>;

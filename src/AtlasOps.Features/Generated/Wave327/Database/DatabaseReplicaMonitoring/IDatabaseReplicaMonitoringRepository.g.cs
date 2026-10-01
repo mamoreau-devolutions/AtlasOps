@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Database.DatabaseReplicaMonitoring;
+
+using AtlasOps.Features;
+
+public interface IDatabaseReplicaMonitoringRepository : IAtlasOpsCapabilityRepository<DatabaseReplicaMonitoringItem>;

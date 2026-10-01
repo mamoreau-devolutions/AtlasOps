@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Api.ApiDeploymentOptimization;
+
+using AtlasOps.Features;
+
+public interface IApiDeploymentOptimizationRepository : IAtlasOpsCapabilityRepository<ApiDeploymentOptimizationItem>;

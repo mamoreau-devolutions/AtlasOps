@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Messaging.MessageBrokerProvisioning;
+
+using AtlasOps.Features;
+
+public interface IMessageBrokerProvisioningRepository : IAtlasOpsCapabilityRepository<MessageBrokerProvisioningItem>;

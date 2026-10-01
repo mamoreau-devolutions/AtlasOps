@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.ServiceManagement.ProblemRecordOptimization;
+
+using AtlasOps.Features;
+
+public interface IProblemRecordOptimizationRepository : IAtlasOpsCapabilityRepository<ProblemRecordOptimizationItem>;

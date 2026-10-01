@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Security.SecurityKeyOptimization;
+
+using AtlasOps.Features;
+
+public interface ISecurityKeyOptimizationRepository : IAtlasOpsCapabilityRepository<SecurityKeyOptimizationItem>;

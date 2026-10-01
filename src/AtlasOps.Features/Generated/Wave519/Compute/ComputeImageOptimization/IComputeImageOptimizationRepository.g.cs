@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Compute.ComputeImageOptimization;
+
+using AtlasOps.Features;
+
+public interface IComputeImageOptimizationRepository : IAtlasOpsCapabilityRepository<ComputeImageOptimizationItem>;

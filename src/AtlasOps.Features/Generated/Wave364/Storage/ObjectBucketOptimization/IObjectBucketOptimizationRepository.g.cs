@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Storage.ObjectBucketOptimization;
+
+using AtlasOps.Features;
+
+public interface IObjectBucketOptimizationRepository : IAtlasOpsCapabilityRepository<ObjectBucketOptimizationItem>;

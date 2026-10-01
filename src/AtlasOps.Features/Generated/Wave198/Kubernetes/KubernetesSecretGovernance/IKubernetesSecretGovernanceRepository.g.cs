@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Kubernetes.KubernetesSecretGovernance;
+
+using AtlasOps.Features;
+
+public interface IKubernetesSecretGovernanceRepository : IAtlasOpsCapabilityRepository<KubernetesSecretGovernanceItem>;

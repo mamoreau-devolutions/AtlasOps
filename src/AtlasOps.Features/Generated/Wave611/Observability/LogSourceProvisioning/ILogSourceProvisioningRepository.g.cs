@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Observability.LogSourceProvisioning;
+
+using AtlasOps.Features;
+
+public interface ILogSourceProvisioningRepository : IAtlasOpsCapabilityRepository<LogSourceProvisioningItem>;

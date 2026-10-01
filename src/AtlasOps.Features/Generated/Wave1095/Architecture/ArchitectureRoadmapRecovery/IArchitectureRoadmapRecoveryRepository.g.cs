@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Architecture.ArchitectureRoadmapRecovery;
+
+using AtlasOps.Features;
+
+public interface IArchitectureRoadmapRecoveryRepository : IAtlasOpsCapabilityRepository<ArchitectureRoadmapRecoveryItem>;

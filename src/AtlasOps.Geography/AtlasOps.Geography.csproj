@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>preview</LangVersion>
+    <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Data\Source\countries\**\*.json"
+             CopyToOutputDirectory="PreserveNewest"
+             Link="ReferenceData\Geography\countries\%(Filename)%(Extension)" />
+    <Content Include="Data\Source\subdivisions\**\*.json"
+             CopyToOutputDirectory="PreserveNewest"
+             Link="ReferenceData\Geography\subdivisions\%(Filename)%(Extension)" />
+    <Content Include="Data\Source\LICENSE"
+             CopyToOutputDirectory="PreserveNewest"
+             Link="ReferenceData\Geography\LICENSE" />
+    <Content Include="Data\Source\SOURCE_COMMIT"
+             CopyToOutputDirectory="PreserveNewest"
+             Link="ReferenceData\Geography\SOURCE_COMMIT" />
+  </ItemGroup>
+</Project>

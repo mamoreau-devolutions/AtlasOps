@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Database.DatabaseRestoreGovernance;
+
+using AtlasOps.Features;
+
+public interface IDatabaseRestoreGovernanceRepository : IAtlasOpsCapabilityRepository<DatabaseRestoreGovernanceItem>;

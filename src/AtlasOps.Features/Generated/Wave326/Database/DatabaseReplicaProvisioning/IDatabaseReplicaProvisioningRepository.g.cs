@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Database.DatabaseReplicaProvisioning;
+
+using AtlasOps.Features;
+
+public interface IDatabaseReplicaProvisioningRepository : IAtlasOpsCapabilityRepository<DatabaseReplicaProvisioningItem>;

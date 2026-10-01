@@ -1,0 +1,5 @@
+namespace AtlasOps.Features.Identity.IdentityUserProvisioning;
+
+using AtlasOps.Features;
+
+public interface IIdentityUserProvisioningRepository : IAtlasOpsCapabilityRepository<IdentityUserProvisioningItem>;
