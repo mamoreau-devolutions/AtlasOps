@@ -1,0 +1,148 @@
+name: AtlasOps Windows restore experiments
+
+run-name: AtlasOps Windows restore experiments
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  restore:
+    name: Restore (${{ matrix.experiment }} #${{ matrix.iteration }})
+    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        experiment:
+          - baseline
+          - no-mmap
+          - defender-exclusion
+          - no-mmap-defender-exclusion
+          - revocation-offline
+          - dev-drive
+        iteration: [1, 2, 3, 4, 5]
+
+    steps:
+      - name: Check out AtlasOps
+        uses: actions/checkout@v7
+
+      - name: Configure .NET SDK
+        uses: actions/setup-dotnet@v6
+        with:
+          global-json-file: global.json
+
+      - name: Record Defender status
+        run: |
+          Get-MpComputerStatus |
+            Select-Object AMServiceEnabled, AntivirusEnabled, RealTimeProtectionEnabled, OnAccessProtectionEnabled, IsTamperProtected |
+            Format-List | Out-String | Write-Host
+        shell: pwsh
+
+      - name: Apply experiment
+        run: |
+          $experiment = '${{ matrix.experiment }}'
+          $packages = Join-Path $env:USERPROFILE '.nuget\packages'
+
+          if ($experiment -in 'no-mmap', 'no-mmap-defender-exclusion') {
+            'NUGET_PACKAGE_EXTRACTION_USE_MMAP=0' | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+          }
+
+          if ($experiment -in 'defender-exclusion', 'no-mmap-defender-exclusion') {
+            New-Item -ItemType Directory -Force -Path $packages | Out-Null
+            Add-MpPreference -ExclusionPath $packages, $env:TEMP, $env:RUNNER_TEMP, $env:DOTNET_ROOT, $env:GITHUB_WORKSPACE
+            Add-MpPreference -ExclusionProcess 'dotnet.exe'
+            (Get-MpPreference).ExclusionPath | Write-Host
+          }
+
+          if ($experiment -eq 'revocation-offline') {
+            'NUGET_CERT_REVOCATION_MODE=offline' | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+          }
+
+          if ($experiment -eq 'dev-drive') {
+            $vhd = Join-Path $env:RUNNER_TEMP 'devdrive.vhdx'
+            $script = Join-Path $env:RUNNER_TEMP 'devdrive.txt'
+            @(
+              "create vdisk file=`"$vhd`" maximum=20480 type=expandable",
+              "select vdisk file=`"$vhd`"",
+              'attach vdisk',
+              'create partition primary',
+              'assign letter=R'
+            ) | Set-Content -Path $script -Encoding ascii
+            diskpart /s $script | Write-Host
+            Format-Volume -DriveLetter R -DevDrive -Confirm:$false -Force | Out-String | Write-Host
+            fsutil devdrv trust R: | Write-Host
+            fsutil devdrv query R: | Write-Host
+            New-Item -ItemType Directory -Force -Path 'R:\nuget\packages' | Out-Null
+            'NUGET_PACKAGES=R:\nuget\packages' | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+          }
+        shell: pwsh
+
+      - name: Restore AtlasOps dependencies
+        run: |
+          New-Item -Path timing -ItemType Directory -Force | Out-Null
+          $id = '${{ matrix.experiment }}-${{ matrix.iteration }}'
+
+          $stopwatch = [System.Diagnostics.Stopwatch]::StartNew()
+          dotnet restore AtlasOps.sln --nologo -m:4 -p:EnableWindowsTargeting=true -p:Configuration=Release -bl:"timing/restore-$id.binlog"
+          $exitCode = $LASTEXITCODE
+          $stopwatch.Stop()
+
+          [ordered]@{
+            experiment = '${{ matrix.experiment }}'
+            iteration = ${{ matrix.iteration }}
+            restoreSeconds = [math]::Round($stopwatch.Elapsed.TotalSeconds, 2)
+            exitCode = $exitCode
+          } | ConvertTo-Json | Set-Content -Path "timing/restore-time-$id.json"
+
+          exit $exitCode
+        shell: pwsh
+
+      - name: Upload restore timing and binlog
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v7
+        with:
+          name: restore-experiment-${{ matrix.experiment }}-${{ matrix.iteration }}
+          path: |
+            timing/*.json
+            timing/*.binlog
+
+  summarize:
+    name: Summarize restore experiments
+    if: ${{ !cancelled() }}
+    needs: restore
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download restore timings
+        uses: actions/download-artifact@v8
+        with:
+          pattern: restore-experiment-*
+          path: timings
+          merge-multiple: true
+
+      - name: Summarize
+        run: |
+          $rows = Get-ChildItem -Path timings -Filter 'restore-time-*.json' |
+            ForEach-Object { Get-Content $_.FullName -Raw | ConvertFrom-Json } |
+            Where-Object { $_.exitCode -eq 0 }
+
+          if (-not $rows) { throw 'No successful restore timings were found.' }
+
+          $baseline = ($rows | Where-Object experiment -eq 'baseline' | Measure-Object restoreSeconds -Average).Average
+          $lines = @(
+            '## Windows restore experiments',
+            '',
+            '| Experiment | Runs | Mean (s) | Min (s) | Max (s) | vs baseline (s) |',
+            '| --- | ---: | ---: | ---: | ---: | ---: |'
+          )
+          foreach ($group in ($rows | Group-Object experiment | Sort-Object Name)) {
+            $m = $group.Group | Measure-Object restoreSeconds -Average -Minimum -Maximum
+            $delta = if ($baseline) { [math]::Round($m.Average - $baseline, 2) } else { '' }
+            $lines += "| $($group.Name) | $($m.Count) | $([math]::Round($m.Average, 2)) | $($m.Minimum) | $($m.Maximum) | $delta |"
+          }
+
+          $lines | Out-File -FilePath $Env:GITHUB_STEP_SUMMARY -Encoding utf8 -Append
+          $lines | ForEach-Object { Write-Host $_ }
+        shell: pwsh
