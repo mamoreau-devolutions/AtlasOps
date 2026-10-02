@@ -49,48 +49,76 @@ jobs:
         with:
           global-json-file: global.json
 
-      - name: Build AtlasOps Windows target
+      - name: Restore AtlasOps dependencies
         run: |
           New-Item -Path timing -ItemType Directory -Force | Out-Null
 
-          $stopwatch = [System.Diagnostics.Stopwatch]::StartNew()
-          dotnet build AtlasOps.sln --nologo --configuration Release -m:1 -p:EnableWindowsTargeting=true
-          $exitCode = $LASTEXITCODE
-          $stopwatch.Stop()
+          $restoreStopwatch = [System.Diagnostics.Stopwatch]::StartNew()
+          dotnet restore AtlasOps.sln --nologo --configuration Release -m:4 -p:EnableWindowsTargeting=true -bl:"timing/restore-${{ matrix.id }}.binlog"
+          $restoreExitCode = $LASTEXITCODE
+          $restoreStopwatch.Stop()
 
-          $duration = [math]::Round($stopwatch.Elapsed.TotalSeconds, 2)
+          $restoreDuration = [math]::Round($restoreStopwatch.Elapsed.TotalSeconds, 2)
+          $restoreTiming = [ordered]@{
+            phase = 'restore'
+            durationSeconds = $restoreDuration
+            exitCode = $restoreExitCode
+          }
+
+          $restoreTiming | ConvertTo-Json | Set-Content -Path "timing/restore-time-${{ matrix.id }}.json"
+
+          if ($restoreExitCode -ne 0) {
+            throw "dotnet restore failed with exit code $restoreExitCode"
+          }
+        shell: pwsh
+
+      - name: Build AtlasOps Windows target
+        run: |
+          $buildStopwatch = [System.Diagnostics.Stopwatch]::StartNew()
+          dotnet build AtlasOps.sln --nologo --configuration Release --no-restore -m:4 -p:EnableWindowsTargeting=true -bl:"timing/build-${{ matrix.id }}.binlog"
+          $buildExitCode = $LASTEXITCODE
+          $buildStopwatch.Stop()
+
+          $buildDuration = [math]::Round($buildStopwatch.Elapsed.TotalSeconds, 2)
+          $totalDuration = [math]::Round((Get-Content -Raw -Path "timing/restore-time-${{ matrix.id }}.json" | ConvertFrom-Json).durationSeconds + $buildDuration, 2)
           $timing = [ordered]@{
             id = '${{ matrix.id }}'
             name = '${{ matrix.name }}'
             hostOs = '${{ matrix.host_os }}'
             runner = '${{ matrix.runner }}'
             targetFramework = 'net10.0-windows'
-            durationSeconds = $duration
-            succeeded = ($exitCode -eq 0)
+            restoreSeconds = [math]::Round((Get-Content -Raw -Path "timing/restore-time-${{ matrix.id }}.json" | ConvertFrom-Json).durationSeconds, 2)
+            buildSeconds = $buildDuration
+            totalSeconds = $totalDuration
+            succeeded = ($buildExitCode -eq 0)
           }
 
           $timing | ConvertTo-Json | Set-Content -Path "timing/build-time-${{ matrix.id }}.json"
 
-          $result = if ($exitCode -eq 0) { 'success' } else { 'failure' }
+          $result = if ($buildExitCode -eq 0) { 'success' } else { 'failure' }
           @(
             "## AtlasOps Windows-target build (${{ matrix.name }})",
             '',
             "- Host OS: ${{ matrix.host_os }}",
             "- Runner: ${{ matrix.runner }}",
             "- Target framework: net10.0-windows",
-            "- Build duration: ${duration}s",
+            "- Restore duration: $($timing.restoreSeconds)s",
+            "- Core build duration: $($timing.buildSeconds)s",
+            "- Total duration: $($timing.totalSeconds)s",
             "- Result: $result"
           ) | Out-File -FilePath $Env:GITHUB_STEP_SUMMARY -Encoding utf8 -Append
 
-          exit $exitCode
+          exit $buildExitCode
         shell: pwsh
 
-      - name: Upload build timing
+      - name: Upload build timing and binlogs
         if: ${{ !cancelled() }}
         uses: actions/upload-artifact@v7
         with:
           name: atlasops-build-time-${{ matrix.id }}
-          path: timing/build-time-${{ matrix.id }}.json
+          path: |
+            timing/*.json
+            timing/*.binlog
 
   compare-timings:
     name: Compare Windows-target build times
@@ -108,26 +136,26 @@ jobs:
 
       - name: Summarize build times
         run: |
-          $timings = Get-ChildItem -Path build-timings -Filter *.json |
+          $timings = Get-ChildItem -Path build-timings -Filter build-time-*.json |
             ForEach-Object { Get-Content $_.FullName -Raw | ConvertFrom-Json } |
-            Sort-Object durationSeconds
+            Sort-Object totalSeconds
 
           if (-not $timings) {
             throw 'No AtlasOps build timing artifacts were found.'
           }
 
-          $fastest = ($timings | Measure-Object -Property durationSeconds -Minimum).Minimum
+          $fastest = ($timings | Measure-Object -Property totalSeconds -Minimum).Minimum
           $lines = @(
             '## AtlasOps Windows-target build comparison',
             '',
-            '| Host | Runner | Target | Duration (s) | Delta (s) | Result |',
-            '| --- | --- | --- | ---: | ---: | --- |'
+            '| Host | Runner | Target | Restore (s) | Core build (s) | Total (s) | Delta (s) | Result |',
+            '| --- | --- | --- | ---: | ---: | ---: | ---: | --- |'
           )
 
           foreach ($timing in $timings) {
-            $delta = [math]::Round([double]$timing.durationSeconds - [double]$fastest, 2)
+            $delta = [math]::Round([double]$timing.totalSeconds - [double]$fastest, 2)
             $result = if ($timing.succeeded) { 'success' } else { 'failure' }
-            $lines += "| $($timing.name) | $($timing.runner) | $($timing.targetFramework) | $($timing.durationSeconds) | $delta | $result |"
+            $lines += "| $($timing.name) | $($timing.runner) | $($timing.targetFramework) | $($timing.restoreSeconds) | $($timing.buildSeconds) | $($timing.totalSeconds) | $delta | $result |"
           }
 
           $lines | Out-File -FilePath $Env:GITHUB_STEP_SUMMARY -Encoding utf8 -Append
