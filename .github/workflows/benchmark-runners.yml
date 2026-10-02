@@ -18,7 +18,7 @@ on:
 
 concurrency:
   group: atlasops-build-benchmark-${{ github.ref_name }}
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 permissions:
   contents: read
@@ -54,7 +54,7 @@ jobs:
           New-Item -Path timing -ItemType Directory -Force | Out-Null
 
           $restoreStopwatch = [System.Diagnostics.Stopwatch]::StartNew()
-          dotnet restore AtlasOps.sln --nologo --configuration Release -m:4 -p:EnableWindowsTargeting=true -bl:"timing/restore-${{ matrix.id }}.binlog"
+          dotnet restore AtlasOps.sln --nologo -m:4 -p:EnableWindowsTargeting=true -p:Configuration=Release -bl:"timing/restore-${{ matrix.id }}.binlog"
           $restoreExitCode = $LASTEXITCODE
           $restoreStopwatch.Stop()
 
@@ -80,14 +80,15 @@ jobs:
           $buildStopwatch.Stop()
 
           $buildDuration = [math]::Round($buildStopwatch.Elapsed.TotalSeconds, 2)
-          $totalDuration = [math]::Round((Get-Content -Raw -Path "timing/restore-time-${{ matrix.id }}.json" | ConvertFrom-Json).durationSeconds + $buildDuration, 2)
+          $restoreDuration = [math]::Round((Get-Content -Raw -Path "timing/restore-time-${{ matrix.id }}.json" | ConvertFrom-Json).durationSeconds, 2)
+          $totalDuration = [math]::Round($restoreDuration + $buildDuration, 2)
           $timing = [ordered]@{
             id = '${{ matrix.id }}'
             name = '${{ matrix.name }}'
             hostOs = '${{ matrix.host_os }}'
             runner = '${{ matrix.runner }}'
             targetFramework = 'net10.0-windows'
-            restoreSeconds = [math]::Round((Get-Content -Raw -Path "timing/restore-time-${{ matrix.id }}.json" | ConvertFrom-Json).durationSeconds, 2)
+            restoreSeconds = $restoreDuration
             buildSeconds = $buildDuration
             totalSeconds = $totalDuration
             succeeded = ($buildExitCode -eq 0)
