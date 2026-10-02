@@ -49,6 +49,18 @@ jobs:
         with:
           global-json-file: global.json
 
+      - name: Move NuGet caches to the runner temp disk
+        if: ${{ matrix.host_os == 'windows' }}
+        run: |
+          $packages = Join-Path $env:RUNNER_TEMP 'nuget\packages'
+          $httpCache = Join-Path $env:RUNNER_TEMP 'nuget\http-cache'
+          New-Item -ItemType Directory -Force -Path $packages, $httpCache | Out-Null
+          "NUGET_PACKAGES=$packages" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+          "NUGET_HTTP_CACHE_PATH=$httpCache" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+          Write-Host "NUGET_PACKAGES=$packages"
+          Write-Host "NUGET_HTTP_CACHE_PATH=$httpCache"
+        shell: pwsh
+
       - name: Restore AtlasOps dependencies
         run: |
           New-Item -Path timing -ItemType Directory -Force | Out-Null
