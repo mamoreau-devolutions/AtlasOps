@@ -4,6 +4,11 @@ run-name: AtlasOps Windows restore experiments
 
 on:
   workflow_dispatch:
+    inputs:
+      experiments:
+        description: JSON array of experiments to run
+        required: false
+        default: '["baseline","no-mmap","defender-exclusion","no-mmap-defender-exclusion","revocation-offline","dev-drive","d-drive-ntfs","d-drive-ntfs-no-mmap","dev-drive-no-mmap"]'
 
 permissions:
   contents: read
@@ -15,13 +20,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        experiment:
-          - baseline
-          - no-mmap
-          - defender-exclusion
-          - no-mmap-defender-exclusion
-          - revocation-offline
-          - dev-drive
+        experiment: ${{ fromJSON(inputs.experiments) }}
         iteration: [1, 2, 3, 4, 5]
 
     steps:
@@ -45,7 +44,10 @@ jobs:
           $experiment = '${{ matrix.experiment }}'
           $packages = Join-Path $env:USERPROFILE '.nuget\packages'
 
-          if ($experiment -in 'no-mmap', 'no-mmap-defender-exclusion') {
+          Get-Volume | Where-Object DriveLetter | Format-Table DriveLetter, FileSystemType, Size, SizeRemaining | Out-String | Write-Host
+          Write-Host "USERPROFILE=$env:USERPROFILE RUNNER_TEMP=$env:RUNNER_TEMP"
+
+          if ($experiment -in 'no-mmap', 'no-mmap-defender-exclusion', 'd-drive-ntfs-no-mmap', 'dev-drive-no-mmap') {
             'NUGET_PACKAGE_EXTRACTION_USE_MMAP=0' | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
           }
 
@@ -60,7 +62,15 @@ jobs:
             'NUGET_CERT_REVOCATION_MODE=offline' | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
           }
 
-          if ($experiment -eq 'dev-drive') {
+          if ($experiment -in 'd-drive-ntfs', 'd-drive-ntfs-no-mmap') {
+            $root = Split-Path -Qualifier $env:RUNNER_TEMP
+            $dir = Join-Path $root 'nuget\packages'
+            New-Item -ItemType Directory -Force -Path $dir | Out-Null
+            Get-Volume -DriveLetter $root.TrimEnd(':') | Format-Table DriveLetter, FileSystemType | Out-String | Write-Host
+            "NUGET_PACKAGES=$dir" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+          }
+
+          if ($experiment -in 'dev-drive', 'dev-drive-no-mmap') {
             $vhd = Join-Path $env:RUNNER_TEMP 'devdrive.vhdx'
             $script = Join-Path $env:RUNNER_TEMP 'devdrive.txt'
             @(
