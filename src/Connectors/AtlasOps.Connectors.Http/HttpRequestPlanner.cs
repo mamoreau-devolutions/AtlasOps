@@ -1,15 +1,13 @@
 namespace AtlasOps.Connectors.Http;
 
+using System.Text.Json;
 using System.Text.RegularExpressions;
 
 using HtmlAgilityPack;
 
+using Json.Schema;
+
 using Microsoft.AspNetCore.WebUtilities;
-
-using Newtonsoft.Json.Linq;
-using Newtonsoft.Json.Schema;
-
-using NJsonSchema;
 
 using RestSharp;
 
@@ -102,23 +100,27 @@ public sealed class HttpRequestPlanner
 
     public JsonValidationResult ValidateJson(string json, string schema)
     {
-        JToken token = JToken.Parse(json);
-        JSchema parsedSchema = JSchema.Parse(schema);
-        bool valid = token.IsValid(parsedSchema, out IList<string> errors);
-        return new JsonValidationResult(valid, errors.ToArray());
+        ArgumentNullException.ThrowIfNull(json);
+        ArgumentNullException.ThrowIfNull(schema);
+        JsonSchema parsedSchema = JsonSchema.FromText(schema, new BuildOptions { SchemaRegistry = new SchemaRegistry() });
+        using JsonDocument document = JsonDocument.Parse(json);
+        EvaluationResults results = parsedSchema.Evaluate(
+            document.RootElement,
+            new EvaluationOptions { OutputFormat = OutputFormat.List });
+        string[] diagnostics = (results.Details ?? [])
+            .Where(static detail => detail.Errors is { Count: > 0 })
+            .SelectMany(static detail => detail.Errors!.Select(
+                error => $"{detail.InstanceLocation}: {error.Key}: {error.Value}"))
+            .ToArray();
+        return new JsonValidationResult(results.IsValid, diagnostics);
     }
 
-    public async ValueTask<JsonValidationResult> ValidateJsonAsync(
+    public ValueTask<JsonValidationResult> ValidateJsonAsync(
         string json,
         string schema,
         CancellationToken cancellationToken)
     {
         cancellationToken.ThrowIfCancellationRequested();
-        NJsonSchema.JsonSchema parsedSchema =
-            await NJsonSchema.JsonSchema.FromJsonAsync(schema, cancellationToken).ConfigureAwait(false);
-        NJsonSchema.Validation.ValidationError[] errors = parsedSchema.Validate(json).ToArray();
-        return new JsonValidationResult(
-            errors.Length == 0,
-            errors.Select(static error => error.ToString()).ToArray());
+        return ValueTask.FromResult(this.ValidateJson(json, schema));
     }
 }

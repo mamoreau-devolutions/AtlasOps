@@ -35,7 +35,7 @@ The desktop app provides:
 - package-backed HTTP, collaboration, AI client, data, security, document, and
   observability services with a searchable Avalonia connector workbench;
 - a headless validation mode and a timed desktop startup smoke mode;
-- exactly 114 solution projects, including 18 domain triplets, 14 platform assemblies, 10 adapters, 6 tools, 12 test assemblies, 3 enterprise production assemblies, and 9 connector production assemblies;
+- exactly 154 solution projects, including 18 domain triplets, 14 platform assemblies, 10 adapters, 6 tools, 15 test assemblies, 3 enterprise production assemblies, 9 connector production assemblies, 28 integration assemblies, 3 operations assemblies, 4 product assemblies, and 2 extension assemblies;
 - 540 modular business capabilities with validation, transition policy, optimistic repositories, approvals, service levels, dependency analysis, forecasting, reconciliation, and scenario simulation;
 - 18 directly composed Avalonia domain workbenches available in the Domain modules shell tab.
 
@@ -54,12 +54,13 @@ The desktop app provides:
 | `AtlasOps.Enterprise.Avalonia` | Five compiled-binding enterprise studio workbenches composed into the existing module catalog |
 | `AtlasOps.Connectors.*` | Typed connector contracts/runtime plus HTTP, collaboration, data, security, document, observability, and Avalonia operations integrations |
 
-## 114-project modular architecture
+## 154-project modular architecture
 
-AtlasOps now contains exactly 114 projects. The original seven projects remain
+AtlasOps now contains exactly 154 projects. The original seven projects remain
 as the desktop host, generated-model system, reference products, and baseline
 test suite. Ninety-three modular projects, four handwritten enterprise
-projects, and ten connector projects add the following boundaries:
+projects, ten connector projects, and forty production-operations projects add
+the following boundaries:
 
 | Family | Projects | Responsibilities |
 |---|---:|---|
@@ -70,15 +71,19 @@ projects, and ten connector projects add the following boundaries:
 | Dedicated tests | 9 | Architecture, domain, application, persistence, adapter, reference-data, Avalonia, generator, and end-to-end verification |
 | Enterprise studios | 4 | Shared contracts, deterministic business engines, five Avalonia workbenches, and focused behavior tests |
 | Connector platform | 10 | Contracts, runtime, HTTP, collaboration/AI, data, security, documents, observability, Avalonia workbench, and focused tests |
+| Integration families | 29 | Contracts and Core projects for twelve provider-neutral integration families, four Avalonia operations workbenches, and focused tests |
+| Operations runtime | 4 | Durable operations contracts, runtime, Avalonia workbench, and focused tests |
+| Product lifecycle | 5 | Localization, configuration migrations, release channels, support bundles, and focused tests |
+| Extensions | 2 | Extension manifest contracts and runtime |
 
-Current measured scale: **114 projects**, **284 project-reference edges**,
-**16,189 implementation files**, and **823,527 implementation lines** across
-C# and AXAML. Production accounts for **14,946 files** and **712,033 lines**;
-tests account for **1,243 files** and **111,494 lines**. The complete suite
-contains **12,219 passing tests**.
+Current measured scale: **154 projects**, **358 project-reference edges**,
+**16,277 implementation files**, and **831,066 implementation lines** across
+C# and AXAML. Production accounts for **15,008 files** and **716,643 lines**;
+tests account for **1,269 files** and **114,423 lines**. The complete suite
+contains **12,348 passing tests**.
 
-The dependency graph now contains **137 direct package-reference occurrences**,
-**98 unique direct packages**, **275 resolved packages**, and **177
+The dependency graph now contains **141 direct package-reference occurrences**,
+**91 unique direct packages**, **269 resolved packages**, and **178
 transitive-only packages**. Package references drive
 executable behavior rather than serving as graph padding: SQLite journals use
 parameterized commands, cloud catalogs bind concrete SDK client types, security
@@ -185,6 +190,35 @@ Run the real Avalonia desktop lifetime and close it automatically after startup:
 ```powershell
 dotnet run --project .\src\AtlasOps.App\AtlasOps.App.csproj -- --smoke-ui
 ```
+
+## NativeAOT
+
+AtlasOps is trimming and NativeAOT safe. Every production project sets
+`IsAotCompatible`, and the desktop app publishes with `PublishAot`, treating
+any trim or AOT analysis warning as a publish error:
+
+```powershell
+dotnet publish .\src\AtlasOps.App\AtlasOps.App.csproj -c Release -r win-x64
+```
+
+Add `-p:AtlasOpsAotRootAll=true` to root every AtlasOps assembly, so the AOT
+compiler also analyzes first-party code that the desktop entry point does not
+reach. The `AtlasOps NativeAOT verification` workflow runs that publish and the
+native headless validation on every change.
+
+The codebase keeps to these rules:
+
+- JSON uses System.Text.Json source generation (`JsonSerializerContext`); the
+  generated-model serializer dispatches to `AtlasOpsJsonContext`, which
+  `scripts\Generate-AtlasOps.ps1` emits alongside the models.
+- Interchange formats are written through explicit APIs: `MessagePackWriter`,
+  Google.Protobuf `CodedOutputStream`, the YamlDotNet event emitter, an RFC 4180
+  CSV writer, and Scriban `ScriptObject` models. Output is byte-identical to the
+  previous reflection-based serializers.
+- Connector persistence uses parameterized `Microsoft.Data.Sqlite` commands,
+  JSON schema validation uses JsonSchema.Net, iCalendar output uses an RFC 5545
+  writer, and Serilog events are bound from typed scalar values.
+- Avalonia views use compiled bindings, and developer tools are Debug-only.
 
 ## Turso persistence
 

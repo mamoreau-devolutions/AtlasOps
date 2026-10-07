@@ -1,0 +1,59 @@
+name: AtlasOps NativeAOT verification
+
+run-name: AtlasOps NativeAOT verification
+
+on:
+  push:
+    paths:
+      - .github/workflows/nativeaot.yml
+      - AtlasOps.sln
+      - Directory.Build.props
+      - Directory.Build.targets
+      - Directory.Packages.props
+      - global.json
+      - nuget.config
+      - src/**
+  pull_request:
+    paths:
+      - .github/workflows/nativeaot.yml
+      - Directory.Build.props
+      - Directory.Build.targets
+      - Directory.Packages.props
+      - global.json
+      - src/**
+  workflow_dispatch:
+
+concurrency:
+  group: atlasops-nativeaot-${{ github.ref_name }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  nativeaot:
+    name: NativeAOT publish (all AtlasOps assemblies rooted)
+    runs-on: windows-latest
+    timeout-minutes: 90
+
+    steps:
+      - name: Check out AtlasOps
+        uses: actions/checkout@v7
+
+      - name: Configure .NET SDK
+        uses: actions/setup-dotnet@v6
+        with:
+          global-json-file: global.json
+
+      # The app treats every trim and AOT analysis warning as an error. Rooting every AtlasOps
+      # assembly makes the compiler analyze all first-party code, including members the desktop
+      # entry point does not reach.
+      - name: Publish with NativeAOT
+        run: dotnet publish src/AtlasOps.App/AtlasOps.App.csproj -c Release -r win-x64 -p:AtlasOpsAotRootAll=true -o artifacts/nativeaot
+        shell: pwsh
+
+      - name: Run headless validation on the native executable
+        run: |
+          & ./artifacts/nativeaot/AtlasOps.App.exe --headless | Write-Host
+          if ($LASTEXITCODE -ne 0) { throw "Headless validation failed with exit code $LASTEXITCODE." }
+        shell: pwsh

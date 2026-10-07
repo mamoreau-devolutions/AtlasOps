@@ -17,4 +17,12 @@
     <EnableWindowsTargeting>true</EnableWindowsTargeting>
     <DefaultItemExcludes>$(DefaultItemExcludes);**/bin/**;**/obj/**</DefaultItemExcludes>
   </PropertyGroup>
+  <!--
+    Every production project is declared trimming and NativeAOT compatible. This enables the trim,
+    single-file, and AOT analyzers and marks the assemblies as trimmable. Tests and the Roslyn
+    generator (netstandard2.0, loaded by the compiler) are excluded.
+  -->
+  <PropertyGroup Condition="$(MSBuildProjectFullPath.StartsWith('$(MSBuildThisFileDirectory)src')) and '$(MSBuildProjectName)' != 'AtlasOps.Generators'">
+    <IsAotCompatible>true</IsAotCompatible>
+  </PropertyGroup>
 </Project>

@@ -1,15 +1,15 @@
 namespace AtlasOps.Connectors.Http;
 
+using System.Text.Json.Nodes;
+
 using HtmlAgilityPack;
+
+using Json.Pointer;
+using Json.Schema;
 
 using Microsoft.AspNetCore.WebUtilities;
 
 using Nager.PublicSuffix;
-
-using Newtonsoft.Json.Linq;
-using Newtonsoft.Json.Schema;
-
-using NJsonSchema;
 
 using RestSharp;
 
@@ -29,8 +29,8 @@ public static class HttpPackageCatalog
         new("html-agility-pack", typeof(HtmlDocument), "HTML response inspection"),
         new("web-utilities", typeof(QueryHelpers), "Query-string encoding"),
         new("public-suffix", typeof(DomainParser), "Registrable domain analysis"),
-        new("newtonsoft-json", typeof(JToken), "JSON token processing"),
-        new("newtonsoft-schema", typeof(JSchema), "JSON schema validation"),
-        new("njsonschema", typeof(NJsonSchema.JsonSchema), "JSON schema generation and validation"),
+        new("json-nodes", typeof(JsonNode), "JSON token processing"),
+        new("json-schema", typeof(JsonSchema), "JSON schema validation"),
+        new("json-pointer", typeof(JsonPointer), "JSON schema diagnostic locations"),
     ];
 }

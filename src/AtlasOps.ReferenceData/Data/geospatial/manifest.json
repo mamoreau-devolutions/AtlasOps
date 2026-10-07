@@ -19,8 +19,8 @@
   "files": [
     {
       "path": "LICENSE.html",
-      "bytes": 37992,
-      "sha256": "9378258f2ba26293d216d02fbb33a8bca3da705111cb79f4eb378bcc66353086"
+      "bytes": 37966,
+      "sha256": "839e3ec90a07fa58bcb0da1b34e4760ad755c6c5b2ddb1867c098c05325c221a"
     },
     {
       "path": "ne_10m_airports.geojson",

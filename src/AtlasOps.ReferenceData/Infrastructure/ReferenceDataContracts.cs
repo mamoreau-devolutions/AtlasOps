@@ -1,6 +1,7 @@
 namespace AtlasOps.ReferenceData.Infrastructure;
 
 using System.Text.Json;
+using System.Text.Json.Serialization;
 
 public sealed record ReferenceDataRow(
     string Id,
@@ -52,11 +53,6 @@ public static class ReferenceDataPaths
 
 public static class ReferenceManifestLoader
 {
-    private static readonly JsonSerializerOptions Options = new()
-    {
-        PropertyNameCaseInsensitive = true,
-    };
-
     public static async Task<ReferencePackManifest> LoadAsync(
         string directory,
         CancellationToken cancellationToken = default)
@@ -64,7 +60,16 @@ public static class ReferenceManifestLoader
         string path = Path.Combine(directory, "manifest.json");
         await using FileStream stream = File.OpenRead(path);
         ReferencePackManifest? manifest =
-            await JsonSerializer.DeserializeAsync<ReferencePackManifest>(stream, Options, cancellationToken);
+            await JsonSerializer.DeserializeAsync(
+                stream,
+                ReferenceDataJsonContext.Default.ReferencePackManifest,
+                cancellationToken);
         return manifest ?? throw new InvalidDataException($"Manifest '{path}' is empty.");
     }
+}
+
+[JsonSourceGenerationOptions(PropertyNameCaseInsensitive = true)]
+[JsonSerializable(typeof(ReferencePackManifest))]
+internal sealed partial class ReferenceDataJsonContext : JsonSerializerContext
+{
 }

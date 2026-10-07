@@ -6,12 +6,11 @@
     <LangVersion>preview</LangVersion>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="CsvHelper" />
     <PackageReference Include="DocumentFormat.OpenXml" />
     <PackageReference Include="MessagePack" />
     <PackageReference Include="Scriban" />
     <PackageReference Include="SharpCompress" />
     <PackageReference Include="YamlDotNet" />
-    <PackageReference Include="protobuf-net" />
+    <PackageReference Include="Google.Protobuf" />
   </ItemGroup>
 </Project>

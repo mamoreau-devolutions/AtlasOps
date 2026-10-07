@@ -9,9 +9,10 @@ param(
 
 $ErrorActionPreference = 'Stop'
 $resolvedRoot = (Resolve-Path $Root).Path
+# Each element is parenthesized because the comma operator binds tighter than '+'.
 $excludedSegments = @(
-    [System.IO.Path]::DirectorySeparatorChar + 'bin' + [System.IO.Path]::DirectorySeparatorChar,
-    [System.IO.Path]::DirectorySeparatorChar + 'obj' + [System.IO.Path]::DirectorySeparatorChar
+    ([System.IO.Path]::DirectorySeparatorChar + 'bin' + [System.IO.Path]::DirectorySeparatorChar),
+    ([System.IO.Path]::DirectorySeparatorChar + 'obj' + [System.IO.Path]::DirectorySeparatorChar)
 )
 
 function Test-IsExcludedPath {

@@ -2,6 +2,7 @@ namespace AtlasOps.ReferenceData.Cloud;
 
 using System.Globalization;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 
 using AtlasOps.ReferenceData.Infrastructure;
 
@@ -25,11 +26,6 @@ public sealed record CloudCatalog(
 
 public sealed class CloudCatalogLoader
 {
-    private static readonly JsonSerializerOptions Options = new()
-    {
-        PropertyNameCaseInsensitive = true,
-    };
-
     public async Task<CloudCatalog> LoadAsync(
         string directory,
         CancellationToken cancellationToken = default)
@@ -44,7 +40,7 @@ public sealed class CloudCatalogLoader
                 continue;
             }
 
-            CloudOffer? offer = JsonSerializer.Deserialize<CloudOffer>(line, Options);
+            CloudOffer? offer = JsonSerializer.Deserialize(line, CloudCatalogJsonContext.Default.CloudOffer);
             if (offer is not null)
             {
                 offers.Add(offer);
@@ -143,4 +139,10 @@ public static class CloudWorkbenchBuilder
                     : "none",
             });
     }
+}
+
+[JsonSourceGenerationOptions(PropertyNameCaseInsensitive = true)]
+[JsonSerializable(typeof(CloudOffer))]
+internal sealed partial class CloudCatalogJsonContext : JsonSerializerContext
+{
 }

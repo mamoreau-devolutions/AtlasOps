@@ -1,11 +1,16 @@
 namespace AtlasOps.Connectors.Data;
 
-using Microsoft.EntityFrameworkCore;
+using System.Data.Common;
+
+using Microsoft.Data.SqlClient;
+using Microsoft.Data.Sqlite;
 using Microsoft.Extensions.Caching.Memory;
 
 using Newtonsoft.Json.Bson;
 
 using OpenMcdf;
+
+using Npgsql;
 
 using Snappier;
 
@@ -17,10 +22,10 @@ public static class ConnectorDataProviderCatalog
 {
     public static IReadOnlyList<DataProviderDescriptor> Providers { get; } =
     [
-        new("ef-core", typeof(DbContext), "Relational object mapping"),
-        new("sqlite", typeof(SqliteDbContextOptionsBuilderExtensions), "Embedded connector persistence"),
-        new("sql-server", typeof(SqlServerDbContextOptionsExtensions), "SQL Server connector persistence"),
-        new("postgresql", typeof(NpgsqlDbContextOptionsBuilderExtensions), "PostgreSQL connector persistence"),
+        new("ado-net", typeof(DbConnection), "Relational provider abstraction"),
+        new("sqlite", typeof(SqliteConnection), "Embedded connector persistence"),
+        new("sql-server", typeof(SqlConnection), "SQL Server connector persistence"),
+        new("postgresql", typeof(NpgsqlConnection), "PostgreSQL connector persistence"),
         new("bson", typeof(BsonDataReader), "Binary JSON interchange"),
         new("compound-file", typeof(Storage), "Compound document storage"),
         new("snappy", typeof(Snappy), "Fast payload compression"),

@@ -1,17 +1,12 @@
 namespace AtlasOps.Geography.Data;
 
 using System.Text.Json;
+using System.Text.Json.Serialization;
 
 using AtlasOps.Geography.Domain;
 
 public sealed class GeographyOverrideStore
 {
-    private static readonly JsonSerializerOptions SerializerOptions = new()
-    {
-        PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
-        WriteIndented = true,
-    };
-
     private readonly string filePath;
 
     public GeographyOverrideStore(string filePath)
@@ -28,9 +23,9 @@ public sealed class GeographyOverrideStore
         }
 
         await using FileStream stream = File.OpenRead(this.filePath);
-        GeographyOverrideSet? value = await JsonSerializer.DeserializeAsync<GeographyOverrideSet>(
+        GeographyOverrideSet? value = await JsonSerializer.DeserializeAsync(
             stream,
-            SerializerOptions,
+            GeographyJsonContext.Default.GeographyOverrideSet,
             cancellationToken);
         if (value is null || value.SchemaVersion != 1)
         {
@@ -52,7 +47,11 @@ public sealed class GeographyOverrideStore
         {
             await using (FileStream stream = File.Create(temporaryPath))
             {
-                await JsonSerializer.SerializeAsync(stream, overrides, SerializerOptions, cancellationToken);
+                await JsonSerializer.SerializeAsync(
+                    stream,
+                    overrides,
+                    GeographyJsonContext.Default.GeographyOverrideSet,
+                    cancellationToken);
                 await stream.FlushAsync(cancellationToken);
             }
 
@@ -83,4 +82,12 @@ public sealed class GeographyOverrideStore
         await this.SaveAsync(overrides, cancellationToken);
         return overrides;
     }
+}
+
+[JsonSourceGenerationOptions(
+    PropertyNamingPolicy = JsonKnownNamingPolicy.CamelCase,
+    WriteIndented = true)]
+[JsonSerializable(typeof(GeographyOverrideSet))]
+internal sealed partial class GeographyJsonContext : JsonSerializerContext
+{
 }

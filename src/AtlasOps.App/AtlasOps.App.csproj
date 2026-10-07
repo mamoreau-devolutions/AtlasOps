@@ -8,6 +8,10 @@
     <Nullable>enable</Nullable>
     <LangVersion>preview</LangVersion>
     <ApplicationManifest>app.manifest</ApplicationManifest>
+    <PublishAot>true</PublishAot>
+    <!-- Any trim or AOT analysis warning fails publishing, reported per call site rather than per assembly. -->
+    <IlcTreatWarningsAsErrors>true</IlcTreatWarningsAsErrors>
+    <TrimmerSingleWarn>false</TrimmerSingleWarn>
     <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
   </PropertyGroup>
 
@@ -16,7 +20,7 @@
     <PackageReference Include="Avalonia.Desktop" />
     <PackageReference Include="Avalonia.Themes.Fluent" />
     <PackageReference Include="Avalonia.Fonts.Inter" />
-    <PackageReference Include="AvaloniaUI.DiagnosticsSupport" />
+    <PackageReference Include="AvaloniaUI.DiagnosticsSupport" Condition="'$(Configuration)' == 'Debug'" />
   </ItemGroup>
 
   <ItemGroup>
@@ -54,4 +58,14 @@
     <ProjectReference Include="..\Enterprise\AtlasOps.Enterprise.Avalonia\AtlasOps.Enterprise.Avalonia.csproj" />
     <ProjectReference Include="..\Modular\Platform\AtlasOps.Composition\AtlasOps.Composition.csproj" />
   </ItemGroup>
+
+  <!--
+    NativeAOT verification mode: `dotnet publish -p:AtlasOpsAotRootAll=true` roots every AtlasOps
+    assembly so the AOT compiler analyzes all first-party code, not only what the app entry point reaches.
+  -->
+  <Target Name="AtlasOpsRootAllAssemblies" BeforeTargets="WriteIlcRspFileForCompilation" DependsOnTargets="ResolveAssemblyReferences" Condition="'$(AtlasOpsAotRootAll)' == 'true'">
+    <ItemGroup>
+      <TrimmerRootAssembly Include="@(ReferencePath->'%(Filename)')" Condition="$([System.String]::Copy('%(Filename)').StartsWith('AtlasOps.'))" />
+    </ItemGroup>
+  </Target>
 </Project>

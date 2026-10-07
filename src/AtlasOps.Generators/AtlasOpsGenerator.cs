@@ -70,6 +70,7 @@ public sealed class AtlasOpsGenerator : IIncrementalGenerator
         builder.AppendLine("namespace AtlasOps.Core.Generated;");
         builder.AppendLine();
         builder.AppendLine("using System.Text.Json;");
+        builder.AppendLine("using System.Text.Json.Serialization.Metadata;");
         builder.AppendLine("using AtlasOps.Core;");
         builder.AppendLine();
         AppendCatalog(builder, models);
@@ -115,10 +116,7 @@ public sealed class AtlasOpsGenerator : IIncrementalGenerator
     {
         builder.AppendLine("public static class AtlasOpsGeneratedSerializer");
         builder.AppendLine("{");
-        builder.AppendLine("    private static readonly JsonSerializerOptions Options = new(JsonSerializerDefaults.Web)");
-        builder.AppendLine("    {");
-        builder.AppendLine("        WriteIndented = true,");
-        builder.AppendLine("    };");
+        builder.AppendLine("    private static AtlasOpsJsonContext Context => AtlasOpsJsonContext.Default;");
         builder.AppendLine();
         builder.AppendLine("    public static string Serialize(IAtlasOpsEntity model)");
         builder.AppendLine("    {");
@@ -127,7 +125,7 @@ public sealed class AtlasOpsGenerator : IIncrementalGenerator
 
         foreach (ModelInfo model in models)
         {
-            builder.AppendLine($"            {model.QualifiedTypeName} value => JsonSerializer.Serialize(value, Options),");
+            builder.AppendLine($"            {model.QualifiedTypeName} value => JsonSerializer.Serialize(value, Context.{model.TypeName}),");
         }
 
         builder.AppendLine("            _ => throw new NotSupportedException($\"Unsupported AtlasOps model: {model.GetType().FullName}\"),");
@@ -141,7 +139,7 @@ public sealed class AtlasOpsGenerator : IIncrementalGenerator
 
         foreach (ModelInfo model in models)
         {
-            builder.AppendLine($"            \"{Escape(model.TypeName)}\" => JsonSerializer.Deserialize<{model.QualifiedTypeName}>(payload, Options)");
+            builder.AppendLine($"            \"{Escape(model.TypeName)}\" => JsonSerializer.Deserialize(payload, Context.{model.TypeName})");
             builder.AppendLine($"                ?? throw new JsonException(\"Unable to deserialize {Escape(model.TypeName)}.\"),");
         }
 
@@ -152,8 +150,14 @@ public sealed class AtlasOpsGenerator : IIncrementalGenerator
         builder.AppendLine("    public static TModel Deserialize<TModel>(string payload)");
         builder.AppendLine("        where TModel : class, IAtlasOpsEntity");
         builder.AppendLine("    {");
-        builder.AppendLine("        return JsonSerializer.Deserialize<TModel>(payload, Options)");
+        builder.AppendLine("        return JsonSerializer.Deserialize(payload, GetTypeInfo<TModel>())");
         builder.AppendLine("            ?? throw new JsonException($\"Unable to deserialize {typeof(TModel).Name}.\");");
+        builder.AppendLine("    }");
+        builder.AppendLine();
+        builder.AppendLine("    public static JsonTypeInfo<T> GetTypeInfo<T>()");
+        builder.AppendLine("    {");
+        builder.AppendLine("        return Context.GetTypeInfo(typeof(T)) as JsonTypeInfo<T>");
+        builder.AppendLine("            ?? throw new NotSupportedException($\"No source-generated JSON metadata is registered for {typeof(T).FullName}.\");");
         builder.AppendLine("    }");
         builder.AppendLine("}");
         builder.AppendLine();

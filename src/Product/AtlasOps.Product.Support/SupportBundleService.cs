@@ -4,6 +4,7 @@ using System.IO.Compression;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 
 public sealed record SupportArtifact(
     string Name,
@@ -52,7 +53,9 @@ public sealed class SupportBundleService
                     Convert.ToHexString(SHA256.HashData(content))));
             }
 
-            byte[] manifest = JsonSerializer.SerializeToUtf8Bytes(entries);
+            byte[] manifest = JsonSerializer.SerializeToUtf8Bytes(
+                entries,
+                SupportBundleJsonContext.Default.ListSupportBundleManifestEntry);
             WriteEntry(archive, "manifest.json", manifest);
         }
 
@@ -94,4 +97,9 @@ public sealed class SupportBundleService
         using Stream stream = entry.Open();
         stream.Write(content);
     }
+}
+
+[JsonSerializable(typeof(List<SupportBundleManifestEntry>))]
+internal sealed partial class SupportBundleJsonContext : JsonSerializerContext
+{
 }

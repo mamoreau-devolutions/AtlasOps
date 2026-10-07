@@ -7,7 +7,6 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Avalonia" />
-    <PackageReference Include="Avalonia.Controls.DataGrid" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AtlasOps.Connectors.Contracts\AtlasOps.Connectors.Contracts.csproj" />
