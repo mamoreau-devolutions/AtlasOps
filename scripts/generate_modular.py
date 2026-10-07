@@ -28,6 +28,7 @@ def project(path: Path, references: list[Path] | None = None, packages: list[str
     properties = ["    <TargetFramework>net10.0-windows</TargetFramework>", "    <ImplicitUsings>enable</ImplicitUsings>", "    <Nullable>enable</Nullable>", "    <LangVersion>preview</LangVersion>"]
     if executable:
         properties.insert(0, "    <OutputType>Exe</OutputType>")
+        properties.append("    <PublishAot>true</PublishAot>")
     if test:
         properties.extend(["    <IsPackable>false</IsPackable>", "    <IsTestProject>true</IsTestProject>"])
     groups: list[str] = []
@@ -430,6 +431,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 
 public sealed record {{TOOL}}Input(string Command, IReadOnlyList<string> Arguments, IReadOnlyDictionary<string, string> Options);
 public sealed record {{TOOL}}Finding(string Code, string Severity, string Subject, string Message, IReadOnlyDictionary<string, string> Evidence);
@@ -449,9 +451,14 @@ public static class Program
     public static int Main(string[] args)
     {
         {{TOOL}}Report report = new {{TOOL}}Engine().Execute(new(args.FirstOrDefault() ?? string.Empty, args.Skip(1).ToArray(), new Dictionary<string, string>()), DateTimeOffset.UtcNow);
-        Console.WriteLine(JsonSerializer.Serialize(report, new JsonSerializerOptions { WriteIndented = true }));
+        Console.WriteLine(JsonSerializer.Serialize(report, {{TOOL}}JsonContext.Default.{{TOOL}}Report));
         return report.Findings.Any(static finding => finding.Severity == "error") ? 1 : 0;
     }
+}
+[JsonSourceGenerationOptions(WriteIndented = true)]
+[JsonSerializable(typeof({{TOOL}}Report))]
+internal sealed partial class {{TOOL}}JsonContext : JsonSerializerContext
+{
 }
 """
 

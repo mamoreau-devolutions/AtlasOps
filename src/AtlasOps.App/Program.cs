@@ -40,7 +40,9 @@ using AtlasOps.Serialization;
 using AtlasOps.Telemetry;
 
 using Avalonia;
+#if DEBUG
 using AvaloniaUI.DiagnosticsSupport;
+#endif
 
 public static class Program
 {
@@ -69,11 +71,16 @@ public static class Program
 
     public static AppBuilder BuildAvaloniaApp()
     {
-        return AppBuilder.Configure<App>()
+        AppBuilder builder = AppBuilder.Configure<App>()
             .UsePlatformDetect()
             .WithInterFont()
-            .WithDeveloperTools()
             .LogToTrace();
+#if DEBUG
+        // Developer tools depend on the runtime XAML loader, so they are excluded from
+        // Release and NativeAOT builds.
+        builder = builder.WithDeveloperTools();
+#endif
+        return builder;
     }
 
     private static async Task RunHeadlessAsync()

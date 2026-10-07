@@ -10,8 +10,6 @@ using AtlasOps.Connectors.Observability;
 using AtlasOps.Connectors.Runtime;
 using AtlasOps.Connectors.Security;
 
-using Microsoft.EntityFrameworkCore;
-
 using RestSharp;
 
 [TestClass]
@@ -63,17 +61,13 @@ public sealed class ConnectorIntegrationTests
     }
 
     [TestMethod]
-    public async Task DataContext_InMemorySqlite_CreatesConnectorSchema()
+    public async Task DataStore_InMemorySqlite_CreatesConnectorSchema()
     {
-        DbContextOptions<ConnectorDataContext> options =
-            new DbContextOptionsBuilder<ConnectorDataContext>()
-                .UseSqlite("Data Source=:memory:")
-                .Options;
-        await using ConnectorDataContext context = new(options);
-        await context.Database.OpenConnectionAsync();
+        await using ConnectorDataStore store = new("Data Source=:memory:");
 
-        bool created = await context.Database.EnsureCreatedAsync();
-        context.ConnectorStates.Add(
+        bool created = await store.EnsureCreatedAsync();
+        bool createdAgain = await store.EnsureCreatedAsync();
+        await store.AddStateAsync(
             new ConnectorStateEntity
             {
                 Id = Guid.NewGuid(),
@@ -84,10 +78,54 @@ public sealed class ConnectorIntegrationTests
                 Revision = 1,
                 UpdatedAt = DateTimeOffset.UtcNow,
             });
-        await context.SaveChangesAsync();
 
         Assert.IsTrue(created);
-        Assert.AreEqual(1, await context.ConnectorStates.CountAsync());
+        Assert.IsFalse(createdAgain);
+        Assert.AreEqual(1, await store.CountStatesAsync());
+        Assert.AreEqual("test", Assert.ContainsSingle(await store.ReadStatesAsync()).ConnectorId);
+    }
+
+    [TestMethod]
+    public async Task DataStore_Checkpoints_UseOptimisticRevisions()
+    {
+        await using ConnectorDataStore store = new("Data Source=:memory:");
+        await store.EnsureCreatedAsync();
+        DateTimeOffset now = new(2026, 10, 1, 12, 0, 0, TimeSpan.Zero);
+
+        bool inserted = await store.TrySaveCheckpointAsync("test", "default", "cursor-1", 0, now);
+        bool duplicateInsert = await store.TrySaveCheckpointAsync("test", "default", "cursor-x", 0, now);
+        bool updated = await store.TrySaveCheckpointAsync("test", "default", "cursor-2", 1, now.AddMinutes(1));
+        bool staleUpdate = await store.TrySaveCheckpointAsync("test", "default", "cursor-y", 1, now.AddMinutes(2));
+        ConnectorCheckpointEntity? checkpoint = await store.ReadCheckpointAsync("test", "default");
+
+        Assert.IsTrue(inserted);
+        Assert.IsFalse(duplicateInsert);
+        Assert.IsTrue(updated);
+        Assert.IsFalse(staleUpdate);
+        Assert.IsNotNull(checkpoint);
+        Assert.AreEqual("cursor-2", checkpoint.Cursor);
+        Assert.AreEqual(2, checkpoint.Revision);
+        Assert.AreEqual(now.AddMinutes(1), checkpoint.UpdatedAt);
+    }
+
+    [TestMethod]
+    public async Task DataStore_Outbox_ReturnsOnlyPendingEntriesInOrder()
+    {
+        await using ConnectorDataStore store = new("Data Source=:memory:");
+        await store.EnsureCreatedAsync();
+        DateTimeOffset now = new(2026, 10, 1, 12, 0, 0, TimeSpan.Zero);
+        ConnectorOutboxEntity first = new() { Id = Guid.NewGuid(), EventType = "a", PayloadJson = "{}", OccurredAt = now };
+        ConnectorOutboxEntity second = new() { Id = Guid.NewGuid(), EventType = "b", PayloadJson = "{}", OccurredAt = now.AddSeconds(1) };
+        await store.AddOutboxAsync(second);
+        await store.AddOutboxAsync(first);
+
+        bool processed = await store.MarkOutboxProcessedAsync(first.Id, now.AddMinutes(1));
+        bool processedAgain = await store.MarkOutboxProcessedAsync(first.Id, now.AddMinutes(2));
+        IReadOnlyList<ConnectorOutboxEntity> pending = await store.ReadPendingOutboxAsync(10);
+
+        Assert.IsTrue(processed);
+        Assert.IsFalse(processedAgain);
+        Assert.AreEqual(second.Id, Assert.ContainsSingle(pending).Id);
     }
 
     [TestMethod]

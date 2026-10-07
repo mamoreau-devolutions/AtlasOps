@@ -6,7 +6,6 @@
     <LangVersion>preview</LangVersion>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Ical.Net" />
     <PackageReference Include="Quartz" />
   </ItemGroup>
 </Project>

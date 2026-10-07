@@ -37,7 +37,14 @@ public sealed class ConnectorDocumentService
 {
     public string RenderMarkdown(string markdown)
     {
-        return new Markdown().Transform(markdown ?? string.Empty);
+        // Explicit options match the default constructor's settings without its app.config lookup,
+        // which goes through reflection-based System.Configuration type loading.
+        MarkdownOptions options = new()
+        {
+            EmptyElementSuffix = " />",
+            LinkEmails = true,
+        };
+        return new Markdown(options).Transform(markdown ?? string.Empty);
     }
 
     public byte[] CreateArchive(IEnumerable<ConnectorDocument> documents)

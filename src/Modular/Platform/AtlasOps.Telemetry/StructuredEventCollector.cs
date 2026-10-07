@@ -5,11 +5,17 @@ using System.Globalization;
 using Serilog;
 using Serilog.Core;
 using Serilog.Events;
+using Serilog.Parsing;
 
 public sealed record StructuredEvent(string Level, string Message, IReadOnlyDictionary<string, string> Properties);
 
 public sealed class StructuredEventCollector : IDisposable
 {
+    // Events are bound explicitly from typed scalar values instead of through Serilog's
+    // params-based capturing, whose destructuring relies on reflection over arbitrary types.
+    private static readonly MessageTemplate OperationTemplate = new MessageTemplateParser().Parse(
+        "Operation {Operation} for {ResourceType} completed in {DurationMs} ms with success {Succeeded}");
+
     private readonly List<StructuredEvent> events = [];
     private readonly Logger logger;
     private readonly CollectingSink sink;
@@ -27,12 +33,17 @@ public sealed class StructuredEventCollector : IDisposable
 
     public void RecordOperation(string operation, string resourceType, TimeSpan duration, bool succeeded)
     {
-        this.logger.Information(
-            "Operation {Operation} for {ResourceType} completed in {DurationMs} ms with success {Succeeded}",
-            operation,
-            resourceType,
-            duration.TotalMilliseconds,
-            succeeded);
+        this.logger.Write(new LogEvent(
+            DateTimeOffset.Now,
+            LogEventLevel.Information,
+            null,
+            OperationTemplate,
+            [
+                new LogEventProperty("Operation", new ScalarValue(operation)),
+                new LogEventProperty("ResourceType", new ScalarValue(resourceType)),
+                new LogEventProperty("DurationMs", new ScalarValue(duration.TotalMilliseconds)),
+                new LogEventProperty("Succeeded", new ScalarValue(succeeded)),
+            ]));
     }
 
     public void Dispose()

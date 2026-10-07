@@ -1,8 +1,9 @@
 namespace AtlasOps.Core;
 
 using System.Net.Http.Headers;
-using System.Net.Http.Json;
+using System.Text;
 using System.Text.Json;
+using System.Text.Json.Nodes;
 
 using AtlasOps.Core.Generated;
 
@@ -39,7 +40,7 @@ public sealed class FileAtlasOpsStore : IAtlasOpsStore
         }
 
         string payload = await File.ReadAllTextAsync(path, cancellationToken);
-        return JsonSerializer.Deserialize<List<TModel>>(payload, JsonOptions.Default) ?? [];
+        return JsonSerializer.Deserialize(payload, AtlasOpsGeneratedSerializer.GetTypeInfo<List<TModel>>()) ?? [];
     }
 
     public async Task SaveAsync<TModel>(
@@ -48,7 +49,7 @@ public sealed class FileAtlasOpsStore : IAtlasOpsStore
         where TModel : class, IAtlasOpsEntity
     {
         List<TModel> materializedModels = models.ToList();
-        string payload = JsonSerializer.Serialize(materializedModels, JsonOptions.Default);
+        string payload = JsonSerializer.Serialize(materializedModels, AtlasOpsGeneratedSerializer.GetTypeInfo<List<TModel>>());
         string path = this.GetPath<TModel>();
         string temporaryPath = path + ".tmp";
         await File.WriteAllTextAsync(temporaryPath, payload, cancellationToken);
@@ -160,31 +161,45 @@ public sealed class TursoAtlasOpsStore : IAtlasOpsStore
         return new Uri(uri, "/v2/pipeline");
     }
 
-    private static object CreatePipelineRequest(TursoStatement statement)
+    private static JsonObject CreatePipelineRequest(TursoStatement statement)
     {
         return CreatePipelineRequest([statement]);
     }
 
-    private static object CreatePipelineRequest(IEnumerable<TursoStatement> statements)
+    private static JsonObject CreatePipelineRequest(IEnumerable<TursoStatement> statements)
     {
-        object[] requests = statements
-            .Select(static statement => (object)new
+        JsonArray requests = [];
+        foreach (TursoStatement statement in statements)
+        {
+            JsonArray arguments = [];
+            foreach (TursoArgument argument in statement.Arguments)
             {
-                type = "execute",
-                stmt = new
+                JsonNode item = new JsonObject
                 {
-                    sql = statement.Sql,
-                    args = statement.Arguments,
-                },
-            })
-            .ToArray();
+                    ["type"] = argument.Type,
+                    ["value"] = argument.Value,
+                };
+                arguments.Add(item);
+            }
 
-        return new { requests };
+            JsonNode request = new JsonObject
+            {
+                ["type"] = "execute",
+                ["stmt"] = new JsonObject
+                {
+                    ["sql"] = statement.Sql,
+                    ["args"] = arguments,
+                },
+            };
+            requests.Add(request);
+        }
+
+        return new JsonObject { ["requests"] = requests };
     }
 
-    private static object CreateTextArgument(string value)
+    private static TursoArgument CreateTextArgument(string value)
     {
-        return new { type = "text", value };
+        return new TursoArgument("text", value);
     }
 
     private async Task EnsureInitializedAsync(CancellationToken cancellationToken)
@@ -213,11 +228,11 @@ public sealed class TursoAtlasOpsStore : IAtlasOpsStore
         }
     }
 
-    private async Task<JsonDocument> SendAsync(object payload, CancellationToken cancellationToken)
+    private async Task<JsonDocument> SendAsync(JsonObject payload, CancellationToken cancellationToken)
     {
         using HttpRequestMessage request = new(HttpMethod.Post, this.pipelineUri)
         {
-            Content = JsonContent.Create(payload),
+            Content = new StringContent(payload.ToJsonString(), Encoding.UTF8, "application/json"),
         };
         request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", this.token);
 
@@ -242,7 +257,9 @@ public sealed class TursoAtlasOpsStore : IAtlasOpsStore
         }
     }
 
-    private sealed record TursoStatement(string Sql, IReadOnlyList<object> Arguments);
+    private sealed record TursoStatement(string Sql, IReadOnlyList<TursoArgument> Arguments);
+
+    private sealed record TursoArgument(string Type, string Value);
 }
 
 public static class AtlasOpsStoreFactory
@@ -256,12 +273,4 @@ public static class AtlasOpsStoreFactory
 
         return new FileAtlasOpsStore(settings.LocalDataPath);
     }
-}
-
-internal static class JsonOptions
-{
-    public static JsonSerializerOptions Default { get; } = new(JsonSerializerDefaults.Web)
-    {
-        WriteIndented = true,
-    };
 }

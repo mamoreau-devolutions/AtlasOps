@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 
 public sealed record DataCompilerInput(string Command, IReadOnlyList<string> Arguments, IReadOnlyDictionary<string, string> Options);
 public sealed record DataCompilerFinding(string Code, string Severity, string Subject, string Message, IReadOnlyDictionary<string, string> Evidence);
@@ -23,7 +24,12 @@ public static class Program
     public static int Main(string[] args)
     {
         DataCompilerReport report = new DataCompilerEngine().Execute(new(args.FirstOrDefault() ?? string.Empty, args.Skip(1).ToArray(), new Dictionary<string, string>()), DateTimeOffset.UtcNow);
-        Console.WriteLine(JsonSerializer.Serialize(report, new JsonSerializerOptions { WriteIndented = true }));
+        Console.WriteLine(JsonSerializer.Serialize(report, DataCompilerJsonContext.Default.DataCompilerReport));
         return report.Findings.Any(static finding => finding.Severity == "error") ? 1 : 0;
     }
+}
+[JsonSourceGenerationOptions(WriteIndented = true)]
+[JsonSerializable(typeof(DataCompilerReport))]
+internal sealed partial class DataCompilerJsonContext : JsonSerializerContext
+{
 }

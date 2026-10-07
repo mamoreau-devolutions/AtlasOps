@@ -82,48 +82,67 @@
                     FontSize="17"
                     FontWeight="SemiBold"
                     Text="Health" />
-                <DataGrid
+                <Grid
                     Grid.Row="1"
-                    AutoGenerateColumns="False"
-                    IsReadOnly="True"
-                    ItemsSource="{Binding Health}">
-                    <DataGrid.Columns>
-                        <DataGridTextColumn
-                            Header="Connector"
-                            Binding="{Binding ConnectorId}" />
-                        <DataGridTextColumn
-                            Header="State"
-                            Binding="{Binding State}" />
-                        <DataGridTextColumn
-                            Header="Message"
-                            Binding="{Binding Message}" />
-                    </DataGrid.Columns>
-                </DataGrid>
+                    RowDefinitions="Auto,*">
+                    <Grid
+                        Margin="8,0"
+                        ColumnDefinitions="180,120,*"
+                        ColumnSpacing="8">
+                        <TextBlock FontWeight="SemiBold" Text="Connector" />
+                        <TextBlock Grid.Column="1" FontWeight="SemiBold" Text="State" />
+                        <TextBlock Grid.Column="2" FontWeight="SemiBold" Text="Message" />
+                    </Grid>
+                    <ListBox
+                        Grid.Row="1"
+                        ItemsSource="{Binding Health}">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate x:DataType="contracts:ConnectorHealthSnapshot">
+                                <Grid
+                                    ColumnDefinitions="180,120,*"
+                                    ColumnSpacing="8">
+                                    <TextBlock Text="{Binding ConnectorId}" TextTrimming="CharacterEllipsis" />
+                                    <TextBlock Grid.Column="1" Text="{Binding State}" />
+                                    <TextBlock Grid.Column="2" Text="{Binding Message}" TextTrimming="CharacterEllipsis" />
+                                </Grid>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </Grid>
                 <TextBlock
                     Grid.Row="2"
                     FontSize="17"
                     FontWeight="SemiBold"
                     Text="Recent executions" />
-                <DataGrid
+                <Grid
                     Grid.Row="3"
-                    AutoGenerateColumns="False"
-                    IsReadOnly="True"
-                    ItemsSource="{Binding Executions}">
-                    <DataGrid.Columns>
-                        <DataGridTextColumn
-                            Header="Time"
-                            Binding="{Binding OccurredAt}" />
-                        <DataGridTextColumn
-                            Header="Connector"
-                            Binding="{Binding ConnectorId}" />
-                        <DataGridTextColumn
-                            Header="Operation"
-                            Binding="{Binding Operation}" />
-                        <DataGridTextColumn
-                            Header="Status"
-                            Binding="{Binding Status}" />
-                    </DataGrid.Columns>
-                </DataGrid>
+                    RowDefinitions="Auto,*">
+                    <Grid
+                        Margin="8,0"
+                        ColumnDefinitions="170,180,140,*"
+                        ColumnSpacing="8">
+                        <TextBlock FontWeight="SemiBold" Text="Time" />
+                        <TextBlock Grid.Column="1" FontWeight="SemiBold" Text="Connector" />
+                        <TextBlock Grid.Column="2" FontWeight="SemiBold" Text="Operation" />
+                        <TextBlock Grid.Column="3" FontWeight="SemiBold" Text="Status" />
+                    </Grid>
+                    <ListBox
+                        Grid.Row="1"
+                        ItemsSource="{Binding Executions}">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate x:DataType="contracts:ConnectorAuditRecord">
+                                <Grid
+                                    ColumnDefinitions="170,180,140,*"
+                                    ColumnSpacing="8">
+                                    <TextBlock Text="{Binding OccurredAt, StringFormat='{}{0:yyyy-MM-dd HH:mm:ss}'}" />
+                                    <TextBlock Grid.Column="1" Text="{Binding ConnectorId}" TextTrimming="CharacterEllipsis" />
+                                    <TextBlock Grid.Column="2" Text="{Binding Operation}" TextTrimming="CharacterEllipsis" />
+                                    <TextBlock Grid.Column="3" Text="{Binding Status}" />
+                                </Grid>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </Grid>
             </Grid>
         </Grid>
     </Grid>

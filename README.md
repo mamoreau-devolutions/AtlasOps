@@ -186,6 +186,35 @@ Run the real Avalonia desktop lifetime and close it automatically after startup:
 dotnet run --project .\src\AtlasOps.App\AtlasOps.App.csproj -- --smoke-ui
 ```
 
+## NativeAOT
+
+AtlasOps is trimming and NativeAOT safe. Every production project sets
+`IsAotCompatible`, and the desktop app publishes with `PublishAot`, treating
+any trim or AOT analysis warning as a publish error:
+
+```powershell
+dotnet publish .\src\AtlasOps.App\AtlasOps.App.csproj -c Release -r win-x64
+```
+
+Add `-p:AtlasOpsAotRootAll=true` to root every AtlasOps assembly, so the AOT
+compiler also analyzes first-party code that the desktop entry point does not
+reach. The `AtlasOps NativeAOT verification` workflow runs that publish and the
+native headless validation on every change.
+
+The codebase keeps to these rules:
+
+- JSON uses System.Text.Json source generation (`JsonSerializerContext`); the
+  generated-model serializer dispatches to `AtlasOpsJsonContext`, which
+  `scripts\Generate-AtlasOps.ps1` emits alongside the models.
+- Interchange formats are written through explicit APIs: `MessagePackWriter`,
+  Google.Protobuf `CodedOutputStream`, the YamlDotNet event emitter, an RFC 4180
+  CSV writer, and Scriban `ScriptObject` models. Output is byte-identical to the
+  previous reflection-based serializers.
+- Connector persistence uses parameterized `Microsoft.Data.Sqlite` commands,
+  JSON schema validation uses JsonSchema.Net, iCalendar output uses an RFC 5545
+  writer, and Serilog events are bound from typed scalar values.
+- Avalonia views use compiled bindings, and developer tools are Debug-only.
+
 ## Turso persistence
 
 AtlasOps uses local JSON persistence by default. Set both variables to use the Turso/libSQL HTTP pipeline:
