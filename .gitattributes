@@ -1,0 +1,4 @@
+# Vendored reference data is verified byte-for-byte (SHA-256 manifests and content fingerprints),
+# so line endings must never be converted on checkout or commit.
+src/AtlasOps.ReferenceData/Data/** -text
+src/AtlasOps.Geography/Data/Source/** -text
